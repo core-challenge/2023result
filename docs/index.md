@@ -1,7 +1,7 @@
 # Result
 
 1. Graph Track
-2. Solver Track [Detail](/solver/)
+2. Solver Track [Detail](/2023result/solver/)
     1.  [overall existent (cpu)](#org4a65e86)
     2.  [overall existent (wallclock)](#org9b49c0d)
     3.  [overall longest (cpu)](#orgb75725a)
@@ -14,6 +14,10 @@
     10. [single longest (wallclock)](#org084fb67)
     11. [single shortest (cpu)](#org4ca359f)
     12. [single shortest (wallclock)](#org3c184f8)
+
+## Graph Track
+
+| Graph Size |  |
 
 
 <a id="orgff3f822"></a>
