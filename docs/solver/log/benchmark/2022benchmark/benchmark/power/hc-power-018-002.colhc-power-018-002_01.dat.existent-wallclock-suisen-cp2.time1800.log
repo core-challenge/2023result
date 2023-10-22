@@ -1,0 +1,12 @@
+#BEGIN: [Sun Sep  3 08:32:14 2023]
+#HOST: s11
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-suisen-cp2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/power/hc-power-018-002.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/power/hc-power-018-002_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/2022benchmark/benchmark/power/hc-power-018-002.col /benchmark/2022benchmark/benchmark/power/hc-power-018-002_01.dat
+[36m23:32:37 [INFO] Time reorder   : 22 (sec)[0m
+TIMEOUT 1800
+c send SIGTERM to CID 665e1c91491a5347103bab9216ef41f02bfd73ea90d92613314914e75ae2c01e
+#END: [Sun Sep  3 09:02:15 2023]

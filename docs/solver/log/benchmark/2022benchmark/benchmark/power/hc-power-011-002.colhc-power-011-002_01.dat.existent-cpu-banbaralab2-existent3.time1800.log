@@ -1,0 +1,41 @@
+#BEGIN: [Mon Aug 28 22:47:20 2023]
+#HOST: s09
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-banbaralab2-existent3
+#INSTANCE1: /benchmark/2022benchmark/benchmark/power/hc-power-011-002.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/power/hc-power-011-002_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na -t4 /benchmark/2022benchmark/benchmark/power/hc-power-011-002.col /benchmark/2022benchmark/benchmark/power/hc-power-011-002_01.dat
+c /benchmark/2022benchmark/benchmark/power/hc-power-011-002.col
+c /benchmark/2022benchmark/benchmark/power/hc-power-011-002_01.dat
+*** Info : (clingo): Sending shutdown signal...
+*** ERROR: (clingo): solving stopped by signal
+*** Info : (clingo): Shutdown completed in 0.005 seconds
+s 2 4 6 9 11 14 16 19 21 24 26 29 31 34 36 39 41 44 46 49 51 54 56 59 61 64 66 69 71 74 76 79 81 84 86 89 91 94 96 99 101 104 106 109 111 114 116 119 121 124 126 129 131 134 136 139 141 144 146 149 151 154 156 159 161 164 166 169
+t 2 4 6 9 11 14 16 19 21 24 26 29 31 34 36 39 41 44 46 49 51 54 56 59 61 64 66 69 71 74 76 79 81 84 86 89 91 94 96 99 101 104 106 109 111 114 116 119 121 124 126 129 131 134 136 139 141 144 146 149 151 154 157 158 162 163 167 168
+c UNKNOWN
+c REACHABILITY UNKNOWN
+	Command being timed: "python3 run_3.py --existent --na -t4 /benchmark/2022benchmark/benchmark/power/hc-power-011-002.col /benchmark/2022benchmark/benchmark/power/hc-power-011-002_01.dat"
+	User time (seconds): 2391.43
+	System time (seconds): 0.62
+	Percent of CPU this job got: 398%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 10:00.94
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1395156
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 423482
+	Voluntary context switches: 7000
+	Involuntary context switches: 5946
+	Swaps: 0
+	File system inputs: 456
+	File system outputs: 200
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Mon Aug 28 22:57:21 2023]

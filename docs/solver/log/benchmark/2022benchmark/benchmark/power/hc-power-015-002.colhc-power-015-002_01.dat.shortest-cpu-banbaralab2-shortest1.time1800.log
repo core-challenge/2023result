@@ -1,0 +1,17 @@
+#BEGIN: [Tue Aug 29 01:32:21 2023]
+#HOST: s13
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-cpu-banbaralab2-shortest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/power/hc-power-015-002.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/power/hc-power-015-002_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest /benchmark/2022benchmark/benchmark/power/hc-power-015-002.col /benchmark/2022benchmark/benchmark/power/hc-power-015-002_01.dat
+c /benchmark/2022benchmark/benchmark/power/hc-power-015-002.col
+c /benchmark/2022benchmark/benchmark/power/hc-power-015-002_01.dat
+TIMEOUT CPU 1800 MEM 0 MAXMEM 0
+#RESULT: UNK
+#FIN: TO
+#CPU: 1800
+#MAXMEM: 0
+c send SIGTERM to CID 28529a1a1efe178d0d39c5fc7860051ca4e43e9a9c76509bcef9fb16f0bd1193
+#END: [Tue Aug 29 02:02:21 2023]

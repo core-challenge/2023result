@@ -1,0 +1,12 @@
+#BEGIN: [Sun Sep  3 02:42:24 2023]
+#HOST: s07
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-suisen-cp2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/power/hc-power-017-002.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/power/hc-power-017-002_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/2022benchmark/benchmark/power/hc-power-017-002.col /benchmark/2022benchmark/benchmark/power/hc-power-017-002_01.dat
+[36m17:42:39 [INFO] Time reorder   : 14 (sec)[0m
+TIMEOUT 1800
+c send SIGTERM to CID 8cfdc175ea800659e56cc241a8de5bfe630cb53fad452bf181afcfe0e34b78d0
+#END: [Sun Sep  3 03:12:24 2023]
