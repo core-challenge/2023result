@@ -1,0 +1,37 @@
+#BEGIN: [Mon Sep 18 15:43:38 2023]
+#HOST: s07
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-suisen-cp2
+#INSTANCE1: /benchmark/random_instance/random_instance016_graph005.col
+#INSTANCE2: /benchmark/random_instance/random_instance016_graph005_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/random_instance/random_instance016_graph005.col /benchmark/random_instance/random_instance016_graph005_01.dat
+[36m06:43:39 [INFO] Time reorder   : 1 (sec)[0m
+[36m06:53:16 [INFO] Time reconf    : 577 (sec)[0m
+s 2 4 5 10 11 13 23 26 28 33 34 35 36 40 42 46 50 54 55 62 66 71 75 77 78 84 90 91 94 97 98 99 101 102 104 108 115 116 120 127 129 131 133 135 139 140 145 147 150 152 156 158 160 161 162 165 166 168 174 180 181 184 186 187 188 192 193 194 196 198 203 205
+t 3 4 5 6 11 19 25 31 32 36 37 42 43 44 46 48 51 52 53 55 56 57 58 60 62 64 69 70 72 88 89 91 92 98 99 100 102 108 109 110 114 118 120 121 122 123 129 134 135 137 138 139 142 145 147 166 169 170 171 175 177 181 183 184 186 189 191 192 194 196 200 208
+
+	Command being timed: "bash /solver-dir/run.sh /benchmark/random_instance/random_instance016_graph005.col /benchmark/random_instance/random_instance016_graph005_01.dat"
+	User time (seconds): 554.03
+	System time (seconds): 24.29
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 9:38.53
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 64498868
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1757
+	Minor (reclaiming a frame) page faults: 29773950
+	Voluntary context switches: 2352
+	Involuntary context switches: 5043
+	Swaps: 0
+	File system inputs: 74344
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Mon Sep 18 15:53:17 2023]

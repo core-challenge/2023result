@@ -1,0 +1,37 @@
+#BEGIN: [Wed Sep  6 00:19:23 2023]
+#HOST: s14
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-suisen-cp2
+#INSTANCE1: /benchmark/random_instance/random_instance034_graph005.col
+#INSTANCE2: /benchmark/random_instance/random_instance034_graph005_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/random_instance/random_instance034_graph005.col /benchmark/random_instance/random_instance034_graph005_01.dat
+[36m15:19:29 [INFO] Time reorder   : 5 (sec)[0m
+[36m15:29:36 [INFO] Time reconf    : 606 (sec)[0m
+s 1 5 9 10 12 13 23 24 27 38 41 44 45 49 52 54 55 56 57 58 61 64 69 70 81 83 84 85 88 90 99 106 107 110 111 112 117 121 124 125 128 131 136 140 145 148 149 156 157 158 168 169 175 176 177 178 182 188 189 194 196 197 199 205 210 216 222 223 226 229 230 231 234 243 246 252 255 258 262 263 265 270 273 274 277 280 281 282 284 285 289 290 294 295 298 299 305 307 311 318 324 327 332 333 337 343 344 347 348 350 355 360 364 365 366 372 380 384 385 391 397 398 401 407 410 411 412 416 417 419 422 424 428 431 432 433 435 438 442
+t 5 12 14 16 17 25 27 35 42 46 52 53 54 55 56 57 58 65 69 71 72 77 79 83 84 87 92 95 99 100 101 102 103 106 109 111 113 114 116 119 120 121 125 129 134 135 140 144 148 149 151 160 161 164 168 170 171 173 174 177 179 180 181 184 196 197 200 203 205 215 219 223 225 226 227 228 230 231 238 241 242 246 252 262 273 275 278 282 283 284 285 287 288 290 292 296 299 301 305 309 312 313 314 315 322 323 327 328 335 338 342 344 346 347 350 356 359 360 363 364 366 370 371 374 382 390 394 396 399 403 411 419 429 431 432 433 435 438 441
+
+	Command being timed: "bash /solver-dir/run.sh /benchmark/random_instance/random_instance034_graph005.col /benchmark/random_instance/random_instance034_graph005_01.dat"
+	User time (seconds): 587.76
+	System time (seconds): 24.25
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 10:12.24
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 64497196
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1844
+	Minor (reclaiming a frame) page faults: 29541421
+	Voluntary context switches: 2422
+	Involuntary context switches: 5653
+	Swaps: 0
+	File system inputs: 75536
+	File system outputs: 80
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Wed Sep  6 00:29:36 2023]

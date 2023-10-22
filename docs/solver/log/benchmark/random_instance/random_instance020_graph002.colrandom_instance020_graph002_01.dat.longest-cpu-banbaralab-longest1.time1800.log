@@ -1,0 +1,17 @@
+#BEGIN: [Tue Sep 26 04:06:58 2023]
+#HOST: s14
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-banbaralab-longest1
+#INSTANCE1: /benchmark/random_instance/random_instance020_graph002.col
+#INSTANCE2: /benchmark/random_instance/random_instance020_graph002_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest /benchmark/random_instance/random_instance020_graph002.col /benchmark/random_instance/random_instance020_graph002_01.dat
+c /benchmark/random_instance/random_instance020_graph002.col
+c /benchmark/random_instance/random_instance020_graph002_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID bc57ae68f3a145c938b23e4ed93adef4d23e9648572395caf650793276b3ad60
+s 247 215 16 14 57 140 66 27 101 257 160 237 256 108 34 141 254 127 89 204 128 146 23 99 132 37 48 224 42 29 148 9 216 212 45 258 75 150 149 203 225 38 25 176 196 234 244 39 137 179 13 188 71 115 74 131 167 161 76 69 190 118 123 32 7 223 33 41 121 46 40 10 64 219 202 151 144 85 166 98 235 251 155 171
+t 1 160 121 202 99 249 109 93 186 104 114 123 86 32 137 197 51 46 251 146 204 82 163 131 217 88 216 62 78 13 143 77 198 156 64 66 83 192 259 135 11 75 174 49 89 87 151 24 206 194 140 70 257 94 162 124 260 97 12 239 54 59 118 253 55 102 176 149 219 103 170 236 74 205 50 5 35 213 225 187 169 26 224 27
+c UNKNOWN
+c REACHABILITY UNKNOWN
+#END: [Tue Sep 26 04:36:58 2023]

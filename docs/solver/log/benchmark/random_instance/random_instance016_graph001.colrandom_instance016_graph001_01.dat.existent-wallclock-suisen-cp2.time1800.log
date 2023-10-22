@@ -1,0 +1,37 @@
+#BEGIN: [Tue Sep 26 13:23:18 2023]
+#HOST: s02
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-suisen-cp2
+#INSTANCE1: /benchmark/random_instance/random_instance016_graph001.col
+#INSTANCE2: /benchmark/random_instance/random_instance016_graph001_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/random_instance/random_instance016_graph001.col /benchmark/random_instance/random_instance016_graph001_01.dat
+[36m04:23:19 [INFO] Time reorder   : 1 (sec)[0m
+[36m04:34:17 [INFO] Time reconf    : 657 (sec)[0m
+s 1 6 7 10 11 13 17 22 29 31 32 33 34 35 36 40 41 47 51 53 55 58 59 61 69 71 72 76 78 83 86 88 89 91 97 111 115 120 121 123 124 127 131 132 133 136 140 141 142 144 148 150 154 162 171 177 183 184 186 189 190 191 200 201 204 206 207 208
+t 6 11 12 15 18 21 23 27 29 31 33 34 35 36 40 41 46 47 50 52 53 58 62 67 68 69 71 78 84 94 95 100 105 108 111 114 115 118 121 122 124 125 126 128 132 133 137 140 144 146 147 149 156 161 169 173 177 179 180 181 184 186 188 190 191 193 200 207
+
+	Command being timed: "bash /solver-dir/run.sh /benchmark/random_instance/random_instance016_graph001.col /benchmark/random_instance/random_instance016_graph001_01.dat"
+	User time (seconds): 633.98
+	System time (seconds): 24.97
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 10:59.13
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 61726184
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1858
+	Minor (reclaiming a frame) page faults: 28992999
+	Voluntary context switches: 2010
+	Involuntary context switches: 6975
+	Swaps: 0
+	File system inputs: 36712
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Tue Sep 26 13:34:18 2023]

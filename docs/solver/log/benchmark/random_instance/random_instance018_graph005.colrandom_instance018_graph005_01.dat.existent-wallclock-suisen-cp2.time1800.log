@@ -1,0 +1,37 @@
+#BEGIN: [Wed Sep  6 01:04:38 2023]
+#HOST: s02
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-suisen-cp2
+#INSTANCE1: /benchmark/random_instance/random_instance018_graph005.col
+#INSTANCE2: /benchmark/random_instance/random_instance018_graph005_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/random_instance/random_instance018_graph005.col /benchmark/random_instance/random_instance018_graph005_01.dat
+[36m16:04:39 [INFO] Time reorder   : 1 (sec)[0m
+[36m16:16:32 [INFO] Time reconf    : 712 (sec)[0m
+s 3 6 7 10 16 20 24 25 32 33 43 44 45 50 58 60 63 67 68 74 87 88 90 91 94 95 97 98 99 100 101 102 103 111 114 116 118 119 120 122 130 132 133 138 141 144 148 149 153 158 163 167 171 177 179 181 183 184 189 190 191 192 197 204 205 206 209 213 215 216 220 223 224 225 228 230
+t 3 9 13 15 17 20 29 31 32 33 35 37 46 51 54 59 63 69 70 74 76 78 84 88 89 90 91 100 101 102 106 110 112 114 116 119 120 121 122 123 128 129 138 139 140 141 147 148 149 153 161 162 164 168 171 177 178 183 188 189 190 193 198 199 203 205 210 211 215 221 222 223 224 227 231 233
+
+	Command being timed: "bash /solver-dir/run.sh /benchmark/random_instance/random_instance018_graph005.col /benchmark/random_instance/random_instance018_graph005_01.dat"
+	User time (seconds): 688.81
+	System time (seconds): 25.12
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 11:54.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 63318176
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1712
+	Minor (reclaiming a frame) page faults: 29303480
+	Voluntary context switches: 1969
+	Involuntary context switches: 6412
+	Swaps: 0
+	File system inputs: 36816
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Wed Sep  6 01:16:32 2023]

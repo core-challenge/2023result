@@ -1,0 +1,37 @@
+#BEGIN: [Wed Sep  6 01:22:55 2023]
+#HOST: s16
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-suisen-cp2
+#INSTANCE1: /benchmark/random_instance/random_instance025_graph003.col
+#INSTANCE2: /benchmark/random_instance/random_instance025_graph003_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/random_instance/random_instance025_graph003.col /benchmark/random_instance/random_instance025_graph003_01.dat
+[36m16:22:59 [INFO] Time reorder   : 3 (sec)[0m
+[36m16:37:14 [INFO] Time reconf    : 855 (sec)[0m
+s 2 4 7 14 15 17 18 20 21 23 25 26 27 28 30 35 37 41 47 52 53 59 60 64 69 71 72 74 76 80 81 83 91 93 94 96 99 101 102 103 108 117 118 119 120 126 129 134 136 139 143 145 151 153 158 160 163 168 170 172 173 175 176 179 180 183 186 188 192 193 195 197 200 202 203 206 215 216 221 222 224 226 234 237 240 246 250 254 256 273 279 280 283 285 294 298 303 304 306 311 313 314 320 322
+t 1 6 9 11 12 15 18 19 24 25 26 35 37 39 41 45 46 51 52 63 64 69 70 71 72 74 75 77 80 90 91 94 97 98 100 101 104 105 108 117 118 120 122 129 135 142 145 147 148 150 154 156 161 162 164 165 168 170 171 176 178 182 196 200 205 211 212 213 215 217 219 223 224 226 227 228 238 239 244 245 246 249 253 255 259 260 262 266 267 273 277 279 280 283 284 286 294 295 296 302 305 307 313 316
+
+	Command being timed: "bash /solver-dir/run.sh /benchmark/random_instance/random_instance025_graph003.col /benchmark/random_instance/random_instance025_graph003_01.dat"
+	User time (seconds): 837.18
+	System time (seconds): 21.62
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 14:18.88
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 56328880
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 102
+	Minor (reclaiming a frame) page faults: 21874174
+	Voluntary context switches: 241
+	Involuntary context switches: 4546
+	Swaps: 0
+	File system inputs: 19040
+	File system outputs: 72
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Wed Sep  6 01:37:15 2023]

@@ -1,0 +1,44 @@
+#BEGIN: [Wed Sep  6 01:25:29 2023]
+#HOST: s04
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-suisen-cp2
+#INSTANCE1: /benchmark/random_instance/random_instance027_graph005.col
+#INSTANCE2: /benchmark/random_instance/random_instance027_graph005_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/random_instance/random_instance027_graph005.col /benchmark/random_instance/random_instance027_graph005_01.dat
+[36m16:25:33 [INFO] Time reorder   : 3 (sec)[0m
+Traceback (most recent call last):
+  File "/solver-dir/./Main.py", line 174, in <module>
+    solve(
+  File "/solver-dir/./Main.py", line 77, in solve
+    source = [mapping[u] for u in source]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/solver-dir/./Main.py", line 77, in <listcomp>
+    source = [mapping[u] for u in source]
+              ~~~~~~~^^^
+KeyError: 318
+Command exited with non-zero status 1
+	Command being timed: "bash /solver-dir/run.sh /benchmark/random_instance/random_instance027_graph005.col /benchmark/random_instance/random_instance027_graph005_01.dat"
+	User time (seconds): 3.64
+	System time (seconds): 0.03
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.68
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 46636
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 13882
+	Voluntary context switches: 15
+	Involuntary context switches: 10
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 32
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+#END: [Wed Sep  6 01:25:33 2023]

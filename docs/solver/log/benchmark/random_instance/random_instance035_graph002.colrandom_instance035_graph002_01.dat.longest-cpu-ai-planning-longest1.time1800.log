@@ -1,0 +1,10 @@
+#BEGIN: [Mon Sep 25 20:27:55 2023]
+#HOST: s07
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-ai-planning-longest1
+#INSTANCE1: /benchmark/random_instance/random_instance035_graph002.col
+#INSTANCE2: /benchmark/random_instance/random_instance035_graph002_01.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning --config=longest-single --memory-limit=54 --time-limit=1800 /benchmark/random_instance/random_instance035_graph002.col /benchmark/random_instance/random_instance035_graph002_01.dat
+c UNKNOWN
+#END: [Mon Sep 25 20:56:56 2023]

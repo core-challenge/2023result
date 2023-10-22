@@ -1,0 +1,37 @@
+#BEGIN: [Wed Sep  6 01:02:54 2023]
+#HOST: s08
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-suisen-cp2
+#INSTANCE1: /benchmark/random_instance/random_instance017_graph001.col
+#INSTANCE2: /benchmark/random_instance/random_instance017_graph001_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/random_instance/random_instance017_graph001.col /benchmark/random_instance/random_instance017_graph001_01.dat
+[36m16:02:56 [INFO] Time reorder   : 1 (sec)[0m
+[36m16:13:55 [INFO] Time reconf    : 659 (sec)[0m
+s 2 3 5 6 8 9 11 21 23 24 25 31 33 38 40 43 45 47 48 54 56 61 62 63 64 65 68 70 71 77 88 91 98 99 102 105 106 110 117 118 127 128 129 132 135 136 137 141 142 144 145 148 153 159 160 165 166 168 173 174 181 186 187 189 191 194 200 201 202 204 205 213
+t 1 2 4 5 11 12 13 14 15 28 32 38 40 46 54 58 59 60 63 65 69 70 71 73 74 80 86 88 89 100 102 107 109 110 111 112 119 120 121 123 126 131 133 134 135 136 137 138 142 147 153 155 156 157 160 165 171 174 175 178 182 184 189 190 192 193 195 199 202 208 215 217
+
+	Command being timed: "bash /solver-dir/run.sh /benchmark/random_instance/random_instance017_graph001.col /benchmark/random_instance/random_instance017_graph001_01.dat"
+	User time (seconds): 637.57
+	System time (seconds): 23.18
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 11:00.81
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 61810820
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 76
+	Minor (reclaiming a frame) page faults: 28977130
+	Voluntary context switches: 97
+	Involuntary context switches: 3716
+	Swaps: 0
+	File system inputs: 15000
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Wed Sep  6 01:13:55 2023]

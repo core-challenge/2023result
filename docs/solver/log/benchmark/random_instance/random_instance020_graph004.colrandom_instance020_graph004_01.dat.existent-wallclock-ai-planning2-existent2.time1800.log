@@ -1,0 +1,33 @@
+#BEGIN: [Fri Sep  8 04:11:03 2023]
+#HOST: s13
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-ai-planning2-existent2
+#INSTANCE1: /benchmark/random_instance/random_instance020_graph004.col
+#INSTANCE2: /benchmark/random_instance/random_instance020_graph004_01.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning2 --config=existent-portfolio --memory-limit=54 --time-limit=1800 /benchmark/random_instance/random_instance020_graph004.col /benchmark/random_instance/random_instance020_graph004_01.dat
+c UNKNOWN
+	Command being timed: "/solvers/driver/run.py --config=existent-portfolio --memory-limit=54 --time-limit=1800 /benchmark/random_instance/random_instance020_graph004.col /benchmark/random_instance/random_instance020_graph004_01.dat"
+	User time (seconds): 1715.87
+	System time (seconds): 17.82
+	Percent of CPU this job got: 503%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:44.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 72968
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 10763366
+	Voluntary context switches: 920353
+	Involuntary context switches: 50813
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 536
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Fri Sep  8 04:16:47 2023]
