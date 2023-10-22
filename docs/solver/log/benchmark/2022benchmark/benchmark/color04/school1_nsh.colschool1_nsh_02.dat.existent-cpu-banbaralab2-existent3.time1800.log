@@ -1,0 +1,50 @@
+#BEGIN: [Mon Aug 28 22:03:19 2023]
+#HOST: s05
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-banbaralab2-existent3
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/school1_nsh.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/school1_nsh_02.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na -t4 /benchmark/2022benchmark/benchmark/color04/school1_nsh.col /benchmark/2022benchmark/benchmark/color04/school1_nsh_02.dat
+c /benchmark/2022benchmark/benchmark/color04/school1_nsh.col
+c /benchmark/2022benchmark/benchmark/color04/school1_nsh_02.dat
+*** Info : (clingo): Sending shutdown signal...
+*** ERROR: (clingo): solving stopped by signal
+*** Info : (clingo): Shutdown completed in 0.073 seconds
+s 9 13 29 44 47 68 71 86 88 99 119 131 133 136 139 140 142 162 176 185 187 189 193 208 236 241 248 263 269 284 290 292 308 309 314 315 316 328 
+t 13 22 29 44 47 68 71 86 88 93 118 131 133 135 136 137 139 140 142 158 168 185 187 189 193 208 236 241 248 269 284 290 292 308 309 313 316 328
+a YES
+a 9 13 29 44 47 68 71 86 88 99 119 131 133 136 139 140 142 162 176 185 187 189 193 208 236 241 248 263 269 284 290 292 308 309 314 315 316 328
+a 9 13 29 44 47 68 71 86 88 93 119 131 133 136 139 140 142 162 176 185 187 189 193 208 236 241 248 263 269 284 290 292 308 309 314 315 316 328
+a 9 13 29 44 47 68 71 86 88 93 119 131 133 136 139 140 142 158 176 185 187 189 193 208 236 241 248 263 269 284 290 292 308 309 314 315 316 328
+a 9 13 22 29 44 47 68 71 86 88 93 119 131 133 136 139 140 142 158 176 185 187 189 193 208 236 241 248 263 269 284 290 292 308 309 314 316 328
+a 9 13 22 29 44 47 68 71 86 88 93 119 131 133 136 139 140 142 158 176 185 187 189 193 208 236 241 248 263 269 284 290 292 308 309 313 316 328
+a 9 13 22 29 44 47 68 71 86 88 93 119 131 133 135 136 139 140 142 158 176 185 187 189 193 208 236 241 248 269 284 290 292 308 309 313 316 328
+a 9 13 22 29 44 47 68 71 86 88 93 118 131 133 135 136 139 140 142 158 176 185 187 189 193 208 236 241 248 269 284 290 292 308 309 313 316 328
+a 9 13 22 29 44 47 68 71 86 88 93 118 131 133 135 136 137 139 140 142 158 185 187 189 193 208 236 241 248 269 284 290 292 308 309 313 316 328
+a 13 22 29 44 47 68 71 86 88 93 118 131 133 135 136 137 139 140 142 158 168 185 187 189 193 208 236 241 248 269 284 290 292 308 309 313 316 328
+c Step: 8
+	Command being timed: "python3 run_3.py --existent --na -t4 /benchmark/2022benchmark/benchmark/color04/school1_nsh.col /benchmark/2022benchmark/benchmark/color04/school1_nsh_02.dat"
+	User time (seconds): 295.11
+	System time (seconds): 1.88
+	Percent of CPU this job got: 256%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:55.91
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4971568
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1871835
+	Voluntary context switches: 4485
+	Involuntary context switches: 969
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 944
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Mon Aug 28 22:05:16 2023]

@@ -1,0 +1,45 @@
+#BEGIN: [Sat Sep  2 23:37:41 2023]
+#HOST: s09
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-suisen-cp2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/games120.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/games120_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/2022benchmark/benchmark/color04/games120.col /benchmark/2022benchmark/benchmark/color04/games120_01.dat
+[36m14:37:42 [INFO] Time reorder   : 0 (sec)[0m
+[36m14:38:03 [INFO] Time reconf    : 20 (sec)[0m
+s 2 5 9 27 29 42 50 57 59 64 73 79 80 81 83 87 93 98 102 109 110 115
+t 2 4 5 9 15 27 29 43 44 48 57 64 68 73 78 80 81 87 93 98 110 115
+a YES
+a 2 5 9 27 29 42 50 57 59 64 73 79 80 81 83 87 93 98 102 109 110 115
+a 2 5 9 27 29 42 43 50 57 59 64 73 79 80 81 83 87 93 98 109 110 115
+a 2 5 9 27 29 43 44 50 57 59 64 73 79 80 81 83 87 93 98 109 110 115
+a 2 5 9 15 27 29 43 44 50 57 64 73 79 80 81 83 87 93 98 109 110 115
+a 2 5 9 15 27 29 43 44 50 57 64 68 73 79 80 81 83 87 93 98 110 115
+a 2 4 5 9 15 27 29 43 44 57 64 68 73 79 80 81 83 87 93 98 110 115
+a 2 4 5 9 15 27 29 43 44 48 57 64 68 73 79 80 81 87 93 98 110 115
+a 2 4 5 9 15 27 29 43 44 48 57 64 68 73 78 80 81 87 93 98 110 115
+	Command being timed: "bash /solver-dir/run.sh /benchmark/2022benchmark/benchmark/color04/games120.col /benchmark/2022benchmark/benchmark/color04/games120_01.dat"
+	User time (seconds): 21.21
+	System time (seconds): 0.42
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:21.64
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1137364
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 512402
+	Voluntary context switches: 22
+	Involuntary context switches: 122
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Sat Sep  2 23:38:03 2023]

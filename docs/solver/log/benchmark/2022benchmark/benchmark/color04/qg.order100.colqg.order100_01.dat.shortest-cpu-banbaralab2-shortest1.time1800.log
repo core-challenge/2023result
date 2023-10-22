@@ -1,0 +1,17 @@
+#BEGIN: [Mon Aug 28 23:52:55 2023]
+#HOST: s05
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-cpu-banbaralab2-shortest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/qg.order100.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/qg.order100_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest /benchmark/2022benchmark/benchmark/color04/qg.order100.col /benchmark/2022benchmark/benchmark/color04/qg.order100_01.dat
+c /benchmark/2022benchmark/benchmark/color04/qg.order100.col
+c /benchmark/2022benchmark/benchmark/color04/qg.order100_01.dat
+TIMEOUT CPU 1800 MEM 0 MAXMEM 0
+#RESULT: UNK
+#FIN: TO
+#CPU: 1800
+#MAXMEM: 0
+c send SIGTERM to CID b3dec59e29bf08e2fd9f6e057e42e12708288d132aa1612b1cfa642dc93121de
+#END: [Tue Aug 29 00:22:56 2023]

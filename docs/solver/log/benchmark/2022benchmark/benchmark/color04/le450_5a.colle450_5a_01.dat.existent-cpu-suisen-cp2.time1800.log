@@ -1,0 +1,37 @@
+#BEGIN: [Sun Sep  3 00:08:08 2023]
+#HOST: s09
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-suisen-cp2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/le450_5a.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/le450_5a_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/2022benchmark/benchmark/color04/le450_5a.col /benchmark/2022benchmark/benchmark/color04/le450_5a_01.dat
+[36m15:08:18 [INFO] Time reorder   : 9 (sec)[0m
+[36m15:23:41 [INFO] Time reconf    : 923 (sec)[0m
+s 2 7 12 17 22 27 32 37 47 52 57 62 67 72 77 82 87 92 97 102 107 112 117 122 127 132 137 142 147 152 157 162 167 172 177 182 187 192 197 202 207 212 217 222 227 232 237 242 247 252 257 262 267 272 277 282 287 292 297 302 307 312 317 322 327 332 337 342 347 352 357 362 367 372 377 382 387 392 397 402 407 412 417 422 427 432 437 442 447
+t 2 7 12 17 22 27 32 37 42 47 52 57 62 67 72 77 82 87 92 97 102 107 112 117 122 127 132 137 142 147 152 157 162 167 172 177 182 187 192 197 202 207 212 217 222 227 232 237 242 247 252 257 262 267 272 277 282 287 292 297 302 307 312 317 322 327 332 337 342 347 357 362 367 372 377 382 387 392 397 402 407 412 417 422 427 432 437 442 447
+
+	Command being timed: "bash /solver-dir/run.sh /benchmark/2022benchmark/benchmark/color04/le450_5a.col /benchmark/2022benchmark/benchmark/color04/le450_5a_01.dat"
+	User time (seconds): 909.18
+	System time (seconds): 23.94
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 15:33.33
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 64455324
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1816
+	Minor (reclaiming a frame) page faults: 29636333
+	Voluntary context switches: 1983
+	Involuntary context switches: 8496
+	Swaps: 0
+	File system inputs: 32688
+	File system outputs: 160
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Sun Sep  3 00:23:42 2023]

@@ -1,0 +1,39 @@
+#BEGIN: [Fri Sep  8 15:32:05 2023]
+#HOST: s11
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-cpu-ai-planning2-shortest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/DSJC1000.1.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/DSJC1000.1_02.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning2 --config=shortest-portfolio --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/DSJC1000.1.col /benchmark/2022benchmark/benchmark/color04/DSJC1000.1_02.dat
+s 17 42 47 51 56 84 100 101 102 126 130 135 136 158 197 233 246 261 279 309 330 341 345 355 365 374 408 413 431 453 455 467 469 479 486 511 524 535 568 572 593 608 617 633 639 666 668 688 692 727 736 740 754 759 768 796 830 835 851 872 930 959 965 973 988 989 
+t 17 42 47 51 56 84 100 101 102 126 127 130 135 136 158 197 201 233 246 261 279 309 330 341 345 355 365 408 413 431 453 455 467 469 479 486 511 524 535 568 572 593 608 617 633 639 666 668 688 692 727 740 754 759 796 830 835 851 855 872 930 959 965 973 988 989
+a YES
+a 17 42 47 51 56 84 100 101 102 126 130 135 136 158 197 233 246 261 279 309 330 341 345 355 365 374 408 413 431 453 455 467 469 479 486 511 524 535 568 572 593 608 617 633 639 666 668 688 692 727 736 740 754 759 768 796 830 835 851 872 930 959 965 973 988 989
+a 17 42 47 51 56 84 100 101 102 126 130 135 136 158 197 201 233 246 261 279 309 330 341 345 355 365 408 413 431 453 455 467 469 479 486 511 524 535 568 572 593 608 617 633 639 666 668 688 692 727 736 740 754 759 768 796 830 835 851 872 930 959 965 973 988 989
+a 17 42 47 51 56 84 100 101 102 126 130 135 136 158 197 201 233 246 261 279 309 330 341 345 355 365 408 413 431 453 455 467 469 479 486 511 524 535 568 572 593 608 617 633 639 666 668 688 692 727 740 754 759 768 796 830 835 851 855 872 930 959 965 973 988 989
+a 17 42 47 51 56 84 100 101 102 126 127 130 135 136 158 197 201 233 246 261 279 309 330 341 345 355 365 408 413 431 453 455 467 469 479 486 511 524 535 568 572 593 608 617 633 639 666 668 688 692 727 740 754 759 796 830 835 851 855 872 930 959 965 973 988 989
+	Command being timed: "/solvers/driver/run.py --config=shortest-portfolio --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/DSJC1000.1.col /benchmark/2022benchmark/benchmark/color04/DSJC1000.1_02.dat"
+	User time (seconds): 0.84
+	System time (seconds): 0.06
+	Percent of CPU this job got: 70%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.29
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 40944
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 23931
+	Voluntary context switches: 71
+	Involuntary context switches: 14
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1960
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Fri Sep  8 15:32:07 2023]

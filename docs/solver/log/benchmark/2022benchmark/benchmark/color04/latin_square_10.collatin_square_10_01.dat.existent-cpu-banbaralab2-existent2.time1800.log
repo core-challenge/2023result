@@ -1,0 +1,41 @@
+#BEGIN: [Mon Aug 28 18:06:15 2023]
+#HOST: s11
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-banbaralab2-existent2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/latin_square_10.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/latin_square_10_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na /benchmark/2022benchmark/benchmark/color04/latin_square_10.col /benchmark/2022benchmark/benchmark/color04/latin_square_10_01.dat
+c /benchmark/2022benchmark/benchmark/color04/latin_square_10.col
+c /benchmark/2022benchmark/benchmark/color04/latin_square_10_01.dat
+*** Info : (clingo): INTERRUPTED by signal!
+s 62 151 243 327 440 615 702 786 894 
+t 62 151 243 327 440 531 615 702 786
+a YES
+a 62 151 243 327 440 615 702 786 894
+a 62 151 243 327 440 531 615 702 786
+c Step: 1
+	Command being timed: "python3 run_3.py --existent --na /benchmark/2022benchmark/benchmark/color04/latin_square_10.col /benchmark/2022benchmark/benchmark/color04/latin_square_10_01.dat"
+	User time (seconds): 76.79
+	System time (seconds): 0.62
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:17.43
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1360968
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 648820
+	Voluntary context switches: 30
+	Involuntary context switches: 361
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 17848
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Mon Aug 28 18:07:33 2023]

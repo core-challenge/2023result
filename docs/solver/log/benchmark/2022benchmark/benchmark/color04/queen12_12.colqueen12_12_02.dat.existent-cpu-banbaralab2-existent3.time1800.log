@@ -1,0 +1,54 @@
+#BEGIN: [Mon Aug 28 22:02:08 2023]
+#HOST: s12
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-banbaralab2-existent3
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/queen12_12.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/queen12_12_02.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na -t4 /benchmark/2022benchmark/benchmark/color04/queen12_12.col /benchmark/2022benchmark/benchmark/color04/queen12_12_02.dat
+c /benchmark/2022benchmark/benchmark/color04/queen12_12.col
+c /benchmark/2022benchmark/benchmark/color04/queen12_12_02.dat
+*** Info : (clingo): Sending shutdown signal...
+*** ERROR: (clingo): solving stopped by signal
+*** Info : (clingo): Shutdown completed in 0.318 seconds
+s 11 14 30 39 60 80 89 97 112 129 139 
+t 10 16 30 37 60 80 86 101 111 129 143
+a YES
+a 11 14 30 39 60 80 89 97 112 129 139
+a 11 14 30 39 60 70 80 89 97 112 129
+a 11 14 30 39 60 70 80 89 97 112 127
+a 11 14 30 39 60 70 80 89 97 112 129
+a 7 14 30 39 60 70 80 89 97 112 129
+a 7 14 30 60 70 80 89 97 112 129 143
+a 7 14 30 60 70 80 87 97 112 129 143
+a 7 14 30 37 60 70 80 87 112 129 143
+a 7 14 30 37 60 70 80 87 101 129 143
+a 7 14 30 37 60 70 80 101 111 129 143
+a 7 30 37 60 70 80 86 101 111 129 143
+a 16 30 37 60 70 80 86 101 111 129 143
+a 10 16 30 37 60 80 86 101 111 129 143
+c Step: 12
+	Command being timed: "python3 run_3.py --existent --na -t4 /benchmark/2022benchmark/benchmark/color04/queen12_12.col /benchmark/2022benchmark/benchmark/color04/queen12_12_02.dat"
+	User time (seconds): 242.92
+	System time (seconds): 0.14
+	Percent of CPU this job got: 393%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:01.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 283180
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 132608
+	Voluntary context switches: 2214
+	Involuntary context switches: 664
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 232
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Mon Aug 28 22:03:10 2023]

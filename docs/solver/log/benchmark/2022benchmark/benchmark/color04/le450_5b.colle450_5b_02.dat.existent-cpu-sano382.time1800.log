@@ -1,0 +1,38 @@
+#BEGIN: [Sat Sep  2 11:30:54 2023]
+#HOST: s04
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-sano382
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/le450_5b.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/le450_5b_02.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark sano-382 -Xmx54g SimpleSolver /benchmark/2022benchmark/benchmark/color04/le450_5b.col /benchmark/2022benchmark/benchmark/color04/le450_5b_02.dat
+s 7 12 17 22 32 37 47 56 57 61 62 66 71 72 76 77 81 82 85 87 97 102 107 112 122 127 137 147 152 162 167 171 172 176 177 181 186 187 191 192 196 197 202 212 217 227 229 237 242 257 262 267 281 282 286 287 291 292 296 301 302 306 307 317 327 332 342 347 352 357 367 372 377 382 392 396 397 401 406 407 411 416 417 421 422 432 437 442 447
+t 7 12 17 22 32 37 47 56 57 61 62 66 71 72 76 77 81 82 85 87 97 102 107 112 122 127 137 147 152 162 167 171 172 176 177 181 186 187 191 192 196 197 202 212 217 227 229 237 257 262 267 277 281 282 286 287 291 292 296 301 302 306 307 317 327 342 347 352 357 367 372 374 377 382 392 396 397 401 406 407 411 416 417 421 422 432 437 442 447
+a YES
+a 7 12 17 22 32 37 47 56 57 61 62 66 71 72 76 77 81 82 85 87 97 102 107 112 122 127 137 147 152 162 167 171 172 176 177 181 186 187 191 192 196 197 202 212 217 227 229 237 242 257 262 267 281 282 286 287 291 292 296 301 302 306 307 317 327 332 342 347 352 357 367 372 377 382 392 396 397 401 406 407 411 416 417 421 422 432 437 442 447
+a 7 12 17 22 32 37 47 56 57 61 62 66 71 72 76 77 81 82 85 87 97 102 107 112 122 127 137 147 152 162 167 171 172 176 177 181 186 187 191 192 196 197 202 212 217 227 229 237 257 262 267 277 281 282 286 287 291 292 296 301 302 306 307 317 327 332 342 347 352 357 367 372 377 382 392 396 397 401 406 407 411 416 417 421 422 432 437 442 447
+a 7 12 17 22 32 37 47 56 57 61 62 66 71 72 76 77 81 82 85 87 97 102 107 112 122 127 137 147 152 162 167 171 172 176 177 181 186 187 191 192 196 197 202 212 217 227 229 237 257 262 267 277 281 282 286 287 291 292 296 301 302 306 307 317 327 342 347 352 357 367 372 374 377 382 392 396 397 401 406 407 411 416 417 421 422 432 437 442 447
+	Command being timed: "java -cp bin -Xmx54g SimpleSolver /benchmark/2022benchmark/benchmark/color04/le450_5b.col /benchmark/2022benchmark/benchmark/color04/le450_5b_02.dat"
+	User time (seconds): 0.64
+	System time (seconds): 0.10
+	Percent of CPU this job got: 250%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.29
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 162572
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 36636
+	Voluntary context switches: 1261
+	Involuntary context switches: 24
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 72
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Sat Sep  2 11:30:55 2023]

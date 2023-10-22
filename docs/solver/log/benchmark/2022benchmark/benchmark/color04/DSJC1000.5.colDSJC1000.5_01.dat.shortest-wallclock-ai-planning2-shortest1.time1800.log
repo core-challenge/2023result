@@ -1,0 +1,42 @@
+#BEGIN: [Fri Sep  8 22:57:02 2023]
+#HOST: s12
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-wallclock-ai-planning2-shortest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/DSJC1000.5.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/DSJC1000.5_01.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning2 --config=shortest-single --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/DSJC1000.5.col /benchmark/2022benchmark/benchmark/color04/DSJC1000.5_01.dat
+s 101 146 157 270 276 376 626 634 678 748 778 860 861 997 
+t 101 146 270 276 376 383 560 566 606 678 748 861 869 936
+a YES
+a 101 146 157 270 276 376 626 634 678 748 778 860 861 997
+a 101 146 157 270 276 376 566 634 678 748 778 860 861 997
+a 101 146 157 270 276 376 566 606 634 678 748 860 861 997
+a 101 146 157 270 276 376 566 606 634 678 748 861 869 997
+a 101 146 157 270 276 376 383 566 606 678 748 861 869 997
+a 101 146 157 270 276 376 383 566 606 678 748 861 869 936
+a 101 146 270 276 376 383 560 566 606 678 748 861 869 936
+	Command being timed: "/solvers/driver/run.py --config=shortest-single --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/DSJC1000.5.col /benchmark/2022benchmark/benchmark/color04/DSJC1000.5_01.dat"
+	User time (seconds): 1.32
+	System time (seconds): 0.02
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.35
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 109524
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 47925
+	Voluntary context switches: 22
+	Involuntary context switches: 17
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 6424
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Fri Sep  8 22:57:04 2023]

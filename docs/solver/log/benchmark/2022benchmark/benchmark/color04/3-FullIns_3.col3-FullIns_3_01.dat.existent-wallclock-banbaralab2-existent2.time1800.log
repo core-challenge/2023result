@@ -1,0 +1,41 @@
+#BEGIN: [Tue Aug 29 21:03:38 2023]
+#HOST: s15
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-banbaralab2-existent2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/3-FullIns_3.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/3-FullIns_3_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na /benchmark/2022benchmark/benchmark/color04/3-FullIns_3.col /benchmark/2022benchmark/benchmark/color04/3-FullIns_3_01.dat
+c /benchmark/2022benchmark/benchmark/color04/3-FullIns_3.col
+c /benchmark/2022benchmark/benchmark/color04/3-FullIns_3_01.dat
+s 1 5 6 9 10 12 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 79 
+t 1 3 5 9 10 14 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 79
+a YES
+a 1 5 6 9 10 12 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 79
+a 1 5 6 9 10 14 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 79
+a 1 3 5 9 10 14 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 79
+c Step: 2
+	Command being timed: "python3 run_3.py --existent --na /benchmark/2022benchmark/benchmark/color04/3-FullIns_3.col /benchmark/2022benchmark/benchmark/color04/3-FullIns_3_01.dat"
+	User time (seconds): 0.44
+	System time (seconds): 0.02
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.46
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 50012
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 24580
+	Voluntary context switches: 27
+	Involuntary context switches: 3
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 88
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Tue Aug 29 21:03:38 2023]

@@ -1,0 +1,15 @@
+#BEGIN: [Fri Sep  1 02:56:34 2023]
+#HOST: s05
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-banbaralab-longest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/qg.order40.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/qg.order40_02.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest -t4 /benchmark/2022benchmark/benchmark/color04/qg.order40.col /benchmark/2022benchmark/benchmark/color04/qg.order40_02.dat
+c /benchmark/2022benchmark/benchmark/color04/qg.order40.col
+c /benchmark/2022benchmark/benchmark/color04/qg.order40_02.dat
+s 15 73 120 144 186 205 270 311 329 387 422 451 490 527 583 638 676 698 748 780 834 857 893 939 981 1039 1069 1092 1121 1164 1208 1272 1326 1362 1435 1443 1517 1534 1576 
+t 10 79 81 138 191 221 255 309 325 380 430 454 554 582 604 649 693 752 783 835 852 908 947 984 1040 1065 1113 1156 1166 1217 1242 1317 1323 1371 1426 1447 1518 1536 1568
+c UNKNOWN
+c REACHABILITY UNKNOWN
+#END: [Fri Sep  1 03:04:37 2023]

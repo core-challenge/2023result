@@ -1,0 +1,49 @@
+#BEGIN: [Wed Aug 30 01:19:36 2023]
+#HOST: s12
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-banbaralab2-existent3
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/queen12_12.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/queen12_12_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na -t4 /benchmark/2022benchmark/benchmark/color04/queen12_12.col /benchmark/2022benchmark/benchmark/color04/queen12_12_01.dat
+c /benchmark/2022benchmark/benchmark/color04/queen12_12.col
+c /benchmark/2022benchmark/benchmark/color04/queen12_12_01.dat
+*** Info : (clingo): Sending shutdown signal...
+*** ERROR: (clingo): solving stopped by signal
+*** Info : (clingo): Shutdown completed in 0.096 seconds
+s 7 17 27 48 54 68 88 97 117 122 142 
+t 7 23 27 37 58 68 74 88 108 117 125
+a YES
+a 7 17 27 48 54 68 88 97 117 122 142
+a 7 17 27 47 54 68 88 97 117 122 142
+a 7 17 27 47 54 68 74 88 97 117 142
+a 7 27 47 54 68 74 88 97 117 125 142
+a 7 23 27 54 68 74 88 97 117 125 142
+a 7 23 27 54 68 74 88 108 117 125 142
+a 7 23 27 37 54 68 74 88 108 117 125
+a 7 23 27 37 58 68 74 88 108 117 125
+c Step: 7
+	Command being timed: "python3 run_3.py --existent --na -t4 /benchmark/2022benchmark/benchmark/color04/queen12_12.col /benchmark/2022benchmark/benchmark/color04/queen12_12_01.dat"
+	User time (seconds): 240.79
+	System time (seconds): 0.21
+	Percent of CPU this job got: 395%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:00.99
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 291048
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 129410
+	Voluntary context switches: 2344
+	Involuntary context switches: 583
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 208
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Wed Aug 30 01:20:38 2023]

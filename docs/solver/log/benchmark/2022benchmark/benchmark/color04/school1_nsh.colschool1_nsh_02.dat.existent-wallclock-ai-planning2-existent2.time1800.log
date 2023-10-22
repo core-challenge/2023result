@@ -1,0 +1,44 @@
+#BEGIN: [Fri Sep  8 02:59:47 2023]
+#HOST: s08
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-ai-planning2-existent2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/school1_nsh.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/school1_nsh_02.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning2 --config=existent-portfolio --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/school1_nsh.col /benchmark/2022benchmark/benchmark/color04/school1_nsh_02.dat
+s 9 13 29 44 47 68 71 86 88 99 119 131 133 136 139 140 142 162 176 185 187 189 193 208 236 241 248 263 269 284 290 292 308 309 314 315 316 328 
+t 13 22 29 44 47 68 71 86 88 93 118 131 133 135 136 137 139 140 142 158 168 185 187 189 193 208 236 241 248 269 284 290 292 308 309 313 316 328
+a YES
+a 9 13 29 44 47 68 71 86 88 99 119 131 133 136 139 140 142 162 176 185 187 189 193 208 236 241 248 263 269 284 290 292 308 309 314 315 316 328
+a 13 22 29 44 47 68 71 86 88 99 119 131 133 136 139 140 142 162 176 185 187 189 193 208 236 241 248 263 269 284 290 292 308 309 314 315 316 328
+a 13 22 29 44 47 68 71 86 88 93 119 131 133 136 139 140 142 162 176 185 187 189 193 208 236 241 248 263 269 284 290 292 308 309 314 315 316 328
+a 13 22 29 44 47 68 71 86 88 93 118 131 133 136 139 140 142 162 176 185 187 189 193 208 236 241 248 263 269 284 290 292 308 309 314 315 316 328
+a 13 22 29 44 47 68 71 86 88 93 118 131 133 136 139 140 142 158 176 185 187 189 193 208 236 241 248 263 269 284 290 292 308 309 314 315 316 328
+a 13 22 29 44 47 68 71 86 88 93 118 131 133 136 139 140 142 158 168 185 187 189 193 208 236 241 248 263 269 284 290 292 308 309 314 315 316 328
+a 13 22 29 44 47 68 71 86 88 93 118 131 133 135 136 139 140 142 158 168 185 187 189 193 208 236 241 248 269 284 290 292 308 309 314 315 316 328
+a 13 22 29 44 47 68 71 86 88 93 118 131 133 135 136 139 140 142 158 168 185 187 189 193 208 236 241 248 269 284 290 292 308 309 313 315 316 328
+a 13 22 29 44 47 68 71 86 88 93 118 131 133 135 136 137 139 140 142 158 168 185 187 189 193 208 236 241 248 269 284 290 292 308 309 313 316 328
+	Command being timed: "/solvers/driver/run.py --config=existent-portfolio --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/school1_nsh.col /benchmark/2022benchmark/benchmark/color04/school1_nsh_02.dat"
+	User time (seconds): 0.87
+	System time (seconds): 0.06
+	Percent of CPU this job got: 109%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.86
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 58252
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 42439
+	Voluntary context switches: 1110
+	Involuntary context switches: 20
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 888
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Fri Sep  8 02:59:49 2023]
