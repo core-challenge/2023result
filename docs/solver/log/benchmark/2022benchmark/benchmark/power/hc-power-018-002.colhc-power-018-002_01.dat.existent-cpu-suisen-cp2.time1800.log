@@ -1,0 +1,37 @@
+#BEGIN: [Sun Sep  3 02:42:39 2023]
+#HOST: s01
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-suisen-cp2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/power/hc-power-018-002.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/power/hc-power-018-002_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/2022benchmark/benchmark/power/hc-power-018-002.col /benchmark/2022benchmark/benchmark/power/hc-power-018-002_01.dat
+[36m17:42:58 [INFO] Time reorder   : 18 (sec)[0m
+[36m18:05:16 [INFO] Time reconf    : 1338 (sec)[0m
+s 2 4 6 9 11 14 16 19 21 24 26 29 31 34 36 39 41 44 46 49 51 54 56 59 61 64 66 69 71 74 76 79 81 84 86 89 91 94 96 99 101 104 106 109 111 114 116 119 121 124 126 129 131 134 136 139 141 144 146 149 151 154 156 159 161 164 166 169 171 174 176 179 181 184 186 189 191 194 196 199 201 204 206 209 211 214 216 219 221 224 226 229 231 234 236 239 241 244 246 249 251 254 256 259 261 264 266 269 271 274
+t 2 4 6 9 11 14 16 19 21 24 26 29 31 34 36 39 41 44 46 49 51 54 56 59 61 64 66 69 71 74 76 79 81 84 86 89 91 94 96 99 101 104 106 109 111 114 116 119 121 124 126 129 131 134 136 139 141 144 146 149 151 154 156 159 161 164 166 169 171 174 176 179 181 184 186 189 191 194 196 199 201 204 206 209 211 214 216 219 221 224 226 229 231 234 236 239 241 244 246 249 251 254 256 259 262 263 267 268 272 273
+
+	Command being timed: "bash /solver-dir/run.sh /benchmark/2022benchmark/benchmark/power/hc-power-018-002.col /benchmark/2022benchmark/benchmark/power/hc-power-018-002_01.dat"
+	User time (seconds): 1332.17
+	System time (seconds): 24.74
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 22:37.11
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 64413776
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1632
+	Minor (reclaiming a frame) page faults: 29909482
+	Voluntary context switches: 1741
+	Involuntary context switches: 10570
+	Swaps: 0
+	File system inputs: 31944
+	File system outputs: 56
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Sun Sep  3 03:05:16 2023]

@@ -1,0 +1,13 @@
+#BEGIN: [Wed Aug 30 10:18:46 2023]
+#HOST: s02
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-wallclock-banbaralab2-shortest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/power/hc-power-009-002.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/power/hc-power-009-002_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest -t4 /benchmark/2022benchmark/benchmark/power/hc-power-009-002.col /benchmark/2022benchmark/benchmark/power/hc-power-009-002_01.dat
+c /benchmark/2022benchmark/benchmark/power/hc-power-009-002.col
+c /benchmark/2022benchmark/benchmark/power/hc-power-009-002_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID 1b0eb19bb99e24886ab63a287c852f4ddf79883c507717c8312831a8d057a9c9
+#END: [Wed Aug 30 10:48:46 2023]

@@ -1,0 +1,50 @@
+#BEGIN: [Wed Aug 30 11:22:19 2023]
+#HOST: s07
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-wallclock-banbaralab2-shortest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/sp/sp001.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/sp/sp001_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest -t4 /benchmark/2022benchmark/benchmark/sp/sp001.col /benchmark/2022benchmark/benchmark/sp/sp001_01.dat
+c /benchmark/2022benchmark/benchmark/sp/sp001.col
+c /benchmark/2022benchmark/benchmark/sp/sp001_01.dat
+s 1 8
+t 7 13
+a YES
+a 1 8
+a 2 8
+a 2 9
+a 3 9
+a 3 10
+a 4 10
+a 4 11
+a 5 11
+a 5 12
+a 6 12
+a 6 13
+a 7 13
+c Step: 11
+	Command being timed: "python3 run_3.py --shortest -t4 /benchmark/2022benchmark/benchmark/sp/sp001.col /benchmark/2022benchmark/benchmark/sp/sp001_01.dat"
+	User time (seconds): 0.10
+	System time (seconds): 0.02
+	Percent of CPU this job got: 106%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 21636
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 12483
+	Voluntary context switches: 83
+	Involuntary context switches: 3
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 40
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Wed Aug 30 11:22:19 2023]
