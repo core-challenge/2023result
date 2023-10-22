@@ -1,0 +1,15 @@
+#BEGIN: [Thu Sep  7 12:16:51 2023]
+#HOST: s11
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-banbaralab-longest2
+#INSTANCE1: /benchmark/hand_made_wide/power_wide/suzuki_instance_3_8_2_2.col
+#INSTANCE2: /benchmark/hand_made_wide/power_wide/suzuki_instance_3_8_2_2_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest -t4 /benchmark/hand_made_wide/power_wide/suzuki_instance_3_8_2_2.col /benchmark/hand_made_wide/power_wide/suzuki_instance_3_8_2_2_01.dat
+c /benchmark/hand_made_wide/power_wide/suzuki_instance_3_8_2_2.col
+c /benchmark/hand_made_wide/power_wide/suzuki_instance_3_8_2_2_01.dat
+s 4 8 12 18 22 28 32 38 42 48 52 58 62 68 72 78 82 88 92 98 102 108 112 118 122 128 132 138 142 148 152 158 162 168 172 178 182 188 192 198 202 208 212 218 222 228 232 238 242 248
+t 4 8 12 18 22 28 32 38 42 48 52 58 62 68 72 78 82 88 92 98 102 108 112 118 122 128 132 138 142 148 152 158 162 168 172 178 182 188 192 198 202 208 212 218 224 226 234 236 244 246
+c UNKNOWN
+c REACHABILITY UNKNOWN
+#END: [Thu Sep  7 12:24:22 2023]

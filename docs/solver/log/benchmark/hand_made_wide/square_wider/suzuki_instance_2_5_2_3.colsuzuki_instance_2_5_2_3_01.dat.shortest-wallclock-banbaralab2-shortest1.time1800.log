@@ -1,0 +1,14 @@
+#BEGIN: [Thu Sep  7 07:24:05 2023]
+#HOST: s11
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-wallclock-banbaralab2-shortest1
+#INSTANCE1: /benchmark/hand_made_wide/square_wider/suzuki_instance_2_5_2_3.col
+#INSTANCE2: /benchmark/hand_made_wide/square_wider/suzuki_instance_2_5_2_3_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest /benchmark/hand_made_wide/square_wider/suzuki_instance_2_5_2_3.col /benchmark/hand_made_wide/square_wider/suzuki_instance_2_5_2_3_01.dat
+c /benchmark/hand_made_wide/square_wider/suzuki_instance_2_5_2_3.col
+c /benchmark/hand_made_wide/square_wider/suzuki_instance_2_5_2_3_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID 67f7850185a8553a4eed8bbee948405d46e6da8fc3d7658011767c6efd4650bf
+*** Info : (recongo): Sending shutdown signal...
+#END: [Thu Sep  7 07:54:05 2023]

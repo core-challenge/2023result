@@ -1,0 +1,12 @@
+#BEGIN: [Mon Sep 11 05:25:43 2023]
+#HOST: s13
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-suisen-cp2
+#INSTANCE1: /benchmark/hand_made_wide/power_wide/suzuki_instance_3_14_2_2.col
+#INSTANCE2: /benchmark/hand_made_wide/power_wide/suzuki_instance_3_14_2_2_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/hand_made_wide/power_wide/suzuki_instance_3_14_2_2.col /benchmark/hand_made_wide/power_wide/suzuki_instance_3_14_2_2_01.dat
+[36m20:27:04 [INFO] Time reorder   : 81 (sec)[0m
+TIMEOUT 1800
+c send SIGTERM to CID 7ad8e72d027e4986947517d06161ade4b081399f5793bb441abb8e584fff394b
+#END: [Mon Sep 11 05:55:43 2023]

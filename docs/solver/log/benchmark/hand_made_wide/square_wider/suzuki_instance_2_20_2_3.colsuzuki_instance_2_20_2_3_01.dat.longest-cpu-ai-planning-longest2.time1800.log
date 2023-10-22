@@ -1,0 +1,10 @@
+#BEGIN: [Fri Sep 15 12:06:01 2023]
+#HOST: s08
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-ai-planning-longest2
+#INSTANCE1: /benchmark/hand_made_wide/square_wider/suzuki_instance_2_20_2_3.col
+#INSTANCE2: /benchmark/hand_made_wide/square_wider/suzuki_instance_2_20_2_3_01.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning --config=longest-portfolio --memory-limit=54 --time-limit=1800 /benchmark/hand_made_wide/square_wider/suzuki_instance_2_20_2_3.col /benchmark/hand_made_wide/square_wider/suzuki_instance_2_20_2_3_01.dat
+c UNKNOWN
+#END: [Fri Sep 15 12:35:00 2023]

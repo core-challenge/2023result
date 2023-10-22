@@ -1,0 +1,16 @@
+#BEGIN: [Thu Sep  7 02:19:12 2023]
+#HOST: s01
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-banbaralab2-existent3
+#INSTANCE1: /benchmark/hand_made_wide/square_wider/suzuki_instance_2_10_2_3.col
+#INSTANCE2: /benchmark/hand_made_wide/square_wider/suzuki_instance_2_10_2_3_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na -t4 /benchmark/hand_made_wide/square_wider/suzuki_instance_2_10_2_3.col /benchmark/hand_made_wide/square_wider/suzuki_instance_2_10_2_3_01.dat
+c /benchmark/hand_made_wide/square_wider/suzuki_instance_2_10_2_3.col
+c /benchmark/hand_made_wide/square_wider/suzuki_instance_2_10_2_3_01.dat
+*** Info : (clingo): Sending shutdown signal...
+*** ERROR: (clingo): solving stopped by signal
+*** Info : (clingo): Shutdown completed in 0.001 seconds
+TIMEOUT 1800
+c send SIGTERM to CID a6981e99e03a1a0127d921b116ff22e7ffb3c9f6309b948980028804e0a0219f
+#END: [Thu Sep  7 02:49:12 2023]

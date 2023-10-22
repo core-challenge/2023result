@@ -1,0 +1,10 @@
+#BEGIN: [Sun Sep 10 08:04:23 2023]
+#HOST: s08
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-wallclock-ai-planning-longest1
+#INSTANCE1: /benchmark/hand_made_wide/power_wide/suzuki_instance_3_10_2_2.col
+#INSTANCE2: /benchmark/hand_made_wide/power_wide/suzuki_instance_3_10_2_2_01.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning --config=longest-single --memory-limit=54 --time-limit=1800 /benchmark/hand_made_wide/power_wide/suzuki_instance_3_10_2_2.col /benchmark/hand_made_wide/power_wide/suzuki_instance_3_10_2_2_01.dat
+c UNKNOWN
+#END: [Sun Sep 10 08:33:23 2023]
