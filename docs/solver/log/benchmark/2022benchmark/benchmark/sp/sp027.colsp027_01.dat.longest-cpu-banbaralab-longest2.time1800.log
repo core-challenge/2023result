@@ -1,0 +1,15 @@
+#BEGIN: [Fri Sep  1 05:25:26 2023]
+#HOST: s11
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-banbaralab-longest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/sp/sp027.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/sp/sp027_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest -t4 /benchmark/2022benchmark/benchmark/sp/sp027.col /benchmark/2022benchmark/benchmark/sp/sp027_01.dat
+c /benchmark/2022benchmark/benchmark/sp/sp027.col
+c /benchmark/2022benchmark/benchmark/sp/sp027_01.dat
+s 1 8 14 21 27 34 40 47 53 60 66 73 79 86 92 99 105 112 118 125 131 138 144 151 157 164 170 177 183 190 196 203 209 216 222 229 235 242 248 255 261 268 274 281 287 294 300 307 313 320 326 333 339 346
+t 7 13 14 21 27 34 40 47 53 60 66 73 79 86 92 99 105 112 118 125 131 138 144 151 157 164 170 177 183 190 196 203 209 216 222 229 235 242 248 255 261 268 274 281 287 294 300 307 313 320 326 333 339 346
+c UNKNOWN
+c REACHABILITY UNKNOWN
+#END: [Fri Sep  1 05:32:57 2023]

@@ -1,0 +1,93 @@
+#BEGIN: [Thu Aug 31 01:43:56 2023]
+#HOST: s02
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-wallclock-banbaralab-longest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/sp/sp002.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/sp/sp002_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest /benchmark/2022benchmark/benchmark/sp/sp002.col /benchmark/2022benchmark/benchmark/sp/sp002_01.dat
+c /benchmark/2022benchmark/benchmark/sp/sp002.col
+c /benchmark/2022benchmark/benchmark/sp/sp002_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID 5254e27864b4865b90d39ff824bfa412625fd6855a89a36272a33dc003eec742
+s 1 8 14 21
+t 7 13 14 21
+a YES
+a 1 8 14 21
+a 1 8 15 21
+a 1 8 15 22
+a 1 8 16 22
+a 1 8 16 23
+a 1 8 17 23
+a 1 8 17 24
+a 1 8 18 24
+a 1 8 18 25
+a 1 8 19 25
+a 1 8 19 26
+a 1 8 20 26
+a 2 8 20 26
+a 2 8 19 26
+a 2 8 19 25
+a 2 8 18 25
+a 2 8 18 24
+a 2 8 17 24
+a 2 8 17 23
+a 2 8 16 23
+a 2 8 16 22
+a 2 8 15 22
+a 2 8 15 21
+a 2 8 14 21
+a 2 9 14 21
+a 3 9 14 21
+a 3 10 14 21
+a 4 10 14 21
+a 4 10 15 21
+a 4 10 15 22
+a 3 10 15 22
+a 3 10 16 22
+a 4 10 16 22
+a 4 10 16 23
+a 3 10 16 23
+a 3 10 17 23
+a 4 10 17 23
+a 4 10 17 24
+a 3 10 17 24
+a 3 10 18 24
+a 4 10 18 24
+a 4 10 18 25
+a 3 10 18 25
+a 3 10 19 25
+a 4 10 19 25
+a 4 10 19 26
+a 3 10 19 26
+a 3 10 20 26
+a 4 10 20 26
+a 4 11 20 26
+a 5 11 20 26
+a 5 12 20 26
+a 5 12 19 26
+a 6 12 19 26
+a 6 12 19 25
+a 5 12 19 25
+a 5 12 18 25
+a 6 12 18 25
+a 6 12 18 24
+a 5 12 18 24
+a 5 12 17 24
+a 6 12 17 24
+a 6 12 17 23
+a 5 12 17 23
+a 5 12 16 23
+a 6 12 16 23
+a 6 12 16 22
+a 5 12 16 22
+a 5 12 15 22
+a 6 12 15 22
+a 6 12 15 21
+a 5 12 15 21
+a 5 12 14 21
+a 6 12 14 21
+a 6 13 14 21
+a 7 13 14 21
+c Step: 75
+#END: [Thu Aug 31 02:13:57 2023]

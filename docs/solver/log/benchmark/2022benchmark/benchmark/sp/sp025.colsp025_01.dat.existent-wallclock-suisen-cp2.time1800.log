@@ -1,0 +1,37 @@
+#BEGIN: [Sun Sep  3 10:01:10 2023]
+#HOST: s13
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-suisen-cp2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/sp/sp025.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/sp/sp025_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/2022benchmark/benchmark/sp/sp025.col /benchmark/2022benchmark/benchmark/sp/sp025_01.dat
+[36m01:02:47 [INFO] Time reorder   : 97 (sec)[0m
+[36m01:14:22 [INFO] Time reconf    : 694 (sec)[0m
+s 1 8 14 21 27 34 40 47 53 60 66 73 79 86 92 99 105 112 118 125 131 138 144 151 157 164 170 177 183 190 196 203 209 216 222 229 235 242 248 255 261 268 274 281 287 294 300 307 313 320
+t 7 13 14 21 27 34 40 47 53 60 66 73 79 86 92 99 105 112 118 125 131 138 144 151 157 164 170 177 183 190 196 203 209 216 222 229 235 242 248 255 261 268 274 281 287 294 300 307 313 320
+
+	Command being timed: "bash /solver-dir/run.sh /benchmark/2022benchmark/benchmark/sp/sp025.col /benchmark/2022benchmark/benchmark/sp/sp025_01.dat"
+	User time (seconds): 773.71
+	System time (seconds): 18.02
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 13:11.85
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 55268756
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 76
+	Minor (reclaiming a frame) page faults: 22365698
+	Voluntary context switches: 163
+	Involuntary context switches: 6291
+	Swaps: 0
+	File system inputs: 14672
+	File system outputs: 88
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Sun Sep  3 10:14:22 2023]
