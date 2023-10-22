@@ -1,24 +1,27 @@
 # Result
 
-1. Graph Track
-2. Solver Track [Detail](/2023result/solver/)
-    1.  [overall existent (cpu)](#org4a65e86)
-    2.  [overall existent (wallclock)](#org9b49c0d)
-    3.  [overall longest (cpu)](#orgb75725a)
-    4.  [overall longest (wallclock)](#orgd8e4c21)
-    5.  [overall shortest (cpu)](#org6b9604e)
-    6.  [overall shortest (wallclock)](#org90e0c20)
-    7.  [single existent (cpu)](#org5512706)
-    8.  [single existent (wallclock)](#orge7e5acf)
-    9.  [single longest (cpu)](#orgcbc02c6)
-    10. [single longest (wallclock)](#org084fb67)
-    11. [single shortest (cpu)](#org4ca359f)
-    12. [single shortest (wallclock)](#org3c184f8)
+- Graph Track
+- Solver Track [Detail](/2023result/solver/)
+    - [overall existent (cpu)](#org4a65e86)
+    - [overall existent (wallclock)](#org9b49c0d)
+    - [overall longest (cpu)](#orgb75725a)
+    - [overall longest (wallclock)](#orgd8e4c21)
+    - [overall shortest (cpu)](#org6b9604e)
+    - [overall shortest (wallclock)](#org90e0c20)
+    - [single existent (cpu)](#org5512706)
+    - [single existent (wallclock)](#orge7e5acf)
+    - [single longest (cpu)](#orgcbc02c6)
+    - [single longest (wallclock)](#org084fb67)
+    - [single shortest (cpu)](#org4ca359f)
+    - [single shortest (wallclock)](#org3c184f8)
 
 ## Graph Track
 
-| Graph Size |  |
-
+| Graph Size | PARIS | piyopiyo | tohoku boar |
+| ---------: | ----: | -------: | ----------: |
+|         17 |    30 [col](/2023result/graph/PARIS/graph-le17/graph17.col), [datl](/2023result/graph/PARIS/graph-le17/graph17.dat), [out](/2023result/graph/PARIS/graph-le17/graph17.out) |       30 [col](/2023result/graph/piyopiyo/graph-le17/graph_17.col), [datl](/2023result/graph/piyopiyo/graph-le17/graph_17.dat), [out](/2023result/graph/piyopiyo/graph-le17/graph_17.out)  |          29 [col](/2023result/graph/tohoku_boar/graph-le17/graph17.col), [datl](/2023result/graph/tohoku_boar/graph-le17/graph17.dat), [out](/2023result/graph/tohoku_boar/graph-le17/graph17.out)|
+|         31 |   211 [col](/2023result/graph/PARIS/graph-le31/graph31.col), [datl](/2023result/graph/PARIS/graph-le31/graph31.dat), [out](/2023result/graph/PARIS/graph-le31/graph31.out)|      231 [col](/2023result/graph/piyopiyo/graph-le31/graph_31.col), [datl](/2023result/graph/piyopiyo/graph-le31/graph_31.dat), [out](/2023result/graph/piyopiyo/graph-le31/graph_31.out) |          NA |
+|         59 |  9895 [col](/2023result/graph/PARIS/graph-le59/graph59.col), [datl](/2023result/graph/PARIS/graph-le59/graph59.dat), [out](/2023result/graph/PARIS/graph-le59/graph59.out) |    11499 [col](/2023result/graph/piyopiyo/graph-le59/graph_59.col), [datl](/2023result/graph/piyopiyo/graph-le59/graph_59.dat), [out](/2023result/graph/piyopiyo/graph-le59/graph_59.out)|          NA |
 
 <a id="orgff3f822"></a>
 
