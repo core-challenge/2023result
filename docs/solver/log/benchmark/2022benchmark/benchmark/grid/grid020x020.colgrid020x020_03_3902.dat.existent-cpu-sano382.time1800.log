@@ -1,0 +1,33 @@
+#BEGIN: [Sat Sep  2 12:59:59 2023]
+#HOST: s07
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-sano382
+#INSTANCE1: /benchmark/2022benchmark/benchmark/grid/grid020x020.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/grid/grid020x020_03_3902.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark sano-382 -Xmx54g SimpleSolver /benchmark/2022benchmark/benchmark/grid/grid020x020.col /benchmark/2022benchmark/benchmark/grid/grid020x020_03_3902.dat
+Command terminated by signal 9
+	Command being timed: "java -cp bin -Xmx54g SimpleSolver /benchmark/2022benchmark/benchmark/grid/grid020x020.col /benchmark/2022benchmark/benchmark/grid/grid020x020_03_3902.dat"
+	User time (seconds): 1799.41
+	System time (seconds): 1.17
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 29:57.10
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1538472
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1410
+	Minor (reclaiming a frame) page faults: 383697
+	Voluntary context switches: 120883
+	Involuntary context switches: 10654
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 11280
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Sat Sep  2 13:29:57 2023]

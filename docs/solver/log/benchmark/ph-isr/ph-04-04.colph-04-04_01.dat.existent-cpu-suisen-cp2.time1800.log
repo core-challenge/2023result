@@ -1,0 +1,12 @@
+#BEGIN: [Tue Sep 12 01:21:12 2023]
+#HOST: s11
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-suisen-cp2
+#INSTANCE1: /benchmark/ph-isr/ph-04-04.col
+#INSTANCE2: /benchmark/ph-isr/ph-04-04_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/ph-isr/ph-04-04.col /benchmark/ph-isr/ph-04-04_01.dat
+[36m16:21:12 [INFO] Time reorder   : 0 (sec)[0m
+TIMEOUT 1800
+c send SIGTERM to CID 312398d4cb33e1bd298e3f801a92d8d1cdad2c83193c6db7ea5e74b66ce7ff84
+#END: [Tue Sep 12 01:51:13 2023]

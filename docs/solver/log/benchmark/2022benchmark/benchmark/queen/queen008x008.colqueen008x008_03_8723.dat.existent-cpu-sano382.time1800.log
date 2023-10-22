@@ -1,0 +1,47 @@
+#BEGIN: [Sat Sep  2 14:22:31 2023]
+#HOST: s05
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-sano382
+#INSTANCE1: /benchmark/2022benchmark/benchmark/queen/queen008x008.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/queen/queen008x008_03_8723.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark sano-382 -Xmx54g SimpleSolver /benchmark/2022benchmark/benchmark/queen/queen008x008.col /benchmark/2022benchmark/benchmark/queen/queen008x008_03_8723.dat
+s 3 13 18 32 47 52 62
+t 1 14 24 39 44 50 61
+a YES
+a 3 13 18 32 47 52 62
+a 3 13 32 33 47 52 62
+a 3 13 32 33 47 50 62
+a 3 13 24 33 47 50 62
+a 3 13 24 28 33 50 62
+a 3 13 24 28 33 50 63
+a 3 13 24 33 44 50 63
+a 3 14 24 33 44 50 63
+a 3 14 24 33 44 50 61
+a 14 24 27 33 44 50 61
+a 1 14 24 27 44 50 61
+a 1 14 24 39 44 50 61
+	Command being timed: "java -cp bin -Xmx54g SimpleSolver /benchmark/2022benchmark/benchmark/queen/queen008x008.col /benchmark/2022benchmark/benchmark/queen/queen008x008_03_8723.dat"
+	User time (seconds): 0.24
+	System time (seconds): 0.02
+	Percent of CPU this job got: 179%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.14
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 74944
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 13172
+	Voluntary context switches: 483
+	Involuntary context switches: 10
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 72
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Sat Sep  2 14:22:31 2023]

@@ -1,0 +1,15 @@
+#BEGIN: [Mon Sep 11 20:42:58 2023]
+#HOST: s11
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-banbaralab-longest2
+#INSTANCE1: /benchmark/ph-isr/ph-03-02.col
+#INSTANCE2: /benchmark/ph-isr/ph-03-02_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest -t4 /benchmark/ph-isr/ph-03-02.col /benchmark/ph-isr/ph-03-02_01.dat
+c /benchmark/ph-isr/ph-03-02.col
+c /benchmark/ph-isr/ph-03-02_01.dat
+s 1 3 8 11 14 17 20 23 24 26 28 30 32 34 36 38 40
+t 2 4 8 11 14 17 20 23 24 26 28 30 32 34 36 38 40
+c UNKNOWN
+c REACHABILITY UNKNOWN
+#END: [Mon Sep 11 20:50:29 2023]

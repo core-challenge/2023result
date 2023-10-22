@@ -1,0 +1,44 @@
+#BEGIN: [Mon Aug 28 22:57:06 2023]
+#HOST: s13
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-banbaralab2-existent3
+#INSTANCE1: /benchmark/2022benchmark/benchmark/queen/queen030x030.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/queen/queen030x030_02_4963.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na -t4 /benchmark/2022benchmark/benchmark/queen/queen030x030.col /benchmark/2022benchmark/benchmark/queen/queen030x030_02_4963.dat
+c /benchmark/2022benchmark/benchmark/queen/queen030x030.col
+c /benchmark/2022benchmark/benchmark/queen/queen030x030_02_4963.dat
+*** Info : (clingo): Sending shutdown signal...
+*** ERROR: (clingo): solving stopped by signal
+*** Info : (clingo): Shutdown completed in 0.017 seconds
+*** Info : (clingo): Sending shutdown signal...
+*** ERROR: (clingo): solving stopped by signal
+*** Info : (clingo): Shutdown completed in 0.018 seconds
+s 536 106 357 277 82 229 389 128 18 310 671 699 814 895 504 781 725 413 643 480 753 50 448 615 254 561 576 842 162
+t 615 17 814 508 248 78 643 536 160 897 442 725 842 299 753 699 561 390 200 53 224 414 312 576 781 475 139 671 106
+c UNKNOWN
+c REACHABILITY UNKNOWN
+	Command being timed: "python3 run_3.py --existent --na -t4 /benchmark/2022benchmark/benchmark/queen/queen030x030.col /benchmark/2022benchmark/benchmark/queen/queen030x030_02_4963.dat"
+	User time (seconds): 2419.46
+	System time (seconds): 7.37
+	Percent of CPU this job got: 297%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 13:36.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 19373960
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 7958917
+	Voluntary context switches: 14177
+	Involuntary context switches: 5972
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1432
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Mon Aug 28 23:10:44 2023]

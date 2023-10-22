@@ -1,0 +1,11 @@
+#BEGIN: [Sun Sep  3 07:50:27 2023]
+#HOST: s16
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-suisen-cp2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/grid/grid070x070.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/grid/grid070x070_03_4857.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/2022benchmark/benchmark/grid/grid070x070.col /benchmark/2022benchmark/benchmark/grid/grid070x070_03_4857.dat
+TIMEOUT 1800
+c send SIGTERM to CID 82e7e7043dcb772f248cf8eba9b13c6ce32bd4840c14f1489c62459b486dcaa0
+#END: [Sun Sep  3 08:20:27 2023]

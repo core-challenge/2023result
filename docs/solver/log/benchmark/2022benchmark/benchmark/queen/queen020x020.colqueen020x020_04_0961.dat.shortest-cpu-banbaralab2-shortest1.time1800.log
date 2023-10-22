@@ -1,0 +1,57 @@
+#BEGIN: [Tue Aug 29 01:58:43 2023]
+#HOST: s08
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-cpu-banbaralab2-shortest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/queen/queen020x020.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/queen/queen020x020_04_0961.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest /benchmark/2022benchmark/benchmark/queen/queen020x020.col /benchmark/2022benchmark/benchmark/queen/queen020x020_04_0961.dat
+c /benchmark/2022benchmark/benchmark/queen/queen020x020.col
+c /benchmark/2022benchmark/benchmark/queen/queen020x020_04_0961.dat
+s 9 344 68 107 138 303 362 146 179 216 193 52 321 397 260 285 234 270 91
+t 31 237 285 344 362 179 321 86 72 108 138 394 260 147 303 270 49 193 16
+a YES
+a 9 52 68 91 107 138 146 179 193 216 234 260 270 285 303 321 344 362 397
+a 9 52 68 91 107 138 146 179 193 216 234 260 270 295 303 321 344 362 397
+a 9 52 68 91 107 138 146 179 193 216 225 260 270 295 303 321 344 362 397
+a 9 52 68 91 107 138 146 179 193 216 225 260 270 295 303 321 344 362 394
+a 9 57 68 91 107 138 146 179 193 216 225 260 270 295 303 321 344 362 394
+a 9 57 68 91 107 138 146 179 193 216 225 260 270 295 303 332 344 362 394
+a 9 57 61 91 107 138 146 179 193 216 225 260 270 295 303 332 344 362 394
+a 9 26 57 61 91 107 138 179 193 216 225 260 270 295 303 332 344 362 394
+a 9 26 57 61 91 108 138 179 193 216 225 260 270 295 303 332 344 362 394
+a 9 57 61 91 108 138 147 179 193 216 225 260 270 295 303 332 344 362 394
+a 9 57 61 86 108 138 147 179 193 216 225 260 270 295 303 332 344 362 394
+a 9 31 57 86 108 138 147 179 193 216 225 260 270 295 303 332 344 362 394
+a 9 31 57 86 108 138 147 179 193 216 225 260 270 295 303 321 344 362 394
+a 31 57 72 86 108 138 147 179 193 216 225 260 270 295 303 321 344 362 394
+a 31 49 72 86 108 138 147 179 193 216 225 260 270 295 303 321 344 362 394
+a 5 31 49 72 86 108 138 147 179 193 216 260 270 295 303 321 344 362 394
+a 5 31 49 72 86 108 138 147 179 193 237 260 270 295 303 321 344 362 394
+a 16 31 49 72 86 108 138 147 179 193 237 260 270 295 303 321 344 362 394
+a 16 31 49 72 86 108 138 147 179 193 237 260 270 285 303 321 344 362 394
+c Step: 18
+	Command being timed: "python3 run_3.py --shortest /benchmark/2022benchmark/benchmark/queen/queen020x020.col /benchmark/2022benchmark/benchmark/queen/queen020x020_04_0961.dat"
+	User time (seconds): 233.30
+	System time (seconds): 0.04
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:53.36
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 103436
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 46770
+	Voluntary context switches: 28
+	Involuntary context switches: 1608
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 472
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Tue Aug 29 02:02:37 2023]

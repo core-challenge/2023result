@@ -1,0 +1,13 @@
+#BEGIN: [Wed Aug 30 10:54:40 2023]
+#HOST: s05
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-wallclock-banbaralab2-shortest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/queen/queen080x080.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/queen/queen080x080_04_4954.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest -t4 /benchmark/2022benchmark/benchmark/queen/queen080x080.col /benchmark/2022benchmark/benchmark/queen/queen080x080_04_4954.dat
+c /benchmark/2022benchmark/benchmark/queen/queen080x080.col
+c /benchmark/2022benchmark/benchmark/queen/queen080x080_04_4954.dat
+TIMEOUT 1800
+c send SIGTERM to CID 998385ec40b882bb6fbf3f6d3623857a56a24e8d41d56166389fb4c68d37b773
+#END: [Wed Aug 30 11:24:40 2023]

@@ -1,0 +1,15 @@
+#BEGIN: [Fri Sep  1 04:36:09 2023]
+#HOST: s16
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-banbaralab-longest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/queen/queen030x030.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/queen/queen030x030_04_9144.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest -t4 /benchmark/2022benchmark/benchmark/queen/queen030x030.col /benchmark/2022benchmark/benchmark/queen/queen030x030_04_9144.dat
+c /benchmark/2022benchmark/benchmark/queen/queen030x030.col
+c /benchmark/2022benchmark/benchmark/queen/queen030x030_04_9144.dat
+s 248 284 615 538 643 725 397 130 897 814 79 162 781 51 329 671 106 450 699 562 200 576 356 18 227 473 505 753 842
+t 529 53 643 699 389 725 138 671 753 562 450 160 842 106 898 307 507 287 192 224 415 81 248 474 20 781 814 576 356
+c UNKNOWN
+c REACHABILITY UNKNOWN
+#END: [Fri Sep  1 04:43:48 2023]

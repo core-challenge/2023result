@@ -1,0 +1,15 @@
+#BEGIN: [Fri Sep  1 04:14:52 2023]
+#HOST: s07
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-banbaralab-longest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/handcrafted/hc-toyno-01.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/handcrafted/hc-toyno-01_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest -t4 /benchmark/2022benchmark/benchmark/handcrafted/hc-toyno-01.col /benchmark/2022benchmark/benchmark/handcrafted/hc-toyno-01_01.dat
+c /benchmark/2022benchmark/benchmark/handcrafted/hc-toyno-01.col
+c /benchmark/2022benchmark/benchmark/handcrafted/hc-toyno-01_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID 45cac62b69eedc22af6ba0d15557c67ecc3cd140fb23c6abf6acdee08264620e
+s 1 2
+t 4 5
+#END: [Fri Sep  1 04:45:03 2023]

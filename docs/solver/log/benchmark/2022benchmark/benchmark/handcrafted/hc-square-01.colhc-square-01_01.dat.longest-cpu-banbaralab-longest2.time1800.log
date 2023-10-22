@@ -1,0 +1,28 @@
+#BEGIN: [Fri Sep  1 04:14:28 2023]
+#HOST: s06
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-banbaralab-longest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/handcrafted/hc-square-01.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/handcrafted/hc-square-01_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest -t4 /benchmark/2022benchmark/benchmark/handcrafted/hc-square-01.col /benchmark/2022benchmark/benchmark/handcrafted/hc-square-01_01.dat
+c /benchmark/2022benchmark/benchmark/handcrafted/hc-square-01.col
+c /benchmark/2022benchmark/benchmark/handcrafted/hc-square-01_01.dat
+s 1 3 7 9 12 14
+t 2 4 8 10 11 13
+a YES
+a 1 3 7 9 12 14
+a 1 4 7 9 12 14
+a 2 4 7 9 12 14
+a 2 4 5 9 12 14
+a 2 4 5 9 11 14
+a 2 4 8 9 11 14
+a 1 4 8 9 11 14
+a 1 3 8 9 11 14
+a 1 3 6 8 11 14
+a 1 3 6 8 11 13
+a 1 3 8 10 11 13
+a 1 4 8 10 11 13
+a 2 4 8 10 11 13
+c Step: 12
+#END: [Fri Sep  1 04:40:31 2023]

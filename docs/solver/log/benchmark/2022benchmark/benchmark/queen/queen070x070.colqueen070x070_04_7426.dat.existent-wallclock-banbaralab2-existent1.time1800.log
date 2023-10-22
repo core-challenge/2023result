@@ -1,0 +1,14 @@
+#BEGIN: [Tue Aug 29 19:21:57 2023]
+#HOST: s05
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-banbaralab2-existent1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/queen/queen070x070.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/queen/queen070x070_04_7426.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent /benchmark/2022benchmark/benchmark/queen/queen070x070.col /benchmark/2022benchmark/benchmark/queen/queen070x070_04_7426.dat
+c /benchmark/2022benchmark/benchmark/queen/queen070x070.col
+c /benchmark/2022benchmark/benchmark/queen/queen070x070_04_7426.dat
+*** Info : (clingo): INTERRUPTED by signal!
+TIMEOUT 1800
+c send SIGTERM to CID c1cdd97c0f7dd8ff51d6f081f71621ab9f03236cd9b30ee269f16c83119c34c3
+#END: [Tue Aug 29 19:51:58 2023]

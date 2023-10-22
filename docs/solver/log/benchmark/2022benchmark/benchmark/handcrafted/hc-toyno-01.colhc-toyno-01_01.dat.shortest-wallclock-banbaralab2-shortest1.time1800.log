@@ -1,0 +1,13 @@
+#BEGIN: [Wed Aug 30 05:55:53 2023]
+#HOST: s11
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-wallclock-banbaralab2-shortest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/handcrafted/hc-toyno-01.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/handcrafted/hc-toyno-01_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest /benchmark/2022benchmark/benchmark/handcrafted/hc-toyno-01.col /benchmark/2022benchmark/benchmark/handcrafted/hc-toyno-01_01.dat
+c /benchmark/2022benchmark/benchmark/handcrafted/hc-toyno-01.col
+c /benchmark/2022benchmark/benchmark/handcrafted/hc-toyno-01_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID ac7909faad47657a7c9c652a56e58de2aa8930cd1d2314068ef18b7097a1dd68
+#END: [Wed Aug 30 06:25:54 2023]

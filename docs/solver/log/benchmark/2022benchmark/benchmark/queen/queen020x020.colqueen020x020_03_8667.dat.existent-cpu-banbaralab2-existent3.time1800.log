@@ -1,0 +1,71 @@
+#BEGIN: [Mon Aug 28 22:54:57 2023]
+#HOST: s16
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-banbaralab2-existent3
+#INSTANCE1: /benchmark/2022benchmark/benchmark/queen/queen020x020.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/queen/queen020x020_03_8667.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na -t4 /benchmark/2022benchmark/benchmark/queen/queen020x020.col /benchmark/2022benchmark/benchmark/queen/queen020x020_03_8667.dat
+c /benchmark/2022benchmark/benchmark/queen/queen020x020.col
+c /benchmark/2022benchmark/benchmark/queen/queen020x020_03_8667.dat
+*** Info : (clingo): Sending shutdown signal...
+*** ERROR: (clingo): solving stopped by signal
+*** Info : (clingo): Shutdown completed in 0.068 seconds
+s 303 260 88 321 111 233 159 285 32 14 49 344 215 167 270 136 66 362 198
+t 362 215 12 285 48 73 176 34 303 109 140 344 259 321 198 270 397 231 146
+a YES
+a 14 32 49 66 88 111 136 159 167 198 215 233 260 270 285 303 321 344 362
+a 14 32 49 66 88 111 136 159 167 198 215 233 260 270 285 303 321 362 397
+a 14 32 49 66 88 111 136 159 167 198 215 233 260 270 285 303 321 344 362
+a 14 32 49 66 88 111 136 159 167 198 215 233 270 285 303 321 344 362 400
+a 14 32 49 66 88 111 136 159 167 198 215 233 260 270 285 303 321 344 362
+a 14 32 49 66 88 111 136 159 167 198 215 233 260 270 285 303 321 357 362
+a 14 32 49 64 88 111 136 159 167 198 215 233 260 270 285 303 321 357 362
+a 32 49 64 88 111 136 159 167 198 215 233 260 270 285 303 321 357 362 394
+a 6 32 49 64 88 136 159 167 198 215 233 260 270 285 303 321 357 362 394
+a 6 32 49 64 88 103 136 159 167 198 215 233 260 270 285 321 357 362 394
+a 6 32 49 64 88 103 136 159 167 198 215 233 260 270 285 321 357 362 391
+a 6 32 49 64 88 136 159 167 198 215 233 260 270 285 303 321 357 362 391
+a 6 32 49 64 88 136 159 167 198 215 233 260 270 285 303 321 357 362 394
+a 6 32 49 64 88 136 159 167 198 215 233 260 270 285 303 321 351 362 394
+a 6 32 49 64 97 136 159 167 198 215 233 260 270 285 303 321 351 362 394
+a 6 32 49 64 97 136 159 168 198 215 233 260 270 285 303 321 351 362 394
+a 6 32 64 97 109 136 159 168 198 215 233 260 270 285 303 321 351 362 394
+a 6 32 64 87 109 136 159 168 198 215 233 260 270 285 303 321 351 362 394
+a 6 32 59 64 87 109 136 168 198 215 233 260 270 285 303 321 351 362 394
+a 6 32 59 64 87 109 136 168 198 215 233 260 270 285 303 321 351 362 397
+a 6 34 59 64 87 109 136 168 198 215 233 260 270 285 303 321 351 362 397
+a 34 59 64 87 109 136 146 168 198 215 233 260 270 285 303 321 351 362 397
+a 12 34 59 64 87 109 146 168 198 215 233 260 270 285 303 321 351 362 397
+a 12 34 59 64 87 109 140 146 168 198 215 233 270 285 303 321 351 362 397
+a 12 34 64 87 109 140 146 168 198 215 233 259 270 285 303 321 351 362 397
+a 12 34 48 64 87 109 140 146 198 215 233 259 270 285 303 321 351 362 397
+a 12 34 48 64 87 109 140 146 176 198 215 259 270 285 303 321 351 362 397
+a 12 34 48 73 87 109 140 146 176 198 215 259 270 285 303 321 351 362 397
+a 12 34 48 73 87 109 140 146 176 198 215 259 270 285 303 321 344 362 397
+a 12 34 48 73 109 140 146 176 198 215 231 259 270 285 303 321 344 362 397
+c Step: 29
+	Command being timed: "python3 run_3.py --existent --na -t4 /benchmark/2022benchmark/benchmark/queen/queen020x020.col /benchmark/2022benchmark/benchmark/queen/queen020x020_03_8667.dat"
+	User time (seconds): 1145.71
+	System time (seconds): 1.24
+	Percent of CPU this job got: 373%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:07.39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2593992
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 1028273
+	Voluntary context switches: 4772
+	Involuntary context switches: 2461
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 960
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Mon Aug 28 23:00:05 2023]

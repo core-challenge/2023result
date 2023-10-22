@@ -1,0 +1,38 @@
+#BEGIN: [Tue Aug 29 05:25:29 2023]
+#HOST: s03
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-cpu-banbaralab2-shortest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/queen/queen070x070.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/queen/queen070x070_02_8683.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest -t4 /benchmark/2022benchmark/benchmark/queen/queen070x070.col /benchmark/2022benchmark/benchmark/queen/queen070x070_02_8683.dat
+c /benchmark/2022benchmark/benchmark/queen/queen070x070.col
+c /benchmark/2022benchmark/benchmark/queen/queen070x070_02_8683.dat
+s 3674 3102 539 1392 2163 2578 3946 723 55 4136 4351 2449 941 1460 4807 3189 3735 4894 2011 196 1677 2958 1064 2713 2191 4485 2345 589 4590 213 2878 465 1958 4098 122 4031 1472 2655 860 3054 1223 3376 4694 691 4283 393 3826 3892 1839 1610 4419 4215 3618 2089 2297 1690 4621 2836 787 330 1147 3257 2516 1782 1267 3442 1008 3320 2754
+t 55 1839 4894 592 4020 2318 330 2768 4215 3102 4485 2449 739 3617 4136 3442 3891 1210 3674 4694 1146 4789 3554 1958 1472 787 1460 122 2578 2011 4594 2810 3735 196 2958 392 4419 2516 1777 2163 2089 1392 1677 4283 1610 2905 691 234 1267 4351 3257 2713 3024 1001 3153 3306 1073 4108 2655 3396 1720 4621 943 2297 871 2198 3826 3963 465
+c UNKNOWN
+c REACHABILITY UNKNOWN
+	Command being timed: "python3 run_3.py --shortest -t4 /benchmark/2022benchmark/benchmark/queen/queen070x070.col /benchmark/2022benchmark/benchmark/queen/queen070x070_02_8683.dat"
+	User time (seconds): 1796.64
+	System time (seconds): 3.99
+	Percent of CPU this job got: 247%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 12:07.75
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7907004
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4416335
+	Voluntary context switches: 1417
+	Involuntary context switches: 5008
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 19544
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Tue Aug 29 05:37:37 2023]

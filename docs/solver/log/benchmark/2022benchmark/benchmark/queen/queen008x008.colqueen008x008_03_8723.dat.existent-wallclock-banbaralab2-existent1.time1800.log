@@ -1,0 +1,52 @@
+#BEGIN: [Tue Aug 29 19:09:29 2023]
+#HOST: s09
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-banbaralab2-existent1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/queen/queen008x008.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/queen/queen008x008_03_8723.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent /benchmark/2022benchmark/benchmark/queen/queen008x008.col /benchmark/2022benchmark/benchmark/queen/queen008x008_03_8723.dat
+c /benchmark/2022benchmark/benchmark/queen/queen008x008.col
+c /benchmark/2022benchmark/benchmark/queen/queen008x008_03_8723.dat
+s 52 13 62 3 18 47 32
+t 39 1 50 44 24 14 61
+a YES
+a 3 13 18 32 47 52 62
+a 3 13 18 33 47 52 62
+a 3 13 18 32 33 47 52
+a 3 13 18 33 47 52 62
+a 3 13 18 28 33 47 62
+a 3 13 24 28 33 47 62
+a 3 13 24 28 33 47 50
+a 3 13 24 28 33 50 63
+a 3 13 24 33 44 50 63
+a 3 14 24 33 44 50 63
+a 3 14 24 33 44 50 61
+a 14 24 27 33 44 50 61
+a 14 24 27 39 44 50 61
+a 1 14 24 39 44 50 61
+c Step: 13
+	Command being timed: "python3 run_3.py --existent /benchmark/2022benchmark/benchmark/queen/queen008x008.col /benchmark/2022benchmark/benchmark/queen/queen008x008_03_8723.dat"
+	User time (seconds): 0.48
+	System time (seconds): 0.03
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.52
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 22240
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 15533
+	Voluntary context switches: 24
+	Involuntary context switches: 9
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 72
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Tue Aug 29 19:09:30 2023]

@@ -1,0 +1,61 @@
+#BEGIN: [Fri Sep  8 16:50:44 2023]
+#HOST: s04
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-cpu-ai-planning2-shortest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/queen/queen020x020.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/queen/queen020x020_01_7075.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning2 --config=shortest-portfolio --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/queen/queen020x020.col /benchmark/2022benchmark/benchmark/queen/queen020x020_01_7075.dat
+s 270 126 255 303 397 54 321 158 344 199 240 212 362 176 27 13 91 109 68
+t 321 127 236 270 71 168 34 157 285 120 303 219 86 193 395 12 49 344 258
+a YES
+a 13 27 54 68 91 109 126 158 176 199 212 240 255 270 303 321 344 362 397
+a 13 27 54 91 109 126 158 176 199 212 240 255 270 285 303 321 344 362 397
+a 13 27 54 91 109 126 158 176 199 212 240 255 270 285 303 321 344 368 397
+a 13 27 54 77 91 109 126 158 176 199 212 240 255 270 285 303 321 344 368
+a 13 27 54 77 91 109 126 158 176 199 212 240 270 285 303 321 344 368 395
+a 13 27 54 77 91 109 126 142 176 199 212 240 270 285 303 321 344 368 395
+a 13 54 77 91 109 126 142 176 199 212 240 258 270 285 303 321 344 368 395
+a 13 26 54 77 91 109 142 176 199 212 240 258 270 285 303 321 344 368 395
+a 26 54 77 91 109 127 142 176 199 212 240 258 270 285 303 321 344 368 395
+a 3 26 54 77 91 109 127 142 176 199 212 240 258 270 285 321 344 368 395
+a 3 26 54 77 91 109 127 142 176 212 240 258 270 285 313 321 344 368 395
+a 3 26 54 77 91 127 142 176 189 212 240 258 270 285 313 321 344 368 395
+a 3 26 54 77 91 120 127 142 176 189 212 258 270 285 313 321 344 368 395
+a 3 26 54 77 91 120 127 142 176 189 219 258 270 285 313 321 344 368 395
+a 26 54 77 91 120 127 142 176 189 219 223 258 270 285 313 321 344 368 395
+a 12 26 77 91 120 127 142 176 189 219 223 258 270 285 313 321 344 368 395
+a 12 46 77 91 120 127 142 176 189 219 223 258 270 285 313 321 344 368 395
+a 12 34 46 77 120 127 142 176 189 219 223 258 270 285 313 321 344 368 395
+a 12 34 77 86 120 127 142 176 189 219 223 258 270 285 313 321 344 368 395
+a 12 34 49 77 86 120 127 142 176 219 223 258 270 285 313 321 344 368 395
+a 12 34 49 77 86 120 127 142 176 193 219 223 258 270 285 321 344 368 395
+a 12 34 49 77 86 120 127 142 176 193 219 258 270 285 303 321 344 368 395
+a 12 34 49 77 86 120 127 142 193 219 236 258 270 285 303 321 344 368 395
+a 12 34 49 71 86 120 127 142 193 219 236 258 270 285 303 321 344 368 395
+a 12 34 49 71 86 120 127 157 193 219 236 258 270 285 303 321 344 368 395
+a 12 34 49 71 86 120 127 157 168 193 219 236 258 270 285 303 321 344 395
+	Command being timed: "/solvers/driver/run.py --config=shortest-portfolio --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/queen/queen020x020.col /benchmark/2022benchmark/benchmark/queen/queen020x020_01_7075.dat"
+	User time (seconds): 3467.38
+	System time (seconds): 14.09
+	Percent of CPU this job got: 200%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 28:59.45
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 15112936
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 9967326
+	Voluntary context switches: 68453
+	Involuntary context switches: 14554
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1032
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Fri Sep  8 17:19:43 2023]

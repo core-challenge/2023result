@@ -1,0 +1,12 @@
+#BEGIN: [Sun Sep 10 17:02:19 2023]
+#HOST: s03
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-wallclock-ai-planning-longest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/handcrafted/hc-toyno-01.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/handcrafted/hc-toyno-01_01.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning --config=longest-portfolio --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/handcrafted/hc-toyno-01.col /benchmark/2022benchmark/benchmark/handcrafted/hc-toyno-01_01.dat
+s 1 2
+t 4 5
+a NO
+#END: [Sun Sep 10 17:02:20 2023]

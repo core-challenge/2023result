@@ -1,0 +1,12 @@
+#BEGIN: [Sun Sep  3 01:39:59 2023]
+#HOST: s12
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-suisen-cp2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/grid/grid040x040.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/grid/grid040x040_03_0746.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/2022benchmark/benchmark/grid/grid040x040.col /benchmark/2022benchmark/benchmark/grid/grid040x040_03_0746.dat
+[36m16:59:17 [INFO] Time reorder   : 1157 (sec)[0m
+TIMEOUT 1800
+c send SIGTERM to CID 81c431894a7e16d6d7dadcebd8008d2a0083b17705bc8ced1e055eab2700bc8b
+#END: [Sun Sep  3 02:10:00 2023]

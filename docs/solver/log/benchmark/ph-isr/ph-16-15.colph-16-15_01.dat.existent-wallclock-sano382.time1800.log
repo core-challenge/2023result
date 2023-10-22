@@ -1,0 +1,11 @@
+#BEGIN: [Tue Sep 12 01:09:54 2023]
+#HOST: s03
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-sano382
+#INSTANCE1: /benchmark/ph-isr/ph-16-15.col
+#INSTANCE2: /benchmark/ph-isr/ph-16-15_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark sano-382 -Xmx54g SimpleSolver /benchmark/ph-isr/ph-16-15.col /benchmark/ph-isr/ph-16-15_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID 8d06a0e08d57d38b7758e9ea36968294698b35ddd08222642443df296ad5cd1f
+#END: [Tue Sep 12 01:39:54 2023]

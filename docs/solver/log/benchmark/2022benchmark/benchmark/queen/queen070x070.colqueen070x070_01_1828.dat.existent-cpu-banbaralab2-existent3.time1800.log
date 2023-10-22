@@ -1,0 +1,42 @@
+#BEGIN: [Mon Aug 28 23:06:25 2023]
+#HOST: s16
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-banbaralab2-existent3
+#INSTANCE1: /benchmark/2022benchmark/benchmark/queen/queen070x070.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/queen/queen070x070_01_1828.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na -t4 /benchmark/2022benchmark/benchmark/queen/queen070x070.col /benchmark/2022benchmark/benchmark/queen/queen070x070_01_1828.dat
+c /benchmark/2022benchmark/benchmark/queen/queen070x070.col
+c /benchmark/2022benchmark/benchmark/queen/queen070x070_01_1828.dat
+*** Info : (clingo): INTERRUPTED by signal!
+*** Info : (clingo): Sending shutdown signal...
+*** ERROR: (clingo): solving stopped by signal
+*** Info : (clingo): Shutdown completed in 0.055 seconds
+s 1472 3118 2345 943 393 1210 4894 739 3306 4079 4136 4594 1846 1610 1008 4694 55 330 3442 196 2449 1958 3554 4215 1791 4283 4020 3396 1073 1697 2958 2163 2810 239 3895 4802 2011 3181 1460 2516 4419 444 1267 1392 2089 2873 2184 2776 1147 4351 2655 3617 2578 3031 4485 862 2297 2713 818 539 3674 1677 4621 3960 691 592 122 3257 3735
+t 2516 871 465 3169 2836 3438 4136 943 2578 2776 4215 2873 1212 4419 3735 330 1793 4017 1152 1472 1267 4485 4694 55 3964 3320 739 196 1008 570 4807 4621 787 4283 1392 1958 4590 3674 3118 691 2191 1855 3374 3792 2089 2713 3891 3257 122 1696 1610 2655 2297 2011 3030 1677 4351 1073 3554 234 1460 2958 4089 3618 4894 392 2163 2449 2336
+c UNKNOWN
+c REACHABILITY UNKNOWN
+	Command being timed: "python3 run_3.py --existent --na -t4 /benchmark/2022benchmark/benchmark/queen/queen070x070.col /benchmark/2022benchmark/benchmark/queen/queen070x070_01_1828.dat"
+	User time (seconds): 2297.05
+	System time (seconds): 28.71
+	Percent of CPU this job got: 231%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 16:42.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 64405432
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 162992
+	Minor (reclaiming a frame) page faults: 26499230
+	Voluntary context switches: 164294
+	Involuntary context switches: 8532
+	Swaps: 0
+	File system inputs: 1361656
+	File system outputs: 19736
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Mon Aug 28 23:23:09 2023]

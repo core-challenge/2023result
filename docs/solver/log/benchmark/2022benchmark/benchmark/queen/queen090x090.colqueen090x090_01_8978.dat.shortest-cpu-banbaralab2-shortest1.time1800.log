@@ -1,0 +1,17 @@
+#BEGIN: [Tue Aug 29 02:07:15 2023]
+#HOST: s05
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-cpu-banbaralab2-shortest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/queen/queen090x090.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/queen/queen090x090_01_8978.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest /benchmark/2022benchmark/benchmark/queen/queen090x090.col /benchmark/2022benchmark/benchmark/queen/queen090x090_01_8978.dat
+c /benchmark/2022benchmark/benchmark/queen/queen090x090.col
+c /benchmark/2022benchmark/benchmark/queen/queen090x090_01_8978.dat
+TIMEOUT CPU 1800 MEM 0 MAXMEM 0
+#RESULT: UNK
+#FIN: TO
+#CPU: 1800
+#MAXMEM: 0
+c send SIGTERM to CID 37fa61d3018acecca0ce7512d0f8462327d994aa90a4cc6709f59ab710810c47
+#END: [Tue Aug 29 02:37:15 2023]

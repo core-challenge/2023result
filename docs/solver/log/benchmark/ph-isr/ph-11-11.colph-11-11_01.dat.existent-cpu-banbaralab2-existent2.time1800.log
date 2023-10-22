@@ -1,0 +1,15 @@
+#BEGIN: [Mon Sep 11 11:37:50 2023]
+#HOST: s03
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-banbaralab2-existent2
+#INSTANCE1: /benchmark/ph-isr/ph-11-11.col
+#INSTANCE2: /benchmark/ph-isr/ph-11-11_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na /benchmark/ph-isr/ph-11-11.col /benchmark/ph-isr/ph-11-11_01.dat
+c /benchmark/ph-isr/ph-11-11.col
+c /benchmark/ph-isr/ph-11-11_01.dat
+*** Info : (clingo): INTERRUPTED by signal!
+*** Info : (clingo): INTERRUPTED by signal!
+TIMEOUT 1800
+c send SIGTERM to CID 16c18178b1d32792b81cf66c6dafa94d6248d621eb25a77ab48bcce36f401754
+#END: [Mon Sep 11 12:07:51 2023]

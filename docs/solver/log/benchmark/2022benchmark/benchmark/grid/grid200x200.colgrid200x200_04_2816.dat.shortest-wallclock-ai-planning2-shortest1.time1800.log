@@ -1,0 +1,33 @@
+#BEGIN: [Sat Sep  9 00:48:06 2023]
+#HOST: s16
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-wallclock-ai-planning2-shortest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/grid/grid200x200.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/grid/grid200x200_04_2816.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning2 --config=shortest-single --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/grid/grid200x200.col /benchmark/2022benchmark/benchmark/grid/grid200x200_04_2816.dat
+c UNKNOWN
+	Command being timed: "/solvers/driver/run.py --config=shortest-single --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/grid/grid200x200.col /benchmark/2022benchmark/benchmark/grid/grid200x200_04_2816.dat"
+	User time (seconds): 1738.86
+	System time (seconds): 1.94
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 29:00.90
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2893156
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 770092
+	Voluntary context switches: 28
+	Involuntary context switches: 3036
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 21168
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Sat Sep  9 01:17:08 2023]

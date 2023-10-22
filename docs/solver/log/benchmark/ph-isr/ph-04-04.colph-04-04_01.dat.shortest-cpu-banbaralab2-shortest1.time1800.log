@@ -1,0 +1,13 @@
+#BEGIN: [Mon Sep 11 16:02:59 2023]
+#HOST: s10
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-cpu-banbaralab2-shortest1
+#INSTANCE1: /benchmark/ph-isr/ph-04-04.col
+#INSTANCE2: /benchmark/ph-isr/ph-04-04_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest /benchmark/ph-isr/ph-04-04.col /benchmark/ph-isr/ph-04-04_01.dat
+c /benchmark/ph-isr/ph-04-04.col
+c /benchmark/ph-isr/ph-04-04_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID c69212d41dc7605ae4528db3b0d310239ebb56cc82f845550f90f9f0b3490959
+#END: [Mon Sep 11 16:32:59 2023]

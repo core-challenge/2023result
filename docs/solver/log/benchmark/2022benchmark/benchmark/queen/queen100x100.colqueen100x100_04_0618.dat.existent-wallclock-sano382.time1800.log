@@ -1,0 +1,11 @@
+#BEGIN: [Sat Sep  2 21:10:12 2023]
+#HOST: s08
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-sano382
+#INSTANCE1: /benchmark/2022benchmark/benchmark/queen/queen100x100.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/queen/queen100x100_04_0618.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark sano-382 -Xmx54g SimpleSolver /benchmark/2022benchmark/benchmark/queen/queen100x100.col /benchmark/2022benchmark/benchmark/queen/queen100x100_04_0618.dat
+TIMEOUT 1800
+c send SIGTERM to CID dff8eeec60b56f81dd4edbe36e744220853cb3d8a735edcf7bf1b1ee858b5742
+#END: [Sat Sep  2 21:40:12 2023]

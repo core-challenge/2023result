@@ -1,0 +1,11 @@
+#BEGIN: [Sun Sep  3 03:13:56 2023]
+#HOST: s06
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-suisen-cp2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/queen/queen060x060.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/queen/queen060x060_03_1394.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/2022benchmark/benchmark/queen/queen060x060.col /benchmark/2022benchmark/benchmark/queen/queen060x060_03_1394.dat
+TIMEOUT 1800
+c send SIGTERM to CID f10556f8d9bdf63b4e7a8aa2002dca7200476466c1e6179bf7a671b02c464ce0
+#END: [Sun Sep  3 03:43:57 2023]

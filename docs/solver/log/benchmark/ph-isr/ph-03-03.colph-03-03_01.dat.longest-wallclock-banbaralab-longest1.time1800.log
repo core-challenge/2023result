@@ -1,0 +1,17 @@
+#BEGIN: [Mon Sep 11 21:16:17 2023]
+#HOST: s04
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-wallclock-banbaralab-longest1
+#INSTANCE1: /benchmark/ph-isr/ph-03-03.col
+#INSTANCE2: /benchmark/ph-isr/ph-03-03_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest /benchmark/ph-isr/ph-03-03.col /benchmark/ph-isr/ph-03-03_01.dat
+c /benchmark/ph-isr/ph-03-03.col
+c /benchmark/ph-isr/ph-03-03_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID e3e7a2892ba01be86e1e6370e76cd3217833cf4ada2e2da8d4a3f6e13a1d5d0e
+s 1 3 8 11 14 17 20 23 26 29 32 33 36 39 42 44 46 48 50 52 54 56 58
+t 2 4 8 11 14 17 20 23 26 29 32 33 36 39 42 44 46 48 50 52 54 56 58
+c UNKNOWN
+c REACHABILITY UNKNOWN
+#END: [Mon Sep 11 21:46:17 2023]

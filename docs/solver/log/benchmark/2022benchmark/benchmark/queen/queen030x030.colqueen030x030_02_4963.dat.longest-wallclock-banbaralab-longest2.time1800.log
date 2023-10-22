@@ -1,0 +1,17 @@
+#BEGIN: [Thu Aug 31 11:31:19 2023]
+#HOST: s14
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-wallclock-banbaralab-longest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/queen/queen030x030.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/queen/queen030x030_02_4963.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest -t4 /benchmark/2022benchmark/benchmark/queen/queen030x030.col /benchmark/2022benchmark/benchmark/queen/queen030x030_02_4963.dat
+c /benchmark/2022benchmark/benchmark/queen/queen030x030.col
+c /benchmark/2022benchmark/benchmark/queen/queen030x030_02_4963.dat
+TIMEOUT 1800
+c send SIGTERM to CID 9c50d97dd9ccb09663a63a80b70ec459ab3ff70bc73db973880a8dfd340a5c1b
+s 536 106 357 277 82 229 389 128 18 310 671 699 814 895 504 781 725 413 643 480 753 50 448 615 254 561 576 842 162
+t 615 17 814 508 248 78 643 536 160 897 442 725 842 299 753 699 561 390 200 53 224 414 312 576 781 475 139 671 106
+c UNKNOWN
+c REACHABILITY UNKNOWN
+#END: [Thu Aug 31 12:01:20 2023]

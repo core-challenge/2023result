@@ -1,0 +1,13 @@
+#BEGIN: [Mon Sep 11 18:41:49 2023]
+#HOST: s02
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-wallclock-banbaralab2-shortest2
+#INSTANCE1: /benchmark/ph-isr/ph-06-05.col
+#INSTANCE2: /benchmark/ph-isr/ph-06-05_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest -t4 /benchmark/ph-isr/ph-06-05.col /benchmark/ph-isr/ph-06-05_01.dat
+c /benchmark/ph-isr/ph-06-05.col
+c /benchmark/ph-isr/ph-06-05_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID 7723b79b802a365cd451b3b9969cf661790ddc3d1b0b186a47fe7bdd0bc06827
+#END: [Mon Sep 11 19:11:49 2023]

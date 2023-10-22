@@ -1,0 +1,67 @@
+#BEGIN: [Wed Aug 30 02:34:21 2023]
+#HOST: s03
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-banbaralab2-existent3
+#INSTANCE1: /benchmark/2022benchmark/benchmark/queen/queen020x020.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/queen/queen020x020_02_4815.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na -t4 /benchmark/2022benchmark/benchmark/queen/queen020x020.col /benchmark/2022benchmark/benchmark/queen/queen020x020_02_4815.dat
+c /benchmark/2022benchmark/benchmark/queen/queen020x020.col
+c /benchmark/2022benchmark/benchmark/queen/queen020x020_02_4815.dat
+*** Info : (clingo): Sending shutdown signal...
+*** ERROR: (clingo): solving stopped by signal
+*** Info : (clingo): Shutdown completed in 0.001 seconds
+s 240 12 193 397 34 344 127 86 158 362 168 119 49 303 321 255 285 216 71
+t 196 13 285 258 394 88 270 35 157 303 179 321 47 106 344 212 129 362 240
+a YES
+a 12 34 49 71 86 119 127 158 168 193 216 240 255 285 303 321 344 362 397
+a 12 34 49 71 86 119 127 158 168 193 216 240 255 270 285 303 321 344 362
+a 12 49 71 86 119 127 158 168 193 216 240 255 270 285 303 321 344 362 394
+a 12 26 49 71 119 127 158 168 193 216 240 255 270 285 303 321 344 362 394
+a 12 26 49 71 119 127 158 168 193 216 240 255 270 285 317 321 344 362 394
+a 12 26 49 71 82 119 127 158 168 193 216 240 255 270 285 317 321 344 394
+a 12 26 49 71 82 119 127 158 168 193 216 240 255 270 285 303 321 344 394
+a 12 26 49 71 82 119 127 158 168 193 216 240 255 270 285 303 321 377 394
+a 12 26 49 71 82 119 127 168 193 216 240 255 270 285 303 321 344 377 394
+a 12 26 49 71 82 119 127 168 193 216 240 255 270 285 303 338 344 377 394
+a 12 26 49 71 82 119 127 141 193 216 240 255 270 285 303 338 344 377 394
+a 12 26 49 71 82 119 127 141 193 216 240 248 270 285 303 338 344 377 394
+a 12 26 49 71 82 127 141 179 193 216 240 248 270 285 303 338 344 377 394
+a 12 26 55 71 82 127 141 179 193 216 240 248 270 285 303 338 344 377 394
+a 12 26 55 71 82 129 141 179 193 216 240 248 270 285 303 338 344 377 394
+a 12 55 71 82 106 129 141 179 193 216 240 248 270 285 303 338 344 377 394
+a 12 47 71 82 106 129 141 179 193 216 240 248 270 285 303 338 344 377 394
+a 12 35 47 71 82 106 129 141 179 193 240 248 270 285 303 338 344 377 394
+a 12 35 47 71 82 106 129 141 179 196 240 248 270 285 303 338 344 377 394
+a 13 35 47 71 82 106 129 141 179 196 240 248 270 285 303 338 344 377 394
+a 13 35 47 71 82 106 129 141 179 196 212 240 248 270 285 303 344 377 394
+a 13 35 47 71 82 106 129 141 179 196 212 240 258 270 285 303 344 377 394
+a 13 35 47 71 88 106 129 141 179 196 212 240 258 270 285 303 344 377 394
+a 13 35 47 71 88 106 129 179 196 212 240 258 270 285 303 321 344 377 394
+a 13 35 47 71 88 106 129 179 196 212 240 258 270 285 303 321 344 362 394
+a 13 35 47 88 106 129 157 179 196 212 240 258 270 285 303 321 344 362 394
+c Step: 25
+	Command being timed: "python3 run_3.py --existent --na -t4 /benchmark/2022benchmark/benchmark/queen/queen020x020.col /benchmark/2022benchmark/benchmark/queen/queen020x020_02_4815.dat"
+	User time (seconds): 926.41
+	System time (seconds): 1.17
+	Percent of CPU this job got: 374%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:07.60
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2547156
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 1010345
+	Voluntary context switches: 3410
+	Involuntary context switches: 2189
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 872
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Wed Aug 30 02:38:29 2023]

@@ -1,0 +1,17 @@
+#BEGIN: [Wed Aug 30 22:50:45 2023]
+#HOST: s07
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-wallclock-banbaralab-longest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/grid/grid010x010.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/grid/grid010x010_04_4957.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest /benchmark/2022benchmark/benchmark/grid/grid010x010.col /benchmark/2022benchmark/benchmark/grid/grid010x010_04_4957.dat
+c /benchmark/2022benchmark/benchmark/grid/grid010x010.col
+c /benchmark/2022benchmark/benchmark/grid/grid010x010_04_4957.dat
+TIMEOUT 1800
+c send SIGTERM to CID 3597030b3b122f519d1dfdaa6fecf5da1d58ecc97977680a13d4746e57288eab
+s 1 3 5 7 9 12 14 16 18 20 21 23 25 27 29 32 34 36 38 40 41 43 45 47 49 54 56 58 60 61 63 65 67 69 72 74 76 78 80 81 83 85 87 89 92 94 98 100
+t 2 4 6 8 10 11 13 15 17 19 22 24 26 28 30 31 33 35 37 39 42 44 46 48 50 51 53 55 57 59 62 66 68 70 71 73 75 79 82 84 86 88 90 91 93 95 97 99
+c UNKNOWN
+c REACHABILITY UNKNOWN
+#END: [Wed Aug 30 23:20:46 2023]

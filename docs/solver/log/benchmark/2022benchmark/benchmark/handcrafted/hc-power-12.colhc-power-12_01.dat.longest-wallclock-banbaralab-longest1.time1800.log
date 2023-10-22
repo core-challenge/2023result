@@ -1,0 +1,17 @@
+#BEGIN: [Wed Aug 30 23:39:26 2023]
+#HOST: s05
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-wallclock-banbaralab-longest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/handcrafted/hc-power-12.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/handcrafted/hc-power-12_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest /benchmark/2022benchmark/benchmark/handcrafted/hc-power-12.col /benchmark/2022benchmark/benchmark/handcrafted/hc-power-12_01.dat
+c /benchmark/2022benchmark/benchmark/handcrafted/hc-power-12.col
+c /benchmark/2022benchmark/benchmark/handcrafted/hc-power-12_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID 5b9e0ca71a01e93630ad17538e50e0720ed134c54d180e983e9f0796e4ed94f8
+s 1 3 5 11 13 15 16 18 20 26 28 30 31 33 35
+t 1 3 5 11 13 15 16 18 20 25 27 29 32 34 36
+c UNKNOWN
+c REACHABILITY UNKNOWN
+#END: [Thu Aug 31 00:09:26 2023]

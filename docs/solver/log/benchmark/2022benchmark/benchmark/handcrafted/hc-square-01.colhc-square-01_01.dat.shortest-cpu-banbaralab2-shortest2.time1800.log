@@ -1,0 +1,51 @@
+#BEGIN: [Tue Aug 29 05:04:44 2023]
+#HOST: s02
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-cpu-banbaralab2-shortest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/handcrafted/hc-square-01.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/handcrafted/hc-square-01_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest -t4 /benchmark/2022benchmark/benchmark/handcrafted/hc-square-01.col /benchmark/2022benchmark/benchmark/handcrafted/hc-square-01_01.dat
+c /benchmark/2022benchmark/benchmark/handcrafted/hc-square-01.col
+c /benchmark/2022benchmark/benchmark/handcrafted/hc-square-01_01.dat
+s 1 3 7 9 12 14
+t 2 4 8 10 11 13
+a YES
+a 1 3 7 9 12 14
+a 1 4 7 9 12 14
+a 2 4 7 9 12 14
+a 2 4 5 9 12 14
+a 2 4 5 9 11 14
+a 2 4 8 9 11 14
+a 1 4 8 9 11 14
+a 1 3 8 9 11 14
+a 1 3 6 8 11 14
+a 1 3 6 8 11 13
+a 1 3 8 10 11 13
+a 1 4 8 10 11 13
+a 2 4 8 10 11 13
+c Step: 12
+	Command being timed: "python3 run_3.py --shortest -t4 /benchmark/2022benchmark/benchmark/handcrafted/hc-square-01.col /benchmark/2022benchmark/benchmark/handcrafted/hc-square-01_01.dat"
+	User time (seconds): 0.10
+	System time (seconds): 0.02
+	Percent of CPU this job got: 104%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 21696
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 12521
+	Voluntary context switches: 88
+	Involuntary context switches: 2
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 40
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Tue Aug 29 05:04:45 2023]
