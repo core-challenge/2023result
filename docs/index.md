@@ -15,13 +15,78 @@
     - [single shortest (cpu)](#org4ca359f)
     - [single shortest (wallclock)](#org3c184f8)
 
+## Participated Teams
+
+
+### sano (@sano38)
+
+| Name        | Affiliation        |
+| ----------- | ------------------ |
+| Masaya Sano | Shinshu University |
+
+
+### NU-ASP team (@katomasato1202)
+
+| Name              | Affiliation       |
+| ----------------- | ----------------- |
+| Masato Kato       | Nagoya University |
+| Shuji Kosuge      | Nagoya University |
+| Yuya Yamada       | Nagoya University |
+| Kazuki Takada     | Nagoya University |
+| Aoi Ito           | Nagoya University |
+| Mutsunori Banbara | Nagoya University |
+
+### ddreconf (@suisen-cp)
+
+| Name         | Affiliation      |
+| ------------ | ---------------- |
+| Jun Kawahara | Kyoto University |
+| Shou Ohba    | Kyoto University |
+
+### PARIS-solver (@haz)
+
+| Name                | Affiliation          |
+| ------------------- | -------------------- |
+| Remo Christen       | University of Basel  |
+| Salomé Eriksson     | University of Basel  |
+| Michael Katz        | IBM Research         |
+| Christian Muise     | Queen's University   |
+| Florian Pommerening | University of Basel  |
+| Jendrik Seipp       | Linköping University |
+| Silvan Sievers      | University of Basel  |
+| David Speck         | Linköping University |
+
+
+### PARIS-graph (@haz)
+
+| Name            | Affiliation        |
+| --------------- | ------------------ |
+| Alice Petrov    | Queen's University |
+| Bruce Chidley   | Queen's University |
+| Christian Muise | Queen's University |
+
+### piyopiyo (@akkyhowa)
+
+| Name         | Affiliation                                                |
+| ------------ | ---------------------------------------------------------- |
+| Akira Suzuki | Graduate School of Information Sciences,Tohoku University. |
+
+## tohoku boar (@daichan132)
+
+| Name            | Affiliation                                                |
+| --------------- | ---------------------------------------------------------- |
+| Naoki Domon     | Graduate School of Information Sciences, Tohoku University |
+| Daichi Wakayama | Graduate School of Information Sciences, Tohoku University |
+| Takahiro Suzuki | Graduate School of Information Sciences, Tohoku University |
+
+
 ## Graph Track
 
-| Graph Size | PARIS | piyopiyo | tohoku boar |
-| ---------: | ----: | -------: | ----------: |
-|         17 |    30 [col](/2023result/graph/PARIS/graph-le17/graph17.col), [datl](/2023result/graph/PARIS/graph-le17/graph17.dat), [out](/2023result/graph/PARIS/graph-le17/graph17.out) |       30 [col](/2023result/graph/piyopiyo/graph-le17/graph_17.col), [datl](/2023result/graph/piyopiyo/graph-le17/graph_17.dat), [out](/2023result/graph/piyopiyo/graph-le17/graph_17.out)  |          29 [col](/2023result/graph/tohoku_boar/graph-le17/graph17.col), [datl](/2023result/graph/tohoku_boar/graph-le17/graph17.dat), [out](/2023result/graph/tohoku_boar/graph-le17/graph17.out)|
-|         31 |   211 [col](/2023result/graph/PARIS/graph-le31/graph31.col), [datl](/2023result/graph/PARIS/graph-le31/graph31.dat), [out](/2023result/graph/PARIS/graph-le31/graph31.out)|      231 [col](/2023result/graph/piyopiyo/graph-le31/graph_31.col), [datl](/2023result/graph/piyopiyo/graph-le31/graph_31.dat), [out](/2023result/graph/piyopiyo/graph-le31/graph_31.out) |          NA |
-|         59 |  9895 [col](/2023result/graph/PARIS/graph-le59/graph59.col), [datl](/2023result/graph/PARIS/graph-le59/graph59.dat), [out](/2023result/graph/PARIS/graph-le59/graph59.out) |    11499 [col](/2023result/graph/piyopiyo/graph-le59/graph_59.col), [datl](/2023result/graph/piyopiyo/graph-le59/graph_59.dat), [out](/2023result/graph/piyopiyo/graph-le59/graph_59.out)|          NA |
+| Graph Size |                                                                                                                                                                     PARIS |                                                                                                                                                                               piyopiyo |                                                                                                                                                                               tohoku boar |
+| ---------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|         17 |   30 [col](/2023result/graph/PARIS/graph-le17/graph17.col), [datl](/2023result/graph/PARIS/graph-le17/graph17.dat), [out](/2023result/graph/PARIS/graph-le17/graph17.out) |    30 [col](/2023result/graph/piyopiyo/graph-le17/graph_17.col), [datl](/2023result/graph/piyopiyo/graph-le17/graph_17.dat), [out](/2023result/graph/piyopiyo/graph-le17/graph_17.out) | 29 [col](/2023result/graph/tohoku_boar/graph-le17/graph17.col), [datl](/2023result/graph/tohoku_boar/graph-le17/graph17.dat), [out](/2023result/graph/tohoku_boar/graph-le17/graph17.out) |
+|         31 |  211 [col](/2023result/graph/PARIS/graph-le31/graph31.col), [datl](/2023result/graph/PARIS/graph-le31/graph31.dat), [out](/2023result/graph/PARIS/graph-le31/graph31.out) |   231 [col](/2023result/graph/piyopiyo/graph-le31/graph_31.col), [datl](/2023result/graph/piyopiyo/graph-le31/graph_31.dat), [out](/2023result/graph/piyopiyo/graph-le31/graph_31.out) |                                                                                                                                                                                        NA |
+|         59 | 9895 [col](/2023result/graph/PARIS/graph-le59/graph59.col), [datl](/2023result/graph/PARIS/graph-le59/graph59.dat), [out](/2023result/graph/PARIS/graph-le59/graph59.out) | 11499 [col](/2023result/graph/piyopiyo/graph-le59/graph_59.col), [datl](/2023result/graph/piyopiyo/graph-le59/graph_59.dat), [out](/2023result/graph/piyopiyo/graph-le59/graph_59.out) |                                                                                                                                                                                        NA |
 
 <a id="orgff3f822"></a>
 
