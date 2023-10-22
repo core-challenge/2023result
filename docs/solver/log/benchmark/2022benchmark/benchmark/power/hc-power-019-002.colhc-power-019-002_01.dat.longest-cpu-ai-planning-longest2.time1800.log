@@ -1,0 +1,10 @@
+#BEGIN: [Fri Sep 15 03:23:49 2023]
+#HOST: s08
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-ai-planning-longest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/power/hc-power-019-002.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/power/hc-power-019-002_01.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning --config=longest-portfolio --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/power/hc-power-019-002.col /benchmark/2022benchmark/benchmark/power/hc-power-019-002_01.dat
+c UNKNOWN
+#END: [Fri Sep 15 03:52:49 2023]

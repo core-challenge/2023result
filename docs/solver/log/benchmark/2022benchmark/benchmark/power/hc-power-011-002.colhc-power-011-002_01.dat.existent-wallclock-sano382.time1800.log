@@ -1,0 +1,11 @@
+#BEGIN: [Sat Sep  2 19:40:12 2023]
+#HOST: s05
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-sano382
+#INSTANCE1: /benchmark/2022benchmark/benchmark/power/hc-power-011-002.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/power/hc-power-011-002_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark sano-382 -Xmx54g SimpleSolver /benchmark/2022benchmark/benchmark/power/hc-power-011-002.col /benchmark/2022benchmark/benchmark/power/hc-power-011-002_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID df40e787672374366605e00082e0fc070aaaf4e7b7de713d48f54c53bf7060b0
+#END: [Sat Sep  2 20:10:12 2023]
