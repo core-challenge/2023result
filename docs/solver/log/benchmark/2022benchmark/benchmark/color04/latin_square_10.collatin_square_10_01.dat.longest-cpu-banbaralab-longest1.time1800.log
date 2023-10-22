@@ -1,0 +1,27 @@
+#BEGIN: [Thu Aug 31 17:00:34 2023]
+#HOST: s08
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-banbaralab-longest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/latin_square_10.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/latin_square_10_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest /benchmark/2022benchmark/benchmark/color04/latin_square_10.col /benchmark/2022benchmark/benchmark/color04/latin_square_10_01.dat
+c /benchmark/2022benchmark/benchmark/color04/latin_square_10.col
+c /benchmark/2022benchmark/benchmark/color04/latin_square_10_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID fc179ba0093bc1263a70d3dd0ae3c63a922a0c1c5fd73aab0089eb97afd052c2
+s 62 151 243 327 440 615 702 786 894 
+t 62 151 243 327 440 531 615 702 786
+a YES
+a 62 151 243 327 440 615 702 786 894
+a 62 151 243 327 440 531 615 702 894
+a 151 243 327 440 531 615 702 786 894
+a 62 151 243 327 440 531 702 786 894
+a 62 243 327 440 531 615 702 786 894
+a 62 151 243 327 440 531 615 786 894
+a 62 151 243 327 531 615 702 786 894
+a 62 151 327 440 531 615 702 786 894
+a 62 151 243 440 531 615 702 786 894
+a 62 151 243 327 440 531 615 702 786
+c Step: 9
+#END: [Thu Aug 31 17:30:34 2023]

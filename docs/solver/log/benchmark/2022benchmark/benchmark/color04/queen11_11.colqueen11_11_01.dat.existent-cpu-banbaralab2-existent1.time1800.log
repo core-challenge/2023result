@@ -1,0 +1,48 @@
+#BEGIN: [Mon Aug 28 14:15:39 2023]
+#HOST: s01
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-banbaralab2-existent1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/queen11_11.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/queen11_11_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent /benchmark/2022benchmark/benchmark/color04/queen11_11.col /benchmark/2022benchmark/benchmark/color04/queen11_11_01.dat
+c /benchmark/2022benchmark/benchmark/color04/queen11_11.col
+c /benchmark/2022benchmark/benchmark/color04/queen11_11_01.dat
+*** Info : (clingo): INTERRUPTED by signal!
+s 2 15 30 43 49 56 72 88 106 119 
+t 8 17 24 43 49 66 75 91 100 114
+a YES
+a 2 15 30 43 49 56 72 88 106 119
+a 2 15 30 43 49 56 72 88 91 106
+a 2 30 43 49 56 72 88 91 106 114
+a 2 30 43 49 56 75 88 91 106 114
+a 17 30 43 49 56 75 88 91 106 114
+a 17 24 43 49 56 75 88 91 106 114
+a 8 17 24 43 49 56 75 88 91 114
+a 8 17 24 43 49 75 88 91 100 114
+a 8 17 24 43 49 66 75 91 100 114
+c Step: 8
+	Command being timed: "python3 run_3.py --existent /benchmark/2022benchmark/benchmark/color04/queen11_11.col /benchmark/2022benchmark/benchmark/color04/queen11_11_01.dat"
+	User time (seconds): 60.07
+	System time (seconds): 0.09
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:00.17
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 278640
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 84652
+	Voluntary context switches: 28
+	Involuntary context switches: 393
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 112
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Mon Aug 28 14:16:40 2023]

@@ -1,0 +1,12 @@
+#BEGIN: [Sun Sep  3 05:18:31 2023]
+#HOST: s07
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-suisen-cp2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/DSJR500.5.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/DSJR500.5_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/2022benchmark/benchmark/color04/DSJR500.5.col /benchmark/2022benchmark/benchmark/color04/DSJR500.5_01.dat
+[36m20:21:12 [INFO] Time reorder   : 160 (sec)[0m
+TIMEOUT 1800
+c send SIGTERM to CID f457779d95a7c841f4fae0d7f30e86b39865dc7897fafd1c7679f77f5967624f
+#END: [Sun Sep  3 05:48:31 2023]

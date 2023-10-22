@@ -1,0 +1,46 @@
+#BEGIN: [Wed Aug 30 04:32:35 2023]
+#HOST: s13
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-wallclock-banbaralab2-shortest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/queen9_9.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/queen9_9_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest /benchmark/2022benchmark/benchmark/color04/queen9_9.col /benchmark/2022benchmark/benchmark/color04/queen9_9_01.dat
+c /benchmark/2022benchmark/benchmark/color04/queen9_9.col
+c /benchmark/2022benchmark/benchmark/color04/queen9_9_01.dat
+s 3 15 27 29 41 52 64 80 
+t 4 26 29 41 46 60 72 75
+a YES
+a 3 15 27 29 41 52 64 80
+a 4 15 27 29 41 52 64 80
+a 4 15 29 41 52 63 64 80
+a 4 15 29 41 52 63 64 75
+a 4 15 26 29 41 63 64 75
+a 4 15 26 29 41 46 63 75
+a 4 15 26 29 41 46 72 75
+a 4 26 29 41 46 60 72 75
+c Step: 7
+	Command being timed: "python3 run_3.py --shortest /benchmark/2022benchmark/benchmark/color04/queen9_9.col /benchmark/2022benchmark/benchmark/color04/queen9_9_01.dat"
+	User time (seconds): 0.11
+	System time (seconds): 0.01
+	Percent of CPU this job got: 96%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.13
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 21612
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 13578
+	Voluntary context switches: 21
+	Involuntary context switches: 5
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Wed Aug 30 04:32:35 2023]

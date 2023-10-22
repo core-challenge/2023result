@@ -1,0 +1,37 @@
+#BEGIN: [Sun Sep  3 00:53:41 2023]
+#HOST: s05
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-suisen-cp2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/queen16_16.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/queen16_16_02.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/2022benchmark/benchmark/color04/queen16_16.col /benchmark/2022benchmark/benchmark/color04/queen16_16_02.dat
+[36m15:53:45 [INFO] Time reorder   : 3 (sec)[0m
+[36m16:22:08 [INFO] Time reconf    : 1702 (sec)[0m
+s 10 22 51 77 88 101 127 140 160 162 183 201 219 225 244
+t 10 32 45 51 76 88 101 113 142 162 183 201 219 239 244
+
+	Command being timed: "bash /solver-dir/run.sh /benchmark/2022benchmark/benchmark/color04/queen16_16.col /benchmark/2022benchmark/benchmark/color04/queen16_16_02.dat"
+	User time (seconds): 1681.66
+	System time (seconds): 24.35
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 28:26.23
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 64437488
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1673
+	Minor (reclaiming a frame) page faults: 29904160
+	Voluntary context switches: 2253
+	Involuntary context switches: 12113
+	Swaps: 0
+	File system inputs: 75472
+	File system outputs: 168
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Sun Sep  3 01:22:08 2023]

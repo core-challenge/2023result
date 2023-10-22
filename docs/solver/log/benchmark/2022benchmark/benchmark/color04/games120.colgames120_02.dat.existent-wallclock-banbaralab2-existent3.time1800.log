@@ -1,0 +1,58 @@
+#BEGIN: [Wed Aug 30 01:14:23 2023]
+#HOST: s01
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-banbaralab2-existent3
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/games120.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/games120_02.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na -t4 /benchmark/2022benchmark/benchmark/color04/games120.col /benchmark/2022benchmark/benchmark/color04/games120_02.dat
+c /benchmark/2022benchmark/benchmark/color04/games120.col
+c /benchmark/2022benchmark/benchmark/color04/games120_02.dat
+*** Info : (clingo): Sending shutdown signal...
+*** ERROR: (clingo): solving stopped by signal
+*** Info : (clingo): Shutdown completed in 0.000 seconds
+s 2 5 9 15 21 27 29 50 64 73 79 81 87 89 94 98 102 103 109 110 115 
+t 4 5 6 9 16 20 22 29 43 46 54 59 64 68 73 75 78 93 98 110 115
+a YES
+a 2 5 9 15 21 27 29 50 64 73 79 81 87 89 94 98 102 103 109 110 115
+a 2 5 9 15 21 27 29 44 50 64 73 79 81 87 89 94 98 102 109 110 115
+a 2 5 9 15 21 27 29 44 50 64 73 79 81 89 93 94 98 102 109 110 115
+a 5 9 13 15 21 27 29 44 50 64 73 79 81 89 93 94 98 102 109 110 115
+a 5 9 13 15 21 27 29 44 45 50 64 73 79 89 93 94 98 102 109 110 115
+a 5 9 13 15 21 27 29 44 45 50 64 68 73 79 89 93 94 98 102 110 115
+a 4 5 9 13 15 21 27 29 44 45 64 68 73 79 89 93 94 98 102 110 115
+a 4 5 6 9 15 21 27 29 44 45 64 68 73 79 89 93 94 98 102 110 115
+a 4 5 6 9 15 21 27 29 43 44 45 64 68 73 79 89 93 94 98 110 115
+a 4 5 6 9 15 21 22 27 29 43 45 64 68 73 79 89 93 94 98 110 115
+a 4 5 6 9 15 21 22 27 29 43 45 54 64 68 73 89 93 94 98 110 115
+a 4 5 6 9 15 21 22 27 29 43 46 54 64 68 73 89 93 94 98 110 115
+a 4 5 6 9 15 22 27 29 43 46 54 64 68 73 75 89 93 94 98 110 115
+a 4 5 6 9 15 22 27 29 43 46 54 64 68 73 75 78 89 93 98 110 115
+a 4 5 6 9 15 20 22 27 29 43 46 54 64 68 73 75 78 93 98 110 115
+a 4 5 6 9 15 16 20 22 29 43 46 54 64 68 73 75 78 93 98 110 115
+a 4 5 6 9 16 20 22 29 43 46 54 59 64 68 73 75 78 93 98 110 115
+c Step: 16
+	Command being timed: "python3 run_3.py --existent --na -t4 /benchmark/2022benchmark/benchmark/color04/games120.col /benchmark/2022benchmark/benchmark/color04/games120_02.dat"
+	User time (seconds): 242.25
+	System time (seconds): 0.20
+	Percent of CPU this job got: 390%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:02.05
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 421496
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 166828
+	Voluntary context switches: 1635
+	Involuntary context switches: 588
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 128
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Wed Aug 30 01:15:26 2023]

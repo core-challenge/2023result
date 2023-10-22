@@ -1,0 +1,44 @@
+#BEGIN: [Thu Sep  7 14:42:46 2023]
+#HOST: s16
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-ai-planning2-existent1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/queen13_13.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/queen13_13_02.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning2 --config=existent-single --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/queen13_13.col /benchmark/2022benchmark/benchmark/color04/queen13_13_02.dat
+s 8 24 29 46 54 77 87 97 105 122 156 160 
+t 8 24 29 46 54 77 79 95 122 140 156 162
+a YES
+a 8 24 29 46 54 77 87 97 105 122 156 160
+a 8 24 29 46 54 77 97 105 122 140 156 160
+a 8 24 29 46 54 77 79 97 122 140 156 160
+a 8 24 29 46 54 77 79 97 122 140 156 165
+a 8 24 29 46 54 77 79 97 122 140 147 165
+a 8 24 29 46 54 77 79 97 117 122 140 147
+a 8 24 29 46 54 77 79 117 122 140 147 162
+a 8 24 29 46 54 77 79 95 117 122 140 162
+a 8 24 29 46 54 77 79 95 122 140 156 162
+	Command being timed: "/solvers/driver/run.py --config=existent-single --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/queen13_13.col /benchmark/2022benchmark/benchmark/color04/queen13_13_02.dat"
+	User time (seconds): 0.11
+	System time (seconds): 0.01
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.13
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 20704
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 12266
+	Voluntary context switches: 23
+	Involuntary context switches: 5
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 360
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Thu Sep  7 14:42:46 2023]

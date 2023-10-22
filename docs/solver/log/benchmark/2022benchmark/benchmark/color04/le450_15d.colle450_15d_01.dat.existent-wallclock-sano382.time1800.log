@@ -1,0 +1,38 @@
+#BEGIN: [Sat Sep  2 17:09:59 2023]
+#HOST: s03
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-sano382
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/le450_15d.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/le450_15d_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark sano-382 -Xmx54g SimpleSolver /benchmark/2022benchmark/benchmark/color04/le450_15d.col /benchmark/2022benchmark/benchmark/color04/le450_15d_01.dat
+s 7 12 14 27 31 42 63 75 84 95 100 134 152 167 180 187 189 201 207 218 219 230 240 251 268 278 280 289 308 320 331 347 352 360 379 389 398 401 409 420
+t 7 12 27 31 42 63 75 84 95 100 134 149 167 180 187 189 201 207 218 219 230 240 251 268 278 280 289 304 308 320 331 347 352 360 379 389 398 401 409 420
+a YES
+a 7 12 14 27 31 42 63 75 84 95 100 134 152 167 180 187 189 201 207 218 219 230 240 251 268 278 280 289 308 320 331 347 352 360 379 389 398 401 409 420
+a 7 12 27 31 42 63 75 84 95 100 134 149 152 167 180 187 189 201 207 218 219 230 240 251 268 278 280 289 308 320 331 347 352 360 379 389 398 401 409 420
+a 7 12 27 31 42 63 75 84 95 100 134 149 167 180 187 189 201 207 218 219 230 240 251 268 278 280 289 304 308 320 331 347 352 360 379 389 398 401 409 420
+	Command being timed: "java -cp bin -Xmx54g SimpleSolver /benchmark/2022benchmark/benchmark/color04/le450_15d.col /benchmark/2022benchmark/benchmark/color04/le450_15d_01.dat"
+	User time (seconds): 0.27
+	System time (seconds): 0.03
+	Percent of CPU this job got: 255%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 89900
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 8
+	Minor (reclaiming a frame) page faults: 18325
+	Voluntary context switches: 840
+	Involuntary context switches: 8
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 72
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Sat Sep  2 17:10:00 2023]

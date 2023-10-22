@@ -1,0 +1,62 @@
+#BEGIN: [Thu Sep  7 19:21:27 2023]
+#HOST: s04
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-ai-planning2-existent2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/queen10_10.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/queen10_10_02.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning2 --config=existent-portfolio --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/queen10_10.col /benchmark/2022benchmark/benchmark/color04/queen10_10_02.dat
+s 6 20 23 35 52 64 77 81 98 
+t 3 18 37 49 52 66 71 90 95
+a YES
+a 6 20 23 35 52 64 77 81 98
+a 20 23 35 49 52 64 77 81 98
+a 3 20 35 49 52 64 77 81 98
+a 3 30 35 49 52 64 77 81 98
+a 3 15 30 49 52 64 77 81 98
+a 3 15 30 49 56 64 77 81 98
+a 3 15 30 49 56 62 77 81 98
+a 3 15 30 31 49 56 62 77 98
+a 3 15 31 49 56 62 77 90 98
+a 3 15 28 31 49 56 62 77 90
+a 3 15 28 31 49 54 62 77 90
+a 3 15 28 31 49 54 62 90 96
+a 3 15 28 49 54 62 77 90 96
+a 3 15 28 49 54 61 77 90 96
+a 3 15 28 49 54 61 77 90 92
+a 3 15 28 31 49 54 77 90 92
+a 3 15 28 31 49 54 66 90 92
+a 3 15 31 49 54 66 78 90 92
+a 3 17 31 49 54 66 78 90 92
+a 3 17 31 49 54 66 78 90 95
+a 3 17 31 49 52 66 78 90 95
+a 3 17 24 31 49 52 66 78 95
+a 3 20 24 31 49 52 66 78 95
+a 3 20 24 37 49 52 66 78 95
+a 3 20 24 37 49 52 66 71 95
+a 3 18 24 37 49 52 66 71 95
+a 3 18 37 49 52 66 71 90 95
+	Command being timed: "/solvers/driver/run.py --config=existent-portfolio --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/queen10_10.col /benchmark/2022benchmark/benchmark/color04/queen10_10_02.dat"
+	User time (seconds): 2.08
+	System time (seconds): 0.06
+	Percent of CPU this job got: 259%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.83
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 50944
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 30531
+	Voluntary context switches: 5247
+	Involuntary context switches: 138
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 480
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Thu Sep  7 19:21:29 2023]

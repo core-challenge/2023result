@@ -1,0 +1,52 @@
+#BEGIN: [Wed Aug 30 04:24:40 2023]
+#HOST: s14
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-wallclock-banbaralab2-shortest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/games120.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/games120_02.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest /benchmark/2022benchmark/benchmark/color04/games120.col /benchmark/2022benchmark/benchmark/color04/games120_02.dat
+c /benchmark/2022benchmark/benchmark/color04/games120.col
+c /benchmark/2022benchmark/benchmark/color04/games120_02.dat
+s 2 5 9 15 21 27 29 50 64 73 79 81 87 89 94 98 102 103 109 110 115 
+t 4 5 6 9 16 20 22 29 43 46 54 59 64 68 73 75 78 93 98 110 115
+a YES
+a 2 5 9 15 21 27 29 50 64 73 79 81 87 89 94 98 102 103 109 110 115
+a 5 9 15 21 27 29 50 64 73 79 81 87 89 93 94 98 102 103 109 110 115
+a 5 6 9 15 21 27 29 50 64 73 79 81 89 93 94 98 102 103 109 110 115
+a 5 6 9 15 27 29 50 64 73 75 79 81 89 93 94 98 102 103 109 110 115
+a 5 6 9 15 27 29 50 54 64 73 75 79 89 93 94 98 102 103 109 110 115
+a 5 6 9 15 27 29 46 50 54 64 73 75 79 89 93 94 98 103 109 110 115
+a 4 5 6 9 15 27 29 46 54 64 73 75 79 89 93 94 98 103 109 110 115
+a 4 5 6 9 15 27 29 43 46 54 64 73 75 79 89 93 98 103 109 110 115
+a 4 5 6 9 15 27 29 43 46 54 64 68 73 75 79 89 93 98 103 110 115
+a 4 5 6 9 15 20 27 29 43 46 54 64 68 73 75 79 93 98 103 110 115
+a 4 5 6 9 20 27 29 43 46 54 59 64 68 73 75 79 93 98 103 110 115
+a 4 5 6 9 16 20 29 43 46 54 59 64 68 73 75 79 93 98 103 110 115
+a 4 5 6 9 16 20 22 29 43 46 54 59 64 68 73 75 79 93 98 110 115
+a 4 5 6 9 16 20 22 29 43 46 54 59 64 68 73 75 78 93 98 110 115
+c Step: 13
+	Command being timed: "python3 run_3.py --shortest /benchmark/2022benchmark/benchmark/color04/games120.col /benchmark/2022benchmark/benchmark/color04/games120_02.dat"
+	User time (seconds): 0.13
+	System time (seconds): 0.01
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.15
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 22108
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 14284
+	Voluntary context switches: 21
+	Involuntary context switches: 2
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 72
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Wed Aug 30 04:24:41 2023]

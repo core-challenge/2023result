@@ -1,0 +1,19 @@
+#BEGIN: [Thu Aug 31 03:13:59 2023]
+#HOST: s02
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-wallclock-banbaralab-longest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/1-FullIns_4.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/1-FullIns_4_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest -t4 /benchmark/2022benchmark/benchmark/color04/1-FullIns_4.col /benchmark/2022benchmark/benchmark/color04/1-FullIns_4_01.dat
+c /benchmark/2022benchmark/benchmark/color04/1-FullIns_4.col
+c /benchmark/2022benchmark/benchmark/color04/1-FullIns_4_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID 1fd2d8f58bed8650601387909f88558a8bb63d6174c2ed65a79c7c29f962a5f1
+s 2 5 6 8 19 20 21 22 23 24 25 26 27 29 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 92 
+t 1 5 6 8 19 20 21 22 23 24 25 26 27 29 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 92
+a YES
+a 2 5 6 8 19 20 21 22 23 24 25 26 27 29 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 92
+a 1 5 6 8 19 20 21 22 23 24 25 26 27 29 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 92
+c Step: 1
+#END: [Thu Aug 31 03:44:00 2023]

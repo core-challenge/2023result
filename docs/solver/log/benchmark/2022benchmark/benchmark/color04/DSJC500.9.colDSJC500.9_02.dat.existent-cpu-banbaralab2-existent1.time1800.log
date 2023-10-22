@@ -1,0 +1,49 @@
+#BEGIN: [Mon Aug 28 14:11:29 2023]
+#HOST: s04
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-banbaralab2-existent1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/DSJC500.9.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/DSJC500.9_02.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent /benchmark/2022benchmark/benchmark/color04/DSJC500.9.col /benchmark/2022benchmark/benchmark/color04/DSJC500.9_02.dat
+c /benchmark/2022benchmark/benchmark/color04/DSJC500.9.col
+c /benchmark/2022benchmark/benchmark/color04/DSJC500.9_02.dat
+s 97 179 194 467 
+t 144 445 471 477
+a YES
+a 97 179 194 467
+a 65 97 179 194
+a 65 97 194 467
+a 65 97 455 467
+a 97 160 455 467
+a 160 440 455 467
+a 160 236 440 467
+a 160 236 440 477
+a 160 236 445 477
+a 236 445 471 477
+a 144 445 471 477
+c Step: 10
+	Command being timed: "python3 run_3.py --existent /benchmark/2022benchmark/benchmark/color04/DSJC500.9.col /benchmark/2022benchmark/benchmark/color04/DSJC500.9_02.dat"
+	User time (seconds): 5.04
+	System time (seconds): 0.16
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.21
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 377208
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 178539
+	Voluntary context switches: 21
+	Involuntary context switches: 22
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 3480
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Mon Aug 28 14:11:34 2023]

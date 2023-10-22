@@ -1,0 +1,49 @@
+#BEGIN: [Fri Sep  8 02:58:24 2023]
+#HOST: s14
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-ai-planning2-existent2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/DSJC125.9.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/DSJC125.9_02.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning2 --config=existent-portfolio --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/DSJC125.9.col /benchmark/2022benchmark/benchmark/color04/DSJC125.9_02.dat
+s 30 90 125 
+t 20 85 109
+a YES
+a 30 90 125
+a 43 90 125
+a 43 84 125
+a 72 84 125
+a 72 84 117
+a 15 72 117
+a 15 62 117
+a 28 62 117
+a 28 85 117
+a 28 85 125
+a 38 85 125
+a 38 85 119
+a 20 85 119
+a 20 85 109
+	Command being timed: "/solvers/driver/run.py --config=existent-portfolio --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/DSJC125.9.col /benchmark/2022benchmark/benchmark/color04/DSJC125.9_02.dat"
+	User time (seconds): 0.56
+	System time (seconds): 0.04
+	Percent of CPU this job got: 108%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.55
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 47160
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 31015
+	Voluntary context switches: 546
+	Involuntary context switches: 14
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 608
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Fri Sep  8 02:58:25 2023]

@@ -1,0 +1,45 @@
+#BEGIN: [Thu Sep  7 19:21:44 2023]
+#HOST: s04
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-ai-planning2-existent2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/queen8_8.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/queen8_8_02.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning2 --config=existent-portfolio --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/queen8_8.col /benchmark/2022benchmark/benchmark/color04/queen8_8_02.dat
+s 3 13 18 32 38 55 57 
+t 7 12 18 29 40 46 51
+a YES
+a 3 13 18 32 38 55 57
+a 13 18 32 38 44 55 57
+a 7 13 18 32 38 44 57
+a 7 13 18 32 38 51 57
+a 7 12 18 32 38 51 57
+a 7 12 18 32 38 41 51
+a 7 12 18 38 41 51 64
+a 7 12 18 29 41 51 64
+a 7 12 18 29 40 41 51
+a 7 12 18 29 40 46 51
+	Command being timed: "/solvers/driver/run.py --config=existent-portfolio --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/queen8_8.col /benchmark/2022benchmark/benchmark/color04/queen8_8_02.dat"
+	User time (seconds): 0.39
+	System time (seconds): 0.06
+	Percent of CPU this job got: 101%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.45
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 39204
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 30050
+	Voluntary context switches: 3844
+	Involuntary context switches: 8
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 464
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Thu Sep  7 19:21:44 2023]

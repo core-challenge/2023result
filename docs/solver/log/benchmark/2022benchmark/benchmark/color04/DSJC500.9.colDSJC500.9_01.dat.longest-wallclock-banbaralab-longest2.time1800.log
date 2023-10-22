@@ -1,0 +1,44 @@
+#BEGIN: [Thu Aug 31 05:20:55 2023]
+#HOST: s08
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-wallclock-banbaralab-longest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/DSJC500.9.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/DSJC500.9_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest -t4 /benchmark/2022benchmark/benchmark/color04/DSJC500.9.col /benchmark/2022benchmark/benchmark/color04/DSJC500.9_01.dat
+c /benchmark/2022benchmark/benchmark/color04/DSJC500.9.col
+c /benchmark/2022benchmark/benchmark/color04/DSJC500.9_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID 44269a5cdedbec40d042c8650e6856e4d456d54b7b213a4fedc110b15786a212
+s 196 259 381 442 
+t 268 451 469 474
+a YES
+a 196 259 381 442
+a 196 259 317 381
+a 259 317 381 442
+a 259 381 442 449
+a 259 371 442 449
+a 259 317 371 442
+a 196 259 317 442
+a 196 317 381 442
+a 196 317 381 395
+a 196 381 395 469
+a 303 381 395 469
+a 268 303 381 469
+a 196 268 381 469
+a 196 268 451 469
+a 196 197 268 469
+a 196 268 464 469
+a 121 196 464 469
+a 196 451 464 469
+a 196 268 451 464
+a 268 451 464 469
+a 119 268 464 469
+a 16 268 464 469
+a 16 34 268 469
+a 34 69 268 469
+a 34 109 268 469
+a 34 268 469 474
+a 268 451 469 474
+c Step: 26
+#END: [Thu Aug 31 05:50:55 2023]

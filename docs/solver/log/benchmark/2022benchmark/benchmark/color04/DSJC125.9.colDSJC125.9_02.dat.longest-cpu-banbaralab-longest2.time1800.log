@@ -1,0 +1,114 @@
+#BEGIN: [Fri Sep  1 01:54:44 2023]
+#HOST: s16
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-banbaralab-longest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/DSJC125.9.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/DSJC125.9_02.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest -t4 /benchmark/2022benchmark/benchmark/color04/DSJC125.9.col /benchmark/2022benchmark/benchmark/color04/DSJC125.9_02.dat
+c /benchmark/2022benchmark/benchmark/color04/DSJC125.9.col
+c /benchmark/2022benchmark/benchmark/color04/DSJC125.9_02.dat
+s 30 90 125 
+t 20 85 109
+a YES
+a 30 90 125
+a 30 58 90
+a 30 88 90
+a 43 88 90
+a 43 90 125
+a 73 90 125
+a 51 90 125
+a 30 51 90
+a 30 51 125
+a 51 55 125
+a 55 124 125
+a 45 55 124
+a 25 45 55
+a 24 25 45
+a 24 25 81
+a 24 81 89
+a 48 81 89
+a 16 48 81
+a 16 25 81
+a 25 54 81
+a 13 25 81
+a 13 25 60
+a 13 60 116
+a 4 60 116
+a 24 60 116
+a 24 25 60
+a 25 47 60
+a 25 47 88
+a 47 88 107
+a 47 64 107
+a 46 47 64
+a 46 47 91
+a 46 47 50
+a 7 47 50
+a 7 8 50
+a 8 22 50
+a 8 22 62
+a 8 22 67
+a 8 53 67
+a 53 67 125
+a 11 53 67
+a 53 67 119
+a 53 119 124
+a 20 119 124
+a 20 45 124
+a 45 86 124
+a 17 45 124
+a 17 124 125
+a 10 17 124
+a 10 105 124
+a 10 35 105
+a 35 52 105
+a 14 35 52
+a 14 35 42
+a 14 35 64
+a 35 42 64
+a 2 35 42
+a 2 42 64
+a 2 42 93
+a 2 64 93
+a 2 21 64
+a 2 21 29
+a 21 23 29
+a 19 21 23
+a 19 21 96
+a 21 64 96
+a 21 24 96
+a 24 72 96
+a 24 72 107
+a 72 84 107
+a 72 84 115
+a 72 84 125
+a 72 84 117
+a 15 72 117
+a 15 72 96
+a 15 72 111
+a 15 72 107
+a 6 72 107
+a 72 107 115
+a 84 107 115
+a 19 84 115
+a 19 60 84
+a 11 19 60
+a 11 19 86
+a 11 19 80
+a 11 80 87
+a 80 87 97
+a 80 97 114
+a 80 97 115
+a 80 114 115
+a 19 80 115
+a 12 19 115
+a 12 19 86
+a 12 19 42
+a 19 42 63
+a 42 63 109
+a 42 64 109
+a 42 85 109
+a 20 85 109
+c Step: 98
+#END: [Fri Sep  1 02:02:30 2023]

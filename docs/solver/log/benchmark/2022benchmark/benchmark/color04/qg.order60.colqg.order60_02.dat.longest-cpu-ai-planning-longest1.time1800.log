@@ -1,0 +1,10 @@
+#BEGIN: [Thu Sep 14 05:14:08 2023]
+#HOST: s04
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-ai-planning-longest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/qg.order60.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/qg.order60_02.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning --config=longest-single --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/qg.order60.col /benchmark/2022benchmark/benchmark/color04/qg.order60_02.dat
+c UNKNOWN
+#END: [Thu Sep 14 05:43:09 2023]

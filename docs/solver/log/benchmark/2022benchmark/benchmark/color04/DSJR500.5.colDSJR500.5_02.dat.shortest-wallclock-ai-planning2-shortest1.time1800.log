@@ -1,0 +1,42 @@
+#BEGIN: [Fri Sep  8 22:58:50 2023]
+#HOST: s06
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-wallclock-ai-planning2-shortest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/DSJR500.5.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/DSJR500.5_02.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning2 --config=shortest-single --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/DSJR500.5.col /benchmark/2022benchmark/benchmark/color04/DSJR500.5_02.dat
+s 17 27 326 329 464 495 
+t 106 164 222 273 447 464
+a YES
+a 17 27 326 329 464 495
+a 27 55 326 329 464 495
+a 27 55 273 326 464 495
+a 27 55 222 273 464 495
+a 55 106 222 273 464 495
+a 55 106 222 273 447 464
+a 106 164 222 273 447 464
+	Command being timed: "/solvers/driver/run.py --config=shortest-single --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/DSJR500.5.col /benchmark/2022benchmark/benchmark/color04/DSJR500.5_02.dat"
+	User time (seconds): 76.92
+	System time (seconds): 0.06
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:17.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 171876
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 66752
+	Voluntary context switches: 27
+	Involuntary context switches: 409
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1800
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Fri Sep  8 23:00:08 2023]

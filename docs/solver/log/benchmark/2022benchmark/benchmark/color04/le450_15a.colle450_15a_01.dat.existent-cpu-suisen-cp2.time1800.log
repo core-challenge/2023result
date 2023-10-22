@@ -1,0 +1,37 @@
+#BEGIN: [Sat Sep  2 23:39:29 2023]
+#HOST: s13
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-suisen-cp2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/le450_15a.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/le450_15a_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/2022benchmark/benchmark/color04/le450_15a.col /benchmark/2022benchmark/benchmark/color04/le450_15a_01.dat
+[36m14:39:52 [INFO] Time reorder   : 22 (sec)[0m
+[36m14:59:51 [INFO] Time reconf    : 1199 (sec)[0m
+s 6 10 25 32 34 37 40 44 51 54 61 64 79 87 90 91 94 100 107 122 124 127 128 130 132 141 160 171 177 181 183 184 187 199 207 214 230 238 252 267 273 276 277 279 280 289 295 309 312 313 316 326 327 331 335 345 350 357 360 366 372 373 375 392 393 394 398 401 411 412 422 429 436 444 445
+t 6 10 32 34 37 44 51 54 61 64 79 87 90 91 94 100 107 122 124 127 128 130 132 141 149 160 171 177 181 183 184 187 199 207 210 230 238 239 252 267 273 276 277 279 280 289 295 309 312 313 316 326 327 331 335 345 350 357 360 366 372 373 375 392 393 394 398 401 411 412 422 429 436 444 445
+
+	Command being timed: "bash /solver-dir/run.sh /benchmark/2022benchmark/benchmark/color04/le450_15a.col /benchmark/2022benchmark/benchmark/color04/le450_15a_01.dat"
+	User time (seconds): 1204.58
+	System time (seconds): 17.63
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 20:22.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 55299860
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 76
+	Minor (reclaiming a frame) page faults: 21646277
+	Voluntary context switches: 343
+	Involuntary context switches: 8774
+	Swaps: 0
+	File system inputs: 15000
+	File system outputs: 200
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Sat Sep  2 23:59:52 2023]

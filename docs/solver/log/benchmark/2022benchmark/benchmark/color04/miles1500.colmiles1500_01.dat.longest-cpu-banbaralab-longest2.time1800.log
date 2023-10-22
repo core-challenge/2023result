@@ -1,0 +1,27 @@
+#BEGIN: [Fri Sep  1 02:35:53 2023]
+#HOST: s07
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-banbaralab-longest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/miles1500.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/miles1500_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest -t4 /benchmark/2022benchmark/benchmark/color04/miles1500.col /benchmark/2022benchmark/benchmark/color04/miles1500_01.dat
+c /benchmark/2022benchmark/benchmark/color04/miles1500.col
+c /benchmark/2022benchmark/benchmark/color04/miles1500_01.dat
+s 17 22 51 106 112 
+t 17 97 106 112 118
+a YES
+a 17 22 51 106 112
+a 11 22 51 106 112
+a 22 51 85 106 112
+a 22 85 97 106 112
+a 85 97 106 112 118
+a 51 85 106 112 118
+a 11 51 106 112 118
+a 17 51 106 112 118
+a 17 65 106 112 118
+a 17 22 65 106 112
+a 17 22 97 106 112
+a 17 97 106 112 118
+c Step: 11
+#END: [Fri Sep  1 02:55:38 2023]

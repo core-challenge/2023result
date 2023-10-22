@@ -1,0 +1,22 @@
+#BEGIN: [Thu Sep 14 03:35:25 2023]
+#HOST: s16
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-ai-planning-longest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/latin_square_10.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/latin_square_10_02.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning --config=longest-single --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/latin_square_10.col /benchmark/2022benchmark/benchmark/color04/latin_square_10_02.dat
+s 56 149 237 331 373 461 556 669 763 
+t 56 237 331 373 461 556 669 763 835
+a YES
+a 56 149 237 331 373 461 556 669 763
+a 56 149 237 331 373 461 556 669 835
+a 56 149 237 331 373 461 556 763 835
+a 56 149 237 331 373 461 669 763 835
+a 56 149 237 331 373 556 669 763 835
+a 56 149 237 331 461 556 669 763 835
+a 56 149 237 373 461 556 669 763 835
+a 56 149 331 373 461 556 669 763 835
+a 149 237 331 373 461 556 669 763 835
+a 56 237 331 373 461 556 669 763 835
+#END: [Thu Sep 14 04:04:27 2023]

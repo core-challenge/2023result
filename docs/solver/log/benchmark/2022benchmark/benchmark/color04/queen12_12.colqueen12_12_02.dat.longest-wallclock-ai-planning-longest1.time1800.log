@@ -1,0 +1,29 @@
+#BEGIN: [Sat Sep  9 20:39:40 2023]
+#HOST: s01
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-wallclock-ai-planning-longest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/queen12_12.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/queen12_12_02.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning --config=longest-single --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/queen12_12.col /benchmark/2022benchmark/benchmark/color04/queen12_12_02.dat
+s 11 14 30 39 60 80 89 97 112 129 139 
+t 10 16 30 37 60 80 86 101 111 129 143
+a YES
+a 11 14 30 39 60 80 89 97 112 129 139
+a 11 14 30 39 60 70 80 89 97 129 139
+a 11 14 30 39 60 70 80 89 109 129 139
+a 11 14 30 39 60 70 80 101 109 129 139
+a 11 30 39 60 70 80 86 101 109 129 139
+a 11 16 30 39 60 70 80 86 101 129 139
+a 11 16 30 60 70 80 86 101 111 129 139
+a 1 16 30 60 70 80 86 101 111 129 139
+a 1 16 30 60 70 80 86 101 111 129 143
+a 1 16 43 60 70 80 86 101 111 129 143
+a 6 16 43 60 70 80 86 101 111 129 143
+a 6 16 37 60 70 80 86 101 111 129 143
+a 7 16 37 60 70 80 86 101 111 129 143
+a 7 30 37 60 70 80 86 101 111 129 143
+a 16 30 37 60 70 80 86 101 111 129 143
+a 7 16 30 37 60 80 86 101 111 129 143
+a 10 16 30 37 60 80 86 101 111 129 143
+#END: [Sat Sep  9 21:08:41 2023]

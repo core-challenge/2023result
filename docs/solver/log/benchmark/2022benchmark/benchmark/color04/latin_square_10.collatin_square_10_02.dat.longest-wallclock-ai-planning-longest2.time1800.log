@@ -1,0 +1,22 @@
+#BEGIN: [Sun Sep 10 12:55:27 2023]
+#HOST: s06
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-wallclock-ai-planning-longest2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/latin_square_10.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/latin_square_10_02.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning --config=longest-portfolio --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/latin_square_10.col /benchmark/2022benchmark/benchmark/color04/latin_square_10_02.dat
+s 56 149 237 331 373 461 556 669 763 
+t 56 237 331 373 461 556 669 763 835
+a YES
+a 56 149 237 331 373 461 556 669 763
+a 56 149 237 331 373 461 556 669 835
+a 56 149 237 331 373 461 556 763 835
+a 56 149 237 331 373 461 669 763 835
+a 56 149 237 331 373 556 669 763 835
+a 56 149 237 331 461 556 669 763 835
+a 56 149 237 373 461 556 669 763 835
+a 56 149 331 373 461 556 669 763 835
+a 149 237 331 373 461 556 669 763 835
+a 56 237 331 373 461 556 669 763 835
+#END: [Sun Sep 10 13:24:27 2023]

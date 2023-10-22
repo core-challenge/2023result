@@ -1,0 +1,35 @@
+#BEGIN: [Sat Sep  9 18:04:16 2023]
+#HOST: s14
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-wallclock-ai-planning-longest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/color04/DSJC500.9.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/color04/DSJC500.9_02.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning --config=longest-single --memory-limit=54 --time-limit=1800 /benchmark/2022benchmark/benchmark/color04/DSJC500.9.col /benchmark/2022benchmark/benchmark/color04/DSJC500.9_02.dat
+s 97 179 194 467 
+t 144 445 471 477
+a YES
+a 97 179 194 467
+a 65 97 194 467
+a 65 97 194 372
+a 65 97 179 194
+a 65 179 194 360
+a 65 179 194 467
+a 65 97 179 467
+a 65 97 455 467
+a 97 160 455 467
+a 160 440 455 467
+a 160 236 440 467
+a 5 160 236 440
+a 160 236 440 477
+a 160 440 470 477
+a 160 198 470 477
+a 160 445 470 477
+a 160 236 445 477
+a 236 445 471 477
+a 57 236 445 471
+a 236 306 445 471
+a 306 358 445 471
+a 358 445 471 477
+a 144 445 471 477
+#END: [Sat Sep  9 18:33:17 2023]
