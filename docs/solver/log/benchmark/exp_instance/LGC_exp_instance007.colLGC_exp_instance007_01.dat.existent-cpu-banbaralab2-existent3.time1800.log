@@ -1,0 +1,44 @@
+#BEGIN: [Wed Sep 13 18:41:13 2023]
+#HOST: s02
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-banbaralab2-existent3
+#INSTANCE1: /benchmark/exp_instance/LGC_exp_instance007.col
+#INSTANCE2: /benchmark/exp_instance/LGC_exp_instance007_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na -t4 /benchmark/exp_instance/LGC_exp_instance007.col /benchmark/exp_instance/LGC_exp_instance007_01.dat
+c /benchmark/exp_instance/LGC_exp_instance007.col
+c /benchmark/exp_instance/LGC_exp_instance007_01.dat
+*** Info : (clingo): Sending shutdown signal...
+*** ERROR: (clingo): solving stopped by signal
+*** Info : (clingo): Shutdown completed in 0.319 seconds
+*** Info : (clingo): Sending shutdown signal...
+*** ERROR: (clingo): solving stopped by signal
+*** Info : (clingo): Shutdown completed in 0.000 seconds
+s 1 4 6 8 10 12 14 17 19 21 23 25 27 30 32 34 36 38 40 43 45 47 49 51 53 56 58 60 62 64 66 69 71 73 75 77 79 82 84 86 88 90 93 95 97 98 100 102 105 107 109 110 112 114 117 119 121 122 124 126 129 131 133 134 136 138 141 143 145 146 148 150 153 155 157 158 160 162 165 167 169 170 172 174 177 179 181 182 184 186 189 191 193 194 196 198 201 203 205 206 208 210 213 215 217 218 220 222 225 227 229 230 232 234 237 239 241 242 244 246 249 251 253 254 256 258 261 263 265 266 268 270 273 275 277 278 280 282 285 287 289 290 292 294 297 299 301 302 304 306 309 311 313 314 316 318 321 323 325 326 328 330 333 335 337 338 340 342
+t 1 4 6 8 10 12 14 17 19 21 23 25 27 30 32 34 36 38 40 43 45 47 49 51 53 56 58 60 62 64 66 69 71 73 75 77 80 81 84 86 88 90 93 95 97 98 100 102 105 107 109 110 112 114 117 119 121 122 124 126 129 131 133 134 136 138 141 143 145 146 148 150 153 155 157 158 160 162 165 167 169 170 172 174 177 179 181 182 184 186 189 191 193 194 196 198 201 203 205 206 208 210 213 215 217 218 220 222 225 227 229 230 232 234 237 239 241 242 244 246 249 251 253 254 256 258 261 263 265 266 268 270 273 275 277 278 280 282 285 287 289 290 292 294 297 299 301 302 304 306 309 311 313 314 316 318 321 323 325 326 328 330 333 335 337 338 340 342
+c UNKNOWN
+c REACHABILITY UNKNOWN
+	Command being timed: "python3 run_3.py --existent --na -t4 /benchmark/exp_instance/LGC_exp_instance007.col /benchmark/exp_instance/LGC_exp_instance007_01.dat"
+	User time (seconds): 3230.31
+	System time (seconds): 0.83
+	Percent of CPU this job got: 398%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 13:30.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1514452
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4
+	Minor (reclaiming a frame) page faults: 524276
+	Voluntary context switches: 5153
+	Involuntary context switches: 5653
+	Swaps: 0
+	File system inputs: 512
+	File system outputs: 96
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Wed Sep 13 18:54:44 2023]

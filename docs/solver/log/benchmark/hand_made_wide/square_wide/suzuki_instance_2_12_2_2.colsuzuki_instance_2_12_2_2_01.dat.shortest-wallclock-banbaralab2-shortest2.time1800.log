@@ -1,0 +1,13 @@
+#BEGIN: [Thu Sep  7 08:49:37 2023]
+#HOST: s01
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-wallclock-banbaralab2-shortest2
+#INSTANCE1: /benchmark/hand_made_wide/square_wide/suzuki_instance_2_12_2_2.col
+#INSTANCE2: /benchmark/hand_made_wide/square_wide/suzuki_instance_2_12_2_2_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest -t4 /benchmark/hand_made_wide/square_wide/suzuki_instance_2_12_2_2.col /benchmark/hand_made_wide/square_wide/suzuki_instance_2_12_2_2_01.dat
+c /benchmark/hand_made_wide/square_wide/suzuki_instance_2_12_2_2.col
+c /benchmark/hand_made_wide/square_wide/suzuki_instance_2_12_2_2_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID ed03f7261bed2cf5e1dc86679d5f4eae035b8f615dcb337f2f822bd6f5829ee0
+#END: [Thu Sep  7 09:19:37 2023]

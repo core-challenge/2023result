@@ -1,0 +1,13 @@
+#BEGIN: [Wed Sep 13 21:23:48 2023]
+#HOST: s01
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-wallclock-banbaralab2-shortest2
+#INSTANCE1: /benchmark/exp_instance/LGC_exp_instance006.col
+#INSTANCE2: /benchmark/exp_instance/LGC_exp_instance006_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest -t4 /benchmark/exp_instance/LGC_exp_instance006.col /benchmark/exp_instance/LGC_exp_instance006_01.dat
+c /benchmark/exp_instance/LGC_exp_instance006.col
+c /benchmark/exp_instance/LGC_exp_instance006_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID e6130024b0206d198950bd18a7e965698f7e5be4ea07f9b3a3bd4e6a2752c5d4
+#END: [Wed Sep 13 21:53:49 2023]

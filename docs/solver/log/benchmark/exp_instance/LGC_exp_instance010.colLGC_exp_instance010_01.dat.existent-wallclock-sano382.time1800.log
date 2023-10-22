@@ -1,0 +1,11 @@
+#BEGIN: [Thu Sep 14 00:16:36 2023]
+#HOST: s01
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-sano382
+#INSTANCE1: /benchmark/exp_instance/LGC_exp_instance010.col
+#INSTANCE2: /benchmark/exp_instance/LGC_exp_instance010_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark sano-382 -Xmx54g SimpleSolver /benchmark/exp_instance/LGC_exp_instance010.col /benchmark/exp_instance/LGC_exp_instance010_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID fd267f55ff28f23742604f88f9b282a15bade62747e86fb8d3be9386ca8bd505
+#END: [Thu Sep 14 00:46:37 2023]

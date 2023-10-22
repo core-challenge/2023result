@@ -1,0 +1,33 @@
+#BEGIN: [Thu Sep 14 00:06:30 2023]
+#HOST: s05
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-sano382
+#INSTANCE1: /benchmark/exp_instance/SAT_exp_instance012.col
+#INSTANCE2: /benchmark/exp_instance/SAT_exp_instance012_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark sano-382 -Xmx54g SimpleSolver /benchmark/exp_instance/SAT_exp_instance012.col /benchmark/exp_instance/SAT_exp_instance012_01.dat
+Command terminated by signal 9
+	Command being timed: "java -cp bin -Xmx54g SimpleSolver /benchmark/exp_instance/SAT_exp_instance012.col /benchmark/exp_instance/SAT_exp_instance012_01.dat"
+	User time (seconds): 1799.77
+	System time (seconds): 0.90
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 29:56.55
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 778620
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1240
+	Minor (reclaiming a frame) page faults: 190766
+	Voluntary context switches: 87731
+	Involuntary context switches: 10458
+	Swaps: 0
+	File system inputs: 63648
+	File system outputs: 6376
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Thu Sep 14 00:36:27 2023]

@@ -1,0 +1,30 @@
+#BEGIN: [Wed Sep 13 17:22:08 2023]
+#HOST: s13
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-ai-planning-longest2
+#INSTANCE1: /benchmark/exp_instance/SAT_exp_instance004.col
+#INSTANCE2: /benchmark/exp_instance/SAT_exp_instance004_01.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning --config=longest-portfolio --memory-limit=54 --time-limit=1800 /benchmark/exp_instance/SAT_exp_instance004.col /benchmark/exp_instance/SAT_exp_instance004_01.dat
+s 2 4 6 8 9 11 14 17
+t 2 4 5 7 9 12 13 16
+a YES
+a 2 4 6 8 9 11 14 17
+a 2 3 6 8 9 11 14 17
+a 2 3 6 8 9 11 14 18
+a 2 3 6 8 10 11 14 18
+a 2 3 6 8 10 11 14 17
+a 1 3 6 8 10 11 14 17
+a 1 3 6 8 10 11 14 18
+a 1 3 6 8 10 11 15 18
+a 1 3 6 7 10 11 15 18
+a 1 3 6 7 10 12 15 18
+a 1 3 5 7 10 12 15 18
+a 1 3 5 7 10 12 15 16
+a 1 3 5 7 10 12 13 16
+a 1 3 5 7 10 12 13 18
+a 2 3 5 7 10 12 13 18
+a 2 3 5 7 10 12 13 16
+a 2 3 5 7 9 12 13 16
+a 2 4 5 7 9 12 13 16
+#END: [Wed Sep 13 17:51:07 2023]

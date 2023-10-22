@@ -1,0 +1,38 @@
+#BEGIN: [Wed Sep 13 20:51:56 2023]
+#HOST: s12
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-cpu-banbaralab2-shortest2
+#INSTANCE1: /benchmark/exp_instance/SAT_exp_instance020.col
+#INSTANCE2: /benchmark/exp_instance/SAT_exp_instance020_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest -t4 /benchmark/exp_instance/SAT_exp_instance020.col /benchmark/exp_instance/SAT_exp_instance020_01.dat
+c /benchmark/exp_instance/SAT_exp_instance020.col
+c /benchmark/exp_instance/SAT_exp_instance020_01.dat
+s 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 41 43 46 49 51 54 57 60 63 65 68 71 74 77 80 83 85 88 91 94 97 100 103 106 109 111 114 117 120 123 126 129 132 135 138 141 143 146 149 152 155 158 161 164 167 170 173 176 179 181 184 187 190 193 196 199 202 205 208 211 214 217 220 223 225 228 231 234 237 240 243 246 249 252 255 258 261 264 267 270 273 275 278 281 284 287 290 293 296 299 302 305 308 311 314 317 320 323 326 329
+t 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 37 39 41 43 46 49 51 54 57 60 63 65 68 71 74 77 80 83 85 88 91 94 97 100 103 106 109 111 114 117 120 123 126 129 132 135 138 141 143 146 149 152 155 158 161 164 167 170 173 176 179 181 184 187 190 193 196 199 202 205 208 211 214 217 220 223 225 228 231 234 237 240 243 246 249 252 255 258 261 264 267 270 273 276 277 280 283 286 289 292 295 298 301 304 307 310 313 316 319 322 325 328
+c UNKNOWN
+c REACHABILITY UNKNOWN
+	Command being timed: "python3 run_3.py --shortest -t4 /benchmark/exp_instance/SAT_exp_instance020.col /benchmark/exp_instance/SAT_exp_instance020_01.dat"
+	User time (seconds): 1799.52
+	System time (seconds): 0.42
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:30.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 479340
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 134865
+	Voluntary context switches: 2158
+	Involuntary context switches: 4106
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 80
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Wed Sep 13 20:59:27 2023]

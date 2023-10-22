@@ -1,0 +1,12 @@
+#BEGIN: [Thu Sep 14 00:42:28 2023]
+#HOST: s13
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-suisen-cp2
+#INSTANCE1: /benchmark/exp_instance/LGC_exp_instance009.col
+#INSTANCE2: /benchmark/exp_instance/LGC_exp_instance009_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/exp_instance/LGC_exp_instance009.col /benchmark/exp_instance/LGC_exp_instance009_01.dat
+[36m15:42:28 [INFO] Time reorder   : 0 (sec)[0m
+TIMEOUT 1800
+c send SIGTERM to CID 0cded9ea53baab53a8b0e4cd99b407aabe39cb7c5bb17f854173130d1b444bc7
+#END: [Thu Sep 14 01:12:28 2023]

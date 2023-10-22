@@ -1,0 +1,12 @@
+#BEGIN: [Thu Sep 14 00:39:46 2023]
+#HOST: s07
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-suisen-cp2
+#INSTANCE1: /benchmark/exp_instance/LGC_exp_instance009.col
+#INSTANCE2: /benchmark/exp_instance/LGC_exp_instance009_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/exp_instance/LGC_exp_instance009.col /benchmark/exp_instance/LGC_exp_instance009_01.dat
+[36m15:39:46 [INFO] Time reorder   : 0 (sec)[0m
+TIMEOUT 1800
+c send SIGTERM to CID dd4946d22f3c240cbc91d6e4ed03d41a1c7adeb89c124611350f8949ec682a53
+#END: [Thu Sep 14 01:09:46 2023]
