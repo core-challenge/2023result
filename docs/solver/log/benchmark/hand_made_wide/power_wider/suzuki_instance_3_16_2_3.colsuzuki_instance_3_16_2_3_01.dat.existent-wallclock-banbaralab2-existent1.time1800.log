@@ -1,0 +1,14 @@
+#BEGIN: [Wed Sep  6 21:16:58 2023]
+#HOST: s07
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-banbaralab2-existent1
+#INSTANCE1: /benchmark/hand_made_wide/power_wider/suzuki_instance_3_16_2_3.col
+#INSTANCE2: /benchmark/hand_made_wide/power_wider/suzuki_instance_3_16_2_3_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent /benchmark/hand_made_wide/power_wider/suzuki_instance_3_16_2_3.col /benchmark/hand_made_wide/power_wider/suzuki_instance_3_16_2_3_01.dat
+c /benchmark/hand_made_wide/power_wider/suzuki_instance_3_16_2_3.col
+c /benchmark/hand_made_wide/power_wider/suzuki_instance_3_16_2_3_01.dat
+*** Info : (clingo): INTERRUPTED by signal!
+TIMEOUT 1800
+c send SIGTERM to CID 2c9ef18e15c1205570fb590645d11eeabbff0c33e3e77a5a097b69161c02d1f5
+#END: [Wed Sep  6 21:46:58 2023]

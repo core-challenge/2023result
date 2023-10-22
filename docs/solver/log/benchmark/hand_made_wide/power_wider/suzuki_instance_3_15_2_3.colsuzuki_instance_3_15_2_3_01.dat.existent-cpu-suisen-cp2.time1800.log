@@ -1,0 +1,12 @@
+#BEGIN: [Mon Sep 11 05:05:39 2023]
+#HOST: s10
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-suisen-cp2
+#INSTANCE1: /benchmark/hand_made_wide/power_wider/suzuki_instance_3_15_2_3.col
+#INSTANCE2: /benchmark/hand_made_wide/power_wider/suzuki_instance_3_15_2_3_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/hand_made_wide/power_wider/suzuki_instance_3_15_2_3.col /benchmark/hand_made_wide/power_wider/suzuki_instance_3_15_2_3_01.dat
+[36m20:11:59 [INFO] Time reorder   : 380 (sec)[0m
+TIMEOUT 1800
+c send SIGTERM to CID 1d1bda78ea03ca2cd222ca43ebef8a665808c85d5236051ecc06961aa921a0a3
+#END: [Mon Sep 11 05:35:39 2023]
