@@ -1,0 +1,11 @@
+#BEGIN: [Mon Sep 11 08:30:26 2023]
+#HOST: s08
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-sano382
+#INSTANCE1: /benchmark/hand_made_wide/power_wide/suzuki_instance_3_8_2_2.col
+#INSTANCE2: /benchmark/hand_made_wide/power_wide/suzuki_instance_3_8_2_2_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark sano-382 -Xmx54g SimpleSolver /benchmark/hand_made_wide/power_wide/suzuki_instance_3_8_2_2.col /benchmark/hand_made_wide/power_wide/suzuki_instance_3_8_2_2_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID 387c75143ebdf605406b47819e1f2e7cb9bc7a0c1c62ca9dae1f20f9c5e75cd5
+#END: [Mon Sep 11 09:00:26 2023]
