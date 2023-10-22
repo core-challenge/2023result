@@ -1,0 +1,16 @@
+#BEGIN: [Wed Aug 30 03:18:09 2023]
+#HOST: s01
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-banbaralab2-existent3
+#INSTANCE1: /benchmark/2022benchmark/benchmark/sp/sp009.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/sp/sp009_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na -t4 /benchmark/2022benchmark/benchmark/sp/sp009.col /benchmark/2022benchmark/benchmark/sp/sp009_01.dat
+c /benchmark/2022benchmark/benchmark/sp/sp009.col
+c /benchmark/2022benchmark/benchmark/sp/sp009_01.dat
+*** Info : (clingo): Sending shutdown signal...
+*** ERROR: (clingo): solving stopped by signal
+*** Info : (clingo): Shutdown completed in 0.000 seconds
+TIMEOUT 1800
+c send SIGTERM to CID 374c92ea5d71519a6c2dc0b2d4879b5c96ac6e3e38d43a1af56fc66b80697a53
+#END: [Wed Aug 30 03:48:09 2023]

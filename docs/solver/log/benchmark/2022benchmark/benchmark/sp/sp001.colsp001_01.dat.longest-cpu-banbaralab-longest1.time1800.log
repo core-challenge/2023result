@@ -1,0 +1,29 @@
+#BEGIN: [Thu Aug 31 23:31:04 2023]
+#HOST: s12
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-cpu-banbaralab-longest1
+#INSTANCE1: /benchmark/2022benchmark/benchmark/sp/sp001.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/sp/sp001_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest /benchmark/2022benchmark/benchmark/sp/sp001.col /benchmark/2022benchmark/benchmark/sp/sp001_01.dat
+c /benchmark/2022benchmark/benchmark/sp/sp001.col
+c /benchmark/2022benchmark/benchmark/sp/sp001_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID 34f28bc5cc1f3bfc8dfa036c9ea0c82b9ddaa5125357ed3c7cf1abd336a81b9b
+s 1 8
+t 7 13
+a YES
+a 1 8
+a 2 8
+a 2 9
+a 3 9
+a 3 10
+a 4 10
+a 4 11
+a 5 11
+a 5 12
+a 6 12
+a 6 13
+a 7 13
+c Step: 11
+#END: [Fri Sep  1 00:01:05 2023]

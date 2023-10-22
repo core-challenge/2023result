@@ -1,0 +1,18 @@
+#BEGIN: [Mon Aug 28 20:57:19 2023]
+#HOST: s12
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-banbaralab2-existent2
+#INSTANCE1: /benchmark/2022benchmark/benchmark/sp/sp024.col
+#INSTANCE2: /benchmark/2022benchmark/benchmark/sp/sp024_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na /benchmark/2022benchmark/benchmark/sp/sp024.col /benchmark/2022benchmark/benchmark/sp/sp024_01.dat
+c /benchmark/2022benchmark/benchmark/sp/sp024.col
+c /benchmark/2022benchmark/benchmark/sp/sp024_01.dat
+*** Info : (clingo): INTERRUPTED by signal!
+TIMEOUT CPU 1800 MEM 0 MAXMEM 0
+#RESULT: UNK
+#FIN: TO
+#CPU: 1800
+#MAXMEM: 0
+c send SIGTERM to CID 28b27b96552d15c28b5b1c72c47eb2b5a47f2ae521a311c5748ee644da6c5b4f
+#END: [Mon Aug 28 21:27:19 2023]
