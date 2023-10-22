@@ -1,0 +1,56 @@
+#BEGIN: [Tue Sep 26 02:15:09 2023]
+#HOST: s14
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-banbaralab2-existent2
+#INSTANCE1: /benchmark/random_instance/random_instance005_graph002.col
+#INSTANCE2: /benchmark/random_instance/random_instance005_graph002_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na /benchmark/random_instance/random_instance005_graph002.col /benchmark/random_instance/random_instance005_graph002_01.dat
+c /benchmark/random_instance/random_instance005_graph002.col
+c /benchmark/random_instance/random_instance005_graph002_01.dat
+*** Info : (clingo): INTERRUPTED by signal!
+s 23 16 44 55 18 57 28 31 34 13 52 40 24 3 49 61 19 63 42
+t 30 14 43 36 11 4 20 9 6 34 59 44 18 24 49 26 19 32 23
+a YES
+a 3 13 16 18 19 23 24 28 31 34 40 42 44 49 52 55 57 61 63
+a 3 10 13 16 18 23 24 28 31 34 40 42 44 49 52 55 57 61 63
+a 1 3 10 13 16 18 24 28 31 34 40 42 44 49 52 55 57 61 63
+a 1 3 10 13 16 18 24 28 34 40 42 44 49 52 55 57 59 61 63
+a 1 3 13 16 18 19 24 28 34 40 42 44 49 52 55 57 59 61 63
+a 1 3 11 13 18 19 24 28 34 40 42 44 49 52 55 57 59 61 63
+a 1 3 11 13 18 19 24 26 28 34 42 44 49 52 55 57 59 61 63
+a 1 11 13 18 19 24 26 28 32 34 42 44 49 52 55 57 59 61 63
+a 11 13 18 19 23 24 26 28 32 34 42 44 49 52 55 57 59 61 63
+a 11 13 18 19 20 23 24 26 28 32 34 42 44 49 52 57 59 61 63
+a 11 13 18 19 20 23 24 26 28 32 34 36 42 44 49 52 57 59 63
+a 11 13 14 18 19 20 23 24 26 32 34 36 42 44 49 52 57 59 63
+a 11 13 14 18 19 20 23 24 26 32 34 36 42 43 44 49 52 57 59
+a 6 11 13 14 18 19 20 23 24 26 32 34 36 42 43 44 49 57 59
+a 6 11 13 14 18 19 20 23 24 26 30 32 34 36 43 44 49 57 59
+a 4 6 11 14 18 19 20 23 24 26 30 32 34 36 43 44 49 57 59
+a 4 6 9 11 14 18 19 20 23 24 26 30 32 34 36 43 44 49 59
+c Step: 16
+	Command being timed: "python3 run_3.py --existent --na /benchmark/random_instance/random_instance005_graph002.col /benchmark/random_instance/random_instance005_graph002_01.dat"
+	User time (seconds): 60.50
+	System time (seconds): 0.07
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:00.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 113940
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3
+	Minor (reclaiming a frame) page faults: 54599
+	Voluntary context switches: 28
+	Involuntary context switches: 341
+	Swaps: 0
+	File system inputs: 512
+	File system outputs: 96
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Tue Sep 26 02:16:10 2023]

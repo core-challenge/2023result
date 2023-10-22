@@ -1,0 +1,50 @@
+#BEGIN: [Mon Sep 25 12:30:00 2023]
+#HOST: s16
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-ai-planning2-existent1
+#INSTANCE1: /benchmark/random_instance/random_instance005_graph002.col
+#INSTANCE2: /benchmark/random_instance/random_instance005_graph002_01.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning2 --config=existent-single --memory-limit=54 --time-limit=1800 /benchmark/random_instance/random_instance005_graph002.col /benchmark/random_instance/random_instance005_graph002_01.dat
+s 23 16 44 55 18 57 28 31 34 13 52 40 24 3 49 61 19 63 42
+t 30 14 43 36 11 4 20 9 6 34 59 44 18 24 49 26 19 32 23
+a YES
+a 3 13 16 18 19 23 24 28 31 34 40 42 44 49 52 55 57 61 63
+a 3 11 13 18 19 23 24 28 31 34 40 42 44 49 52 55 57 61 63
+a 11 13 18 19 20 23 24 28 31 34 40 42 44 49 52 55 57 61 63
+a 11 13 14 18 19 20 23 24 31 34 40 42 44 49 52 55 57 61 63
+a 11 13 14 18 19 20 23 24 34 40 42 44 49 52 55 57 59 61 63
+a 11 13 14 18 19 20 23 24 26 34 42 44 49 52 55 57 59 61 63
+a 11 14 18 19 20 23 24 26 32 34 42 44 49 52 55 57 59 61 63
+a 4 11 14 18 19 20 23 24 26 32 34 44 49 52 55 57 59 61 63
+a 4 11 14 18 19 20 23 24 26 30 32 34 44 49 55 57 59 61 63
+a 4 9 11 14 18 19 20 23 24 26 30 32 34 44 49 55 59 61 63
+a 3 4 9 11 14 18 19 20 23 24 26 30 32 34 44 49 59 61 63
+a 3 4 9 11 14 18 19 20 21 23 24 26 30 32 34 44 49 59 63
+a 3 4 9 11 14 18 19 20 21 23 24 26 30 32 34 43 44 49 59
+a 4 6 9 11 14 18 19 20 21 23 24 26 30 32 34 43 44 49 59
+a 4 6 9 11 14 18 19 20 23 24 26 30 32 34 36 43 44 49 59
+	Command being timed: "/solvers/driver/run.py --config=existent-single --memory-limit=54 --time-limit=1800 /benchmark/random_instance/random_instance005_graph002.col /benchmark/random_instance/random_instance005_graph002_01.dat"
+	User time (seconds): 0.10
+	System time (seconds): 0.02
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 20104
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 11770
+	Voluntary context switches: 23
+	Involuntary context switches: 4
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 248
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Mon Sep 25 12:30:00 2023]

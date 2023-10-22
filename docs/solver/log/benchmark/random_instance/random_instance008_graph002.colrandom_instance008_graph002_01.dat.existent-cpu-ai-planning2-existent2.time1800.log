@@ -1,0 +1,60 @@
+#BEGIN: [Thu Sep  7 20:32:38 2023]
+#HOST: s08
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-ai-planning2-existent2
+#INSTANCE1: /benchmark/random_instance/random_instance008_graph002.col
+#INSTANCE2: /benchmark/random_instance/random_instance008_graph002_01.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning2 --config=existent-portfolio --memory-limit=54 --time-limit=1800 /benchmark/random_instance/random_instance008_graph002.col /benchmark/random_instance/random_instance008_graph002_01.dat
+s 87 100 17 44 81 30 7 60 48 12 80 32 15 99 103 94 49 67 38 36 47 2 21 50 61 25 24 9 13 83 70 1 23
+t 35 43 101 89 66 88 97 62 77 79 92 11 45 38 87 17 103 71 93 33 2 98 94 20 90 91 41 76 53 7 49 68 61
+a YES
+a 1 2 7 9 12 13 15 17 21 23 24 25 30 32 36 38 44 47 48 49 50 60 61 67 70 80 81 83 87 94 99 100 103
+a 1 2 7 12 13 15 17 21 23 24 25 30 32 36 38 44 47 48 49 50 60 61 67 70 79 80 81 83 87 94 99 100 103
+a 1 2 7 12 15 17 21 23 24 25 30 32 36 38 44 47 48 49 50 60 61 67 70 79 80 81 83 87 93 94 99 100 103
+a 1 2 7 12 15 17 20 21 24 25 30 32 36 38 44 47 48 49 50 60 61 67 70 79 80 81 83 87 93 94 99 100 103
+a 1 2 7 12 17 20 21 24 25 30 32 36 38 44 47 48 49 50 60 61 62 67 70 79 80 81 83 87 93 94 99 100 103
+a 1 2 7 12 17 20 21 25 30 32 36 38 44 47 48 49 50 60 61 62 67 70 79 80 81 83 87 92 93 94 99 100 103
+a 1 2 7 12 17 20 21 25 30 32 36 38 41 44 47 48 49 60 61 62 67 70 79 80 81 83 87 92 93 94 99 100 103
+a 1 2 7 12 17 20 21 25 30 36 38 41 44 47 48 49 60 61 62 67 70 79 80 81 83 87 90 92 93 94 99 100 103
+a 1 2 7 12 17 20 21 25 30 36 38 41 47 48 49 60 61 62 67 70 77 79 80 81 83 87 90 92 93 94 99 100 103
+a 1 2 7 17 20 21 25 30 36 38 41 43 47 48 49 60 61 62 67 70 77 79 80 81 83 87 90 92 93 94 99 100 103
+a 1 2 7 17 20 21 30 36 38 41 43 47 48 49 60 61 62 67 70 71 77 79 80 81 83 87 90 92 93 94 99 100 103
+a 1 2 7 17 20 21 30 35 38 41 43 47 48 49 60 61 62 67 70 71 77 79 80 81 83 87 90 92 93 94 99 100 103
+a 1 2 7 17 20 21 30 35 38 41 43 48 49 60 61 62 67 70 71 77 79 80 81 83 87 90 92 93 94 99 100 101 103
+a 2 7 17 20 21 30 35 38 41 43 48 49 60 61 62 67 70 71 76 77 79 80 81 83 87 90 92 93 94 99 100 101 103
+a 2 7 17 20 21 30 35 38 41 43 48 49 61 62 67 70 71 76 77 79 80 81 83 87 90 91 92 93 94 99 100 101 103
+a 2 7 17 20 21 30 35 38 41 43 49 61 62 67 68 70 71 76 77 79 80 81 83 87 90 91 92 93 94 99 100 101 103
+a 2 7 17 20 21 30 35 38 41 43 49 61 62 67 68 70 71 76 77 79 81 83 87 90 91 92 93 94 98 99 100 101 103
+a 2 7 17 20 30 35 38 41 43 49 53 61 62 67 68 70 71 76 77 79 81 83 87 90 91 92 93 94 98 99 100 101 103
+a 2 7 17 20 30 35 38 41 43 49 53 61 62 68 70 71 76 77 79 81 83 87 90 91 92 93 94 97 98 99 100 101 103
+a 2 7 17 20 30 35 38 41 43 45 49 53 61 62 68 71 76 77 79 81 83 87 90 91 92 93 94 97 98 99 100 101 103
+a 2 7 11 17 20 35 38 41 43 45 49 53 61 62 68 71 76 77 79 81 83 87 90 91 92 93 94 97 98 99 100 101 103
+a 2 7 11 17 20 35 38 41 43 45 49 53 61 62 68 71 76 77 79 83 87 89 90 91 92 93 94 97 98 99 100 101 103
+a 2 7 11 17 20 35 38 41 43 45 49 53 61 62 68 71 76 77 79 87 88 89 90 91 92 93 94 97 98 99 100 101 103
+a 2 7 11 17 20 33 35 38 41 43 45 49 53 61 62 68 71 76 77 79 87 88 89 90 91 92 93 94 97 98 100 101 103
+a 2 7 11 17 20 33 35 38 41 43 45 49 53 61 62 66 68 71 76 77 79 87 88 89 90 91 92 93 94 97 98 101 103
+	Command being timed: "/solvers/driver/run.py --config=existent-portfolio --memory-limit=54 --time-limit=1800 /benchmark/random_instance/random_instance008_graph002.col /benchmark/random_instance/random_instance008_graph002_01.dat"
+	User time (seconds): 1.52
+	System time (seconds): 0.03
+	Percent of CPU this job got: 343%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.45
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 48304
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 28771
+	Voluntary context switches: 2496
+	Involuntary context switches: 119
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 472
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Thu Sep  7 20:32:39 2023]

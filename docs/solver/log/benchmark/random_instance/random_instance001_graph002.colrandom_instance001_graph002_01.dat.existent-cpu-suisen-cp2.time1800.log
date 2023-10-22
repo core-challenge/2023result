@@ -1,0 +1,40 @@
+#BEGIN: [Tue Sep  5 23:00:50 2023]
+#HOST: s07
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-suisen-cp2
+#INSTANCE1: /benchmark/random_instance/random_instance001_graph002.col
+#INSTANCE2: /benchmark/random_instance/random_instance001_graph002_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/random_instance/random_instance001_graph002.col /benchmark/random_instance/random_instance001_graph002_01.dat
+[36m14:00:51 [INFO] Time reorder   : 0 (sec)[0m
+[36m14:00:51 [INFO] Time reconf    : 0 (sec)[0m
+s 5 8 12
+t 2 5 11
+a YES
+a 5 8 12
+a 5 8 11
+a 2 5 11
+	Command being timed: "bash /solver-dir/run.sh /benchmark/random_instance/random_instance001_graph002.col /benchmark/random_instance/random_instance001_graph002_01.dat"
+	User time (seconds): 0.12
+	System time (seconds): 0.01
+	Percent of CPU this job got: 75%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.17
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 32576
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 73
+	Minor (reclaiming a frame) page faults: 15051
+	Voluntary context switches: 479
+	Involuntary context switches: 5
+	Swaps: 0
+	File system inputs: 25624
+	File system outputs: 56
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Tue Sep  5 23:00:51 2023]

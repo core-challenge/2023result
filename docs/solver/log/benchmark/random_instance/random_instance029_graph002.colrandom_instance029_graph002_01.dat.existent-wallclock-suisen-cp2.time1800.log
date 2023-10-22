@@ -1,0 +1,37 @@
+#BEGIN: [Tue Sep 26 13:35:05 2023]
+#HOST: s10
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-suisen-cp2
+#INSTANCE1: /benchmark/random_instance/random_instance029_graph002.col
+#INSTANCE2: /benchmark/random_instance/random_instance029_graph002_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/random_instance/random_instance029_graph002.col /benchmark/random_instance/random_instance029_graph002_01.dat
+[36m04:35:10 [INFO] Time reorder   : 4 (sec)[0m
+[36m04:46:33 [INFO] Time reconf    : 683 (sec)[0m
+s 4 9 11 14 23 30 31 38 40 41 43 45 46 52 57 58 59 63 72 75 78 79 81 86 91 92 94 95 98 102 106 112 113 117 120 121 123 125 126 127 130 133 134 140 143 144 145 147 148 150 152 156 162 163 165 168 175 177 179 182 185 193 195 196 198 202 203 205 214 215 218 219 221 223 224 225 226 231 238 239 241 243 244 245 251 253 256 257 263 266 272 277 278 279 281 284 289 293 299 301 306 308 314 317 320 327 329 330 331 334 335 337 338 341 343 346 349 355 357 358 365 369 374 375 377
+t 5 10 11 13 15 21 25 26 28 30 31 32 37 38 40 43 45 46 53 56 58 60 63 64 66 74 75 77 78 79 80 81 83 85 86 87 89 95 96 102 104 109 112 113 120 121 126 133 135 137 140 141 147 155 156 157 161 163 166 170 174 178 179 183 185 189 190 195 200 201 202 206 214 215 218 219 220 221 225 226 227 228 230 231 233 236 239 240 243 244 251 254 256 257 261 263 264 265 270 272 274 279 285 290 296 299 303 306 308 309 313 317 331 335 337 341 344 355 359 362 366 371 372 374 375
+
+	Command being timed: "bash /solver-dir/run.sh /benchmark/random_instance/random_instance029_graph002.col /benchmark/random_instance/random_instance029_graph002_01.dat"
+	User time (seconds): 663.31
+	System time (seconds): 24.12
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 11:27.59
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 61834540
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1811
+	Minor (reclaiming a frame) page faults: 28740736
+	Voluntary context switches: 1974
+	Involuntary context switches: 3931
+	Swaps: 0
+	File system inputs: 36424
+	File system outputs: 72
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Tue Sep 26 13:46:33 2023]

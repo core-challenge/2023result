@@ -1,0 +1,13 @@
+#BEGIN: [Mon Sep  4 12:41:59 2023]
+#HOST: s11
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-cpu-banbaralab2-shortest1
+#INSTANCE1: /benchmark/random_instance/random_instance037_graph001.col
+#INSTANCE2: /benchmark/random_instance/random_instance037_graph001_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest /benchmark/random_instance/random_instance037_graph001.col /benchmark/random_instance/random_instance037_graph001_01.dat
+c /benchmark/random_instance/random_instance037_graph001.col
+c /benchmark/random_instance/random_instance037_graph001_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID 6993d0f36edaabdb88a3cd664d34ddf054f9e3e71f6f7bcea0c0118e7267b21c
+#END: [Mon Sep  4 13:11:59 2023]

@@ -1,0 +1,58 @@
+#BEGIN: [Mon Sep  4 11:43:05 2023]
+#HOST: s04
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-banbaralab2-existent3
+#INSTANCE1: /benchmark/random_instance/random_instance007_graph003.col
+#INSTANCE2: /benchmark/random_instance/random_instance007_graph003_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --existent --na -t4 /benchmark/random_instance/random_instance007_graph003.col /benchmark/random_instance/random_instance007_graph003_01.dat
+c /benchmark/random_instance/random_instance007_graph003.col
+c /benchmark/random_instance/random_instance007_graph003_01.dat
+*** Info : (clingo): Sending shutdown signal...
+*** ERROR: (clingo): solving stopped by signal
+*** Info : (clingo): Shutdown completed in 0.000 seconds
+s 79 50 76 31 56 85 15 82 11 87 45 13 34 81 29 36 72 58 47 6 46 9 12 33 86 88 77 18 91 20 17 43
+t 67 15 45 19 22 66 56 79 91 27 49 43 4 90 18 40 82 6 36 42 20 3 88 46 32 28 85 81 70 33 65 76
+a YES
+a 6 9 11 12 13 15 17 18 20 29 31 33 34 36 43 45 46 47 50 56 58 72 76 77 79 81 82 85 86 87 88 91
+a 6 9 11 12 13 15 17 18 20 22 29 31 33 34 36 43 45 46 47 50 56 58 72 76 77 79 81 82 85 86 88 91
+a 4 6 11 12 13 15 17 18 20 22 29 31 33 34 36 43 45 46 47 50 56 58 72 76 77 79 81 82 85 86 88 91
+a 4 6 11 12 15 17 18 20 22 29 31 33 34 36 43 45 46 47 50 56 58 65 72 76 77 79 81 82 85 86 88 91
+a 4 11 12 15 17 18 20 22 28 29 31 33 34 36 43 45 46 47 50 56 58 65 72 76 77 79 81 82 85 86 88 91
+a 4 11 12 15 17 18 20 22 27 28 29 31 33 36 43 45 46 47 50 56 58 65 72 76 77 79 81 82 85 86 88 91
+a 4 6 11 12 15 17 18 20 22 27 28 29 31 33 36 43 45 46 47 50 56 58 65 72 76 77 79 81 82 85 88 91
+a 4 6 11 12 15 17 18 20 22 27 28 29 31 33 36 40 43 45 46 47 56 58 65 72 76 77 79 81 82 85 88 91
+a 4 6 11 12 15 18 20 22 27 28 29 31 33 36 40 43 45 46 47 56 58 65 66 72 76 77 79 81 82 85 88 91
+a 4 6 11 12 15 18 20 22 27 28 31 33 36 40 42 43 45 46 47 56 58 65 66 72 76 77 79 81 82 85 88 91
+a 4 6 11 12 15 18 19 20 22 27 28 33 36 40 42 43 45 46 47 56 58 65 66 72 76 77 79 81 82 85 88 91
+a 4 6 12 15 18 19 20 22 27 28 33 36 40 42 43 45 46 47 49 56 58 65 66 72 76 77 79 81 82 85 88 91
+a 4 6 12 15 18 19 20 22 27 28 33 36 40 42 43 45 46 47 49 56 58 65 66 72 76 79 81 82 85 88 90 91
+a 4 6 15 18 19 20 22 27 28 32 33 36 40 42 43 45 46 47 49 56 58 65 66 72 76 79 81 82 85 88 90 91
+a 3 4 6 15 18 19 20 22 27 28 32 33 36 40 42 43 45 46 47 49 56 65 66 72 76 79 81 82 85 88 90 91
+a 3 4 6 15 18 19 20 22 27 28 32 33 36 40 42 43 45 46 49 56 65 66 70 72 76 79 81 82 85 88 90 91
+a 3 4 6 15 18 19 20 22 27 28 32 33 36 40 42 43 45 46 49 56 65 66 67 70 76 79 81 82 85 88 90 91
+c Step: 16
+	Command being timed: "python3 run_3.py --existent --na -t4 /benchmark/random_instance/random_instance007_graph003.col /benchmark/random_instance/random_instance007_graph003_01.dat"
+	User time (seconds): 171.77
+	System time (seconds): 13.41
+	Percent of CPU this job got: 271%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:08.17
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 845656
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 236873
+	Voluntary context switches: 5283480
+	Involuntary context switches: 287
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 136
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Mon Sep  4 11:44:14 2023]

@@ -1,0 +1,39 @@
+#BEGIN: [Thu Sep  7 20:32:02 2023]
+#HOST: s15
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-ai-planning2-existent2
+#INSTANCE1: /benchmark/random_instance/random_instance002_graph005.col
+#INSTANCE2: /benchmark/random_instance/random_instance002_graph005_01.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning2 --config=existent-portfolio --memory-limit=54 --time-limit=1800 /benchmark/random_instance/random_instance002_graph005.col /benchmark/random_instance/random_instance002_graph005_01.dat
+s 16 10 7 20 15 21 12
+t 21 16 11 19 7 12 24
+a YES
+a 7 10 12 15 16 20 21
+a 7 10 12 15 16 21 24
+a 7 10 12 16 19 21 24
+a 7 11 12 16 19 21 24
+	Command being timed: "/solvers/driver/run.py --config=existent-portfolio --memory-limit=54 --time-limit=1800 /benchmark/random_instance/random_instance002_graph005.col /benchmark/random_instance/random_instance002_graph005_01.dat"
+	User time (seconds): 0.45
+	System time (seconds): 0.19
+	Percent of CPU this job got: 159%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.40
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 498992
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 152621
+	Voluntary context switches: 3665
+	Involuntary context switches: 16
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 432
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Thu Sep  7 20:32:02 2023]

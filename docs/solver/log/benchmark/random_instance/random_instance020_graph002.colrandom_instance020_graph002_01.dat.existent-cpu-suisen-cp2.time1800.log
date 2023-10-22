@@ -1,0 +1,37 @@
+#BEGIN: [Tue Sep 26 12:55:46 2023]
+#HOST: s09
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-cpu-suisen-cp2
+#INSTANCE1: /benchmark/random_instance/random_instance020_graph002.col
+#INSTANCE2: /benchmark/random_instance/random_instance020_graph002_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/random_instance/random_instance020_graph002.col /benchmark/random_instance/random_instance020_graph002_01.dat
+[36m03:55:49 [INFO] Time reorder   : 1 (sec)[0m
+[36m04:06:03 [INFO] Time reconf    : 614 (sec)[0m
+s 7 9 10 13 14 16 23 25 27 29 32 33 34 37 38 39 40 41 42 45 46 48 57 64 66 69 71 74 75 76 85 89 98 99 101 108 115 118 121 123 127 128 131 132 137 140 141 144 146 148 149 150 151 155 160 161 166 167 171 176 179 188 190 196 202 203 204 212 215 216 219 223 224 225 234 235 237 244 247 251 254 256 257 258
+t 1 5 11 12 13 24 26 27 32 35 46 49 50 51 54 55 59 62 64 66 70 74 75 77 78 82 83 86 87 88 89 93 94 97 99 102 103 104 109 114 118 121 123 124 131 135 137 140 143 146 149 151 156 160 162 163 169 170 174 176 186 187 192 194 197 198 202 204 205 206 213 216 217 219 224 225 236 239 249 251 253 257 259 260
+
+	Command being timed: "bash /solver-dir/run.sh /benchmark/random_instance/random_instance020_graph002.col /benchmark/random_instance/random_instance020_graph002_01.dat"
+	User time (seconds): 592.48
+	System time (seconds): 24.15
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 10:16.86
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 64447496
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1748
+	Minor (reclaiming a frame) page faults: 29725667
+	Voluntary context switches: 2338
+	Involuntary context switches: 5600
+	Swaps: 0
+	File system inputs: 74296
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Tue Sep 26 13:06:04 2023]

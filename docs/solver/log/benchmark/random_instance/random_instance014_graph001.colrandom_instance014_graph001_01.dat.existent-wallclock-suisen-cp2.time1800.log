@@ -1,0 +1,37 @@
+#BEGIN: [Wed Sep  6 00:55:03 2023]
+#HOST: s07
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: existent-wallclock-suisen-cp2
+#INSTANCE1: /benchmark/random_instance/random_instance014_graph001.col
+#INSTANCE2: /benchmark/random_instance/random_instance014_graph001_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark suisen-cp2 /benchmark/random_instance/random_instance014_graph001.col /benchmark/random_instance/random_instance014_graph001_01.dat
+[36m15:55:05 [INFO] Time reorder   : 0 (sec)[0m
+[36m16:06:28 [INFO] Time reconf    : 683 (sec)[0m
+s 1 5 7 8 17 18 19 27 29 33 36 38 42 44 49 50 52 55 56 59 62 64 65 69 71 74 79 80 88 90 92 93 94 95 101 103 105 106 112 115 116 121 127 128 131 134 137 144 146 147 152 155 156 158 159 165 167 170 172 173 182
+t 9 14 23 31 33 38 42 44 45 47 49 50 51 53 54 55 56 59 60 61 63 64 71 72 77 79 80 84 90 92 93 94 96 101 105 108 116 117 120 129 131 132 135 137 139 142 154 155 161 162 166 167 170 171 172 175 176 177 179 180 181
+
+	Command being timed: "bash /solver-dir/run.sh /benchmark/random_instance/random_instance014_graph001.col /benchmark/random_instance/random_instance014_graph001_01.dat"
+	User time (seconds): 659.84
+	System time (seconds): 24.49
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 11:24.53
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 64497624
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1670
+	Minor (reclaiming a frame) page faults: 30119289
+	Voluntary context switches: 1805
+	Involuntary context switches: 7025
+	Swaps: 0
+	File system inputs: 31696
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Wed Sep  6 01:06:29 2023]

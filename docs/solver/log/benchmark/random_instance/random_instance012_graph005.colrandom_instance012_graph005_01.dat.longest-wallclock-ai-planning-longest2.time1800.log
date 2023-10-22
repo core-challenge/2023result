@@ -1,0 +1,10 @@
+#BEGIN: [Mon Sep 25 23:32:01 2023]
+#HOST: s06
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-wallclock-ai-planning-longest2
+#INSTANCE1: /benchmark/random_instance/random_instance012_graph005.col
+#INSTANCE2: /benchmark/random_instance/random_instance012_graph005_01.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning --config=longest-portfolio --memory-limit=54 --time-limit=1800 /benchmark/random_instance/random_instance012_graph005.col /benchmark/random_instance/random_instance012_graph005_01.dat
+c UNKNOWN
+#END: [Tue Sep 26 00:01:01 2023]

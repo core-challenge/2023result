@@ -1,0 +1,53 @@
+#BEGIN: [Sat Sep  9 11:46:06 2023]
+#HOST: s07
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-wallclock-ai-planning2-shortest2
+#INSTANCE1: /benchmark/random_instance/random_instance006_graph003.col
+#INSTANCE2: /benchmark/random_instance/random_instance006_graph003_01.dat
+#COMMAND: docker run --cap-add=CAP_SYS_RESOURCE --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark ai-planning2 --config=shortest-portfolio --memory-limit=54 --time-limit=1800 /benchmark/random_instance/random_instance006_graph003.col /benchmark/random_instance/random_instance006_graph003_01.dat
+s 31 77 67 3 28 13 30 33 72 37 53 27 66 64 4 32 15 54 63 48 10 21 52 40 17 61
+t 19 2 54 24 5 17 46 31 57 9 47 28 77 59 65 41 36 56 48 21 52 7 50 68 26 40
+a YES
+a 3 4 10 13 15 17 21 27 28 30 31 32 33 37 40 48 52 53 54 61 63 64 66 67 72 77
+a 3 4 10 13 15 17 21 27 28 30 31 32 33 37 40 48 52 54 61 63 64 66 67 68 72 77
+a 4 10 13 15 17 21 27 28 30 31 32 33 37 40 48 52 54 59 61 63 64 66 67 68 72 77
+a 4 10 13 15 17 21 26 27 28 30 31 32 33 37 40 48 52 54 59 61 63 66 67 68 72 77
+a 10 13 15 17 21 26 27 28 30 31 32 33 37 40 48 52 54 57 59 61 63 66 67 68 72 77
+a 9 10 13 15 17 21 26 27 28 30 31 32 33 37 40 48 52 54 57 59 61 63 66 67 68 77
+a 7 9 10 13 15 17 21 26 27 28 30 31 32 33 37 40 48 52 54 57 59 61 63 67 68 77
+a 2 7 9 10 13 15 17 21 26 27 28 30 31 32 33 37 40 48 52 54 57 59 61 67 68 77
+a 2 7 9 10 13 17 21 26 27 28 30 31 32 33 37 40 48 52 54 57 59 61 65 67 68 77
+a 2 7 9 10 13 17 21 26 27 28 30 31 32 33 37 40 48 52 54 56 57 59 65 67 68 77
+a 2 7 9 10 13 17 21 26 28 30 31 32 33 37 40 48 50 52 54 56 57 59 65 67 68 77
+a 2 5 7 9 10 13 17 21 26 28 30 31 32 33 37 40 48 50 52 54 56 57 59 65 68 77
+a 2 5 7 9 10 13 17 21 26 28 30 31 32 37 40 47 48 50 52 54 56 57 59 65 68 77
+a 2 5 7 9 10 13 17 21 26 28 31 32 37 40 46 47 48 50 52 54 56 57 59 65 68 77
+a 2 5 7 9 10 17 21 26 28 31 32 36 37 40 46 47 48 50 52 54 56 57 59 65 68 77
+a 2 5 7 9 10 17 21 26 28 31 36 37 40 41 46 47 48 50 52 54 56 57 59 65 68 77
+a 2 5 7 9 17 21 24 26 28 31 36 37 40 41 46 47 48 50 52 54 56 57 59 65 68 77
+a 2 5 7 9 17 19 21 24 26 28 31 36 40 41 46 47 48 50 52 54 56 57 59 65 68 77
+	Command being timed: "/solvers/driver/run.py --config=shortest-portfolio --memory-limit=54 --time-limit=1800 /benchmark/random_instance/random_instance006_graph003.col /benchmark/random_instance/random_instance006_graph003_01.dat"
+	User time (seconds): 177.08
+	System time (seconds): 0.66
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:57.87
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1673344
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 477529
+	Voluntary context switches: 7020
+	Involuntary context switches: 923
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 464
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+#END: [Sat Sep  9 11:49:04 2023]
