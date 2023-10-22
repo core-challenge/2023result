@@ -1,7 +1,7 @@
 # Result
 
 1. Graph Track
-2. Solver Track
+2. Solver Track [Detail](/solver/)
     1.  [overall existent (cpu)](#org4a65e86)
     2.  [overall existent (wallclock)](#org9b49c0d)
     3.  [overall longest (cpu)](#orgb75725a)
