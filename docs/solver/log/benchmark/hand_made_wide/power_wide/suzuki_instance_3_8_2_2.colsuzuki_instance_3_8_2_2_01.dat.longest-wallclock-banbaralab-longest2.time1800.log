@@ -1,0 +1,17 @@
+#BEGIN: [Mon Sep 11 03:03:58 2023]
+#HOST: s07
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: longest-wallclock-banbaralab-longest2
+#INSTANCE1: /benchmark/hand_made_wide/power_wide/suzuki_instance_3_8_2_2.col
+#INSTANCE2: /benchmark/hand_made_wide/power_wide/suzuki_instance_3_8_2_2_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab --longest -t4 /benchmark/hand_made_wide/power_wide/suzuki_instance_3_8_2_2.col /benchmark/hand_made_wide/power_wide/suzuki_instance_3_8_2_2_01.dat
+c /benchmark/hand_made_wide/power_wide/suzuki_instance_3_8_2_2.col
+c /benchmark/hand_made_wide/power_wide/suzuki_instance_3_8_2_2_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID a3805443167fc2d0192b8de2da10256d33368fd39610e452a22f400d75ad93e4
+s 4 8 12 18 22 28 32 38 42 48 52 58 62 68 72 78 82 88 92 98 102 108 112 118 122 128 132 138 142 148 152 158 162 168 172 178 182 188 192 198 202 208 212 218 222 228 232 238 242 248
+t 4 8 12 18 22 28 32 38 42 48 52 58 62 68 72 78 82 88 92 98 102 108 112 118 122 128 132 138 142 148 152 158 162 168 172 178 182 188 192 198 202 208 212 218 224 226 234 236 244 246
+c UNKNOWN
+c REACHABILITY UNKNOWN
+#END: [Mon Sep 11 03:33:58 2023]

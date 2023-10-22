@@ -1,0 +1,13 @@
+#BEGIN: [Thu Sep  7 03:16:59 2023]
+#HOST: s08
+#TIMELIMIT: 1800
+#MEMLIMIT: 0
+#SOLVER: shortest-cpu-banbaralab2-shortest1
+#INSTANCE1: /benchmark/hand_made_wide/power_wide/suzuki_instance_3_19_2_2.col
+#INSTANCE2: /benchmark/hand_made_wide/power_wide/suzuki_instance_3_19_2_2_01.dat
+#COMMAND: docker run --cidfile /tmp/cid.txt --init --rm -t --ulimit cpu=1800 -v /home/share/benchmark/ISR-benchmark:/benchmark banbaralab2 --shortest /benchmark/hand_made_wide/power_wide/suzuki_instance_3_19_2_2.col /benchmark/hand_made_wide/power_wide/suzuki_instance_3_19_2_2_01.dat
+c /benchmark/hand_made_wide/power_wide/suzuki_instance_3_19_2_2.col
+c /benchmark/hand_made_wide/power_wide/suzuki_instance_3_19_2_2_01.dat
+TIMEOUT 1800
+c send SIGTERM to CID cb381cdfcab13ec8e6167f9bc0ea49413813b46be2a10ca6036f4d7a2f5a02a9
+#END: [Thu Sep  7 03:47:00 2023]
