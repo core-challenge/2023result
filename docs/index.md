@@ -32,6 +32,8 @@
 |         31 |  211 [col](/2023result/graph/PARIS/graph-le31/graph31.col), [datl](/2023result/graph/PARIS/graph-le31/graph31.dat), [out](/2023result/graph/PARIS/graph-le31/graph31.out) |   231 [col](/2023result/graph/piyopiyo/graph-le31/graph_31.col), [datl](/2023result/graph/piyopiyo/graph-le31/graph_31.dat), [out](/2023result/graph/piyopiyo/graph-le31/graph_31.out) |                                                                                                                                                                                        NA |
 |         59 | 9895 [col](/2023result/graph/PARIS/graph-le59/graph59.col), [datl](/2023result/graph/PARIS/graph-le59/graph59.dat), [out](/2023result/graph/PARIS/graph-le59/graph59.out) | 11499 [col](/2023result/graph/piyopiyo/graph-le59/graph_59.col), [datl](/2023result/graph/piyopiyo/graph-le59/graph_59.dat), [out](/2023result/graph/piyopiyo/graph-le59/graph_59.out) |                                                                                                                                                                                        NA |
 
+- For the graph sized 17, the tiebreak was conducted based on the submission date/time. First place goes to piyopiyo.
+
 # Solver Track
 ## overall existent (cpu)
 | Series           | #Ins. | max. #Nodes | max Len. | PARIS-existent1 | PARIS-existent2 | NU-ASP-existent1 | NU-ASP-existent2 | NU-ASP-existent3 | sano | ddreconf |
