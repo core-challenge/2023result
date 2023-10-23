@@ -281,8 +281,8 @@ You can find the details of the solver track [here](/2023result/solver/).
 
 ## Longest stepper
 
-- The solver outputs the longest reconfiguration sequence is `ddreconf`
-  - 442175 steps @ hc\-power\-014\-002_01.dat
+- The solver that outputs the longest reconfiguration sequence is `ddreconf`
+  - 🥇 442175 steps @ hc-power-014-002\_01.dat
 
 # Participated Teams
 
