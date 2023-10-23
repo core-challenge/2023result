@@ -26,7 +26,8 @@ You can find the details of the solver track [here](/2023result/solver/).
 
 # Graph Track
 
-| Graph Size |                                                                                                                                                                     PARIS |                                                                                                                                                                               piyopiyo |                                                                                                                                                                               tohoku boar |
+| Graph Size |                                                                                                                                                                     PARIS |                                                                                                                                                                               
+piyopiyo |                                                                                                                                                                               tohoku boar |
 | ---------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |         17 | 🥈  30 [col](/2023result/graph/PARIS/graph-le17/graph17.col), [datl](/2023result/graph/PARIS/graph-le17/graph17.dat), [out](/2023result/graph/PARIS/graph-le17/graph17.out) |  🥇  30 [col](/2023result/graph/piyopiyo/graph-le17/graph_17.col), [datl](/2023result/graph/piyopiyo/graph-le17/graph_17.dat), [out](/2023result/graph/piyopiyo/graph-le17/graph_17.out) | 🥉 29 [col](/2023result/graph/tohoku_boar/graph-le17/graph17.col), [datl](/2023result/graph/tohoku_boar/graph-le17/graph17.dat), [out](/2023result/graph/tohoku_boar/graph-le17/graph17.out) |
 |         31 | 🥈 211 [col](/2023result/graph/PARIS/graph-le31/graph31.col), [datl](/2023result/graph/PARIS/graph-le31/graph31.dat), [out](/2023result/graph/PARIS/graph-le31/graph31.out) | 🥇  231 [col](/2023result/graph/piyopiyo/graph-le31/graph_31.col), [datl](/2023result/graph/piyopiyo/graph-le31/graph_31.dat), [out](/2023result/graph/piyopiyo/graph-le31/graph_31.out) |                                                                                                                                                                                        NA |
@@ -36,9 +37,11 @@ You can find the details of the solver track [here](/2023result/solver/).
 
 # Solver Track
 
+- The tiebreak was conducted based on the submission date/time.
+
 ## overall existent (cpu)
 
-| Series           | #Ins. | max. #Nodes | max Len. | PARIS-existent1 | PARIS-existent2 | NU-ASP-existent1 | NU-ASP-existent2 | NU-ASP-existent3 | sano | ddreconf |
+| Series           | #Ins. | max. #Nodes | max Len. | PARIS-existent1 | 🥇PARIS-existent2 | NU-ASP-existent1 | 🥈NU-ASP-existent2 | 🥉NU-ASP-existent3 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | --------------: | --------------: | ---------------: | ---------------: | ---------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             202 |             202 |              200 |              200 |              200 |  154 |       76 |
 | grid             |    49 |       40000 |        8 |              25 |              47 |                5 |               18 |               20 |   17 |       13 |
@@ -58,7 +61,7 @@ You can find the details of the solver track [here](/2023result/solver/).
 
 ## overall existent (wallclock)
 
-| Series           | #Ins. | max. #Nodes | max Len. | PARIS-existent1 | PARIS-existent2 | NU-ASP-existent1 | NU-ASP-existent2 | NU-ASP-existent3 | sano | ddreconf |
+| Series           | #Ins. | max. #Nodes | max Len. | PARIS-existent1 | 🥇PARIS-existent2 | NU-ASP-existent1 | 🥉NU-ASP-existent2 | 🥈NU-ASP-existent3 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | --------------: | --------------: | ---------------: | ---------------: | ---------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             202 |             202 |              200 |              200 |              200 |  153 |       76 |
 | grid             |    49 |       40000 |        8 |              25 |              47 |                5 |               18 |               20 |   17 |       13 |
@@ -78,7 +81,7 @@ You can find the details of the solver track [here](/2023result/solver/).
 
 ## overall longest (cpu)
 
-| Series           | #Ins. | max. #Nodes | max Len. | PARIS-longest1 | PARIS-longest2 | NU-ASP-longest1 | NU-ASP-longest2 | sano | ddreconf |
+| Series           | #Ins. | max. #Nodes | max Len. | PARIS-longest1 | 🥇PARIS-longest2 | 🥈NU-ASP-longest1 | 🥉NU-ASP-longest2 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | -------------: | -------------: | --------------: | --------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             73 |             87 |              98 |             108 |   11 |        4 |
 | grid             |    49 |       40000 |        8 |              1 |              1 |               0 |               1 |    0 |        0 |
@@ -98,7 +101,7 @@ You can find the details of the solver track [here](/2023result/solver/).
 
 ## overall longest (wallclock)
 
-| Series           | #Ins. | max. #Nodes | max Len. | PARIS-longest1 | PARIS-longest2 | NU-ASP-longest1 | NU-ASP-longest2 | sano | ddreconf |
+| Series           | #Ins. | max. #Nodes | max Len. | 🥉PARIS-longest1 | 🥈PARIS-longest2 | NU-ASP-longest1 | 🥇NU-ASP-longest2 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | -------------: | -------------: | --------------: | --------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             68 |             77 |              69 |             143 |   11 |        4 |
 | grid             |    49 |       40000 |        8 |              2 |              2 |               0 |               1 |    0 |        0 |
@@ -118,7 +121,7 @@ You can find the details of the solver track [here](/2023result/solver/).
 
 ## overall shortest (cpu)
 
-| Series           | #Ins. | max. #Nodes | max Len. | PARIS-shortest1 | PARIS-shortest2 | NU-ASP-shortest1 | NU-ASP-shortest2 | sano | ddreconf |
+| Series           | #Ins. | max. #Nodes | max Len. | PARIS-shortest1 | 🥇PARIS-shortest2 | 🥉NU-ASP-shortest1 | 🥈NU-ASP-shortest2 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | --------------: | --------------: | ---------------: | ---------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             198 |             198 |              200 |              200 |  154 |       76 |
 | grid             |    49 |       40000 |        8 |               2 |               2 |                2 |                2 |    2 |        2 |
@@ -138,7 +141,7 @@ You can find the details of the solver track [here](/2023result/solver/).
 
 ## overall shortest (wallclock)
 
-| Series           | #Ins. | max. #Nodes | max Len. | PARIS-shortest1 | PARIS-shortest2 | NU-ASP-shortest1 | NU-ASP-shortest2 | sano | ddreconf |
+| Series           | #Ins. | max. #Nodes | max Len. | PARIS-shortest1 | 🥇PARIS-shortest2 | 🥉NU-ASP-shortest1 | 🥈NU-ASP-shortest2 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | --------------: | --------------: | ---------------: | ---------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             198 |             198 |              200 |              200 |  153 |       76 |
 | grid             |    49 |       40000 |        8 |               2 |               2 |                2 |                2 |    2 |        2 |
@@ -158,7 +161,7 @@ You can find the details of the solver track [here](/2023result/solver/).
 
 ## single existent (cpu)
 
-| Series           | #Ins. | max. #Nodes | max Len. | PARIS-existent1 | NU-ASP-existent1 | sano | ddreconf |
+| Series           | #Ins. | max. #Nodes | max Len. | 🥇PARIS-existent1 | 🥈NU-ASP-existent1 | sano | 🥉ddreconf |
 | :--------------- | ----: | ----------: | -------: | --------------: | ---------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             202 |              200 |  154 |       76 |
 | grid             |    49 |       40000 |        8 |              25 |                5 |   17 |       13 |
@@ -178,7 +181,7 @@ You can find the details of the solver track [here](/2023result/solver/).
 
 ## single existent (wallclock)
 
-| Series           | #Ins. | max. #Nodes | max Len. | PARIS-existent1 | NU-ASP-existent1 | sano | ddreconf |
+| Series           | #Ins. | max. #Nodes | max Len. | 🥇PARIS-existent1 | 🥈NU-ASP-existent1 | sano | 🥉ddreconf |
 | :--------------- | ----: | ----------: | -------: | --------------: | ---------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             202 |              200 |  153 |       76 |
 | grid             |    49 |       40000 |        8 |              25 |                5 |   17 |       13 |
@@ -198,7 +201,7 @@ You can find the details of the solver track [here](/2023result/solver/).
 
 ## single longest (cpu)
 
-| Series           | #Ins. | max. #Nodes | max Len. | PARIS-longest1 | NU-ASP-longest1 | sano | ddreconf |
+| Series           | #Ins. | max. #Nodes | max Len. | 🥈PARIS-longest1 | 🥇NU-ASP-longest1 | sano | 🥉ddreconf |
 | :--------------- | ----: | ----------: | -------: | -------------: | --------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |            101 |             134 |   11 |        4 |
 | grid             |    49 |       40000 |        8 |              2 |               0 |    0 |        0 |
@@ -218,7 +221,7 @@ You can find the details of the solver track [here](/2023result/solver/).
 
 ## single longest (wallclock)
 
-| Series           | #Ins. | max. #Nodes | max Len. | PARIS-longest1 | NU-ASP-longest1 | sano | ddreconf |
+| Series           | #Ins. | max. #Nodes | max Len. | 🥈PARIS-longest1 | 🥇NU-ASP-longest1 | sano | 🥉ddreconf |
 | :--------------- | ----: | ----------: | -------: | -------------: | --------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |            101 |             133 |   11 |        4 |
 | grid             |    49 |       40000 |        8 |              2 |               0 |    0 |        0 |
@@ -238,7 +241,7 @@ You can find the details of the solver track [here](/2023result/solver/).
 
 ## single shortest (cpu)
 
-| Series           | #Ins. | max. #Nodes | max Len. | PARIS-shortest1 | NU-ASP-shortest1 | sano | ddreconf |
+| Series           | #Ins. | max. #Nodes | max Len. | 🥈PARIS-shortest1 | 🥇NU-ASP-shortest1 | sano | 🥉ddreconf |
 | :--------------- | ----: | ----------: | -------: | --------------: | ---------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             198 |              200 |  154 |       76 |
 | grid             |    49 |       40000 |        8 |               2 |                2 |    2 |        2 |
@@ -258,7 +261,7 @@ You can find the details of the solver track [here](/2023result/solver/).
 
 ## single shortest (wallclock)
 
-| Series           | #Ins. | max. #Nodes | max Len. | PARIS-shortest1 | NU-ASP-shortest1 | sano | ddreconf |
+| Series           | #Ins. | max. #Nodes | max Len. | 🥈PARIS-shortest1 | 🥇NU-ASP-shortest1 | sano | 🥉ddreconf |
 | :--------------- | ----: | ----------: | -------: | --------------: | ---------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             198 |              200 |  153 |       76 |
 | grid             |    49 |       40000 |        8 |               2 |                2 |    2 |        2 |
