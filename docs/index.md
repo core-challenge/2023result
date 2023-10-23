@@ -13,6 +13,7 @@
   - [single longest (wallclock)](#single-longest-wallclock)
   - [single shortest (cpu)](#single-shortest-cpu)
   - [single shortest (wallclock)](#single-shortest-wallclock)
+  - [Longest stepper](#longest-stepper)
 - [Participated Teams](#participated-teams)
   - [sano (@sano38)](#sano-sano38)
   - [NU-ASP team (@katomasato1202)](#nu-asp-team-katomasato1202)
@@ -277,6 +278,11 @@ You can find the details of the solver track [here](/2023result/solver/).
 | ph-isr           |    36 |        9205 |       31 |               1 |                0 |    0 |        1 |
 | random\_instance |   200 |         520 |      115 |             140 |              194 |   17 |       35 |
 | Total            |   693 |             |          |             420 |              433 |  203 |      240 |
+
+## Longest stepper
+
+- The solver outputs the longest reconfiguration sequence is `ddreconf`
+  - 442175 steps @ hc\-power\-014\-002_01.dat
 
 # Participated Teams
 
