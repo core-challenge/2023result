@@ -1,6 +1,4 @@
-# Result
 
-- [Result](#result)
 - [Graph Track](#graph-track)
 - [Solver Track](#solver-track)
   - [overall existent (cpu)](#overall-existent-cpu)
@@ -24,6 +22,8 @@
   - [piyopiyo (@akkyhowa)](#piyopiyo-akkyhowa)
   - [tohoku boar (@daichan132)](#tohoku-boar-daichan132)
 
+You can find the details of the solver track [here](/2023result/solver/).
+
 # Graph Track
 
 | Graph Size |                                                                                                                                                                     PARIS |                                                                                                                                                                               piyopiyo |                                                                                                                                                                               tohoku boar |
@@ -35,7 +35,9 @@
 - For the graph sized 17, the tiebreak was conducted based on the submission date/time. First place goes to piyopiyo.
 
 # Solver Track
+
 ## overall existent (cpu)
+
 | Series           | #Ins. | max. #Nodes | max Len. | PARIS-existent1 | PARIS-existent2 | NU-ASP-existent1 | NU-ASP-existent2 | NU-ASP-existent3 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | --------------: | --------------: | ---------------: | ---------------: | ---------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             202 |             202 |              200 |              200 |              200 |  154 |       76 |
@@ -53,7 +55,9 @@
 | ph-isr           |    36 |        9205 |       31 |               2 |               6 |                0 |                1 |                1 |    1 |        3 |
 | random\_instance |   200 |         520 |      115 |             143 |             143 |              194 |              194 |              194 |   17 |       36 |
 | Total            |   693 |             |          |             456 |             543 |              442 |              456 |              456 |  222 |      255 |
+
 ## overall existent (wallclock)
+
 | Series           | #Ins. | max. #Nodes | max Len. | PARIS-existent1 | PARIS-existent2 | NU-ASP-existent1 | NU-ASP-existent2 | NU-ASP-existent3 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | --------------: | --------------: | ---------------: | ---------------: | ---------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             202 |             202 |              200 |              200 |              200 |  153 |       76 |
@@ -71,7 +75,9 @@
 | ph-isr           |    36 |        9205 |       31 |               2 |               6 |                0 |                1 |                1 |    1 |        3 |
 | random\_instance |   200 |         520 |      115 |             143 |             143 |              194 |              194 |              194 |   17 |       35 |
 | Total            |   693 |             |          |             456 |             542 |              442 |              456 |              458 |  220 |      254 |
+
 ## overall longest (cpu)
+
 | Series           | #Ins. | max. #Nodes | max Len. | PARIS-longest1 | PARIS-longest2 | NU-ASP-longest1 | NU-ASP-longest2 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | -------------: | -------------: | --------------: | --------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             73 |             87 |              98 |             108 |   11 |        4 |
@@ -89,7 +95,9 @@
 | ph-isr           |    36 |        9205 |       31 |              0 |              1 |               0 |               0 |    0 |        0 |
 | random\_instance |   200 |         520 |      115 |             15 |             55 |              66 |              33 |    1 |        1 |
 | Total            |   693 |             |          |            141 |            225 |             180 |             161 |   21 |       66 |
+
 ## overall longest (wallclock)
+
 | Series           | #Ins. | max. #Nodes | max Len. | PARIS-longest1 | PARIS-longest2 | NU-ASP-longest1 | NU-ASP-longest2 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | -------------: | -------------: | --------------: | --------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             68 |             77 |              69 |             143 |   11 |        4 |
@@ -107,7 +115,9 @@
 | ph-isr           |    36 |        9205 |       31 |              0 |              1 |               0 |               0 |    0 |        0 |
 | random\_instance |   200 |         520 |      115 |             15 |             50 |              13 |              96 |    1 |        1 |
 | Total            |   693 |             |          |            136 |            207 |              96 |             261 |   21 |       65 |
+
 ## overall shortest (cpu)
+
 | Series           | #Ins. | max. #Nodes | max Len. | PARIS-shortest1 | PARIS-shortest2 | NU-ASP-shortest1 | NU-ASP-shortest2 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | --------------: | --------------: | ---------------: | ---------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             198 |             198 |              200 |              200 |  154 |       76 |
@@ -125,7 +135,9 @@
 | ph-isr           |    36 |        9205 |       31 |               1 |               1 |                0 |                0 |    0 |        1 |
 | random\_instance |   200 |         520 |      115 |             140 |             140 |              194 |              195 |   17 |       36 |
 | Total            |   693 |             |          |             420 |             484 |              433 |              435 |  205 |      241 |
+
 ## overall shortest (wallclock)
+
 | Series           | #Ins. | max. #Nodes | max Len. | PARIS-shortest1 | PARIS-shortest2 | NU-ASP-shortest1 | NU-ASP-shortest2 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | --------------: | --------------: | ---------------: | ---------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             198 |             198 |              200 |              200 |  153 |       76 |
@@ -143,7 +155,9 @@
 | ph-isr           |    36 |        9205 |       31 |               1 |               1 |                0 |                0 |    0 |        1 |
 | random\_instance |   200 |         520 |      115 |             140 |             140 |              194 |              197 |   17 |       35 |
 | Total            |   693 |             |          |             420 |             483 |              433 |              437 |  203 |      240 |
+
 ## single existent (cpu)
+
 | Series           | #Ins. | max. #Nodes | max Len. | PARIS-existent1 | NU-ASP-existent1 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | --------------: | ---------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             202 |              200 |  154 |       76 |
@@ -161,7 +175,9 @@
 | ph-isr           |    36 |        9205 |       31 |               2 |                0 |    1 |        3 |
 | random\_instance |   200 |         520 |      115 |             143 |              194 |   17 |       36 |
 | Total            |   693 |             |          |             456 |              442 |  222 |      255 |
+
 ## single existent (wallclock)
+
 | Series           | #Ins. | max. #Nodes | max Len. | PARIS-existent1 | NU-ASP-existent1 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | --------------: | ---------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             202 |              200 |  153 |       76 |
@@ -179,7 +195,9 @@
 | ph-isr           |    36 |        9205 |       31 |               2 |                0 |    1 |        3 |
 | random\_instance |   200 |         520 |      115 |             143 |              194 |   17 |       35 |
 | Total            |   693 |             |          |             456 |              442 |  220 |      254 |
+
 ## single longest (cpu)
+
 | Series           | #Ins. | max. #Nodes | max Len. | PARIS-longest1 | NU-ASP-longest1 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | -------------: | --------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |            101 |             134 |   11 |        4 |
@@ -197,7 +215,9 @@
 | ph-isr           |    36 |        9205 |       31 |              1 |               0 |    0 |        0 |
 | random\_instance |   200 |         520 |      115 |             18 |              78 |    1 |        1 |
 | Total            |   693 |             |          |            201 |             237 |   22 |       68 |
+
 ## single longest (wallclock)
+
 | Series           | #Ins. | max. #Nodes | max Len. | PARIS-longest1 | NU-ASP-longest1 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | -------------: | --------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |            101 |             133 |   11 |        4 |
@@ -215,7 +235,9 @@
 | ph-isr           |    36 |        9205 |       31 |              1 |               0 |    0 |        0 |
 | random\_instance |   200 |         520 |      115 |             18 |              78 |    1 |        1 |
 | Total            |   693 |             |          |            198 |             237 |   21 |       68 |
+
 ## single shortest (cpu)
+
 | Series           | #Ins. | max. #Nodes | max Len. | PARIS-shortest1 | NU-ASP-shortest1 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | --------------: | ---------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             198 |              200 |  154 |       76 |
@@ -233,7 +255,9 @@
 | ph-isr           |    36 |        9205 |       31 |               1 |                0 |    0 |        1 |
 | random\_instance |   200 |         520 |      115 |             140 |              194 |   17 |       36 |
 | Total            |   693 |             |          |             420 |              433 |  205 |      241 |
+
 ## single shortest (wallclock)
+
 | Series           | #Ins. | max. #Nodes | max Len. | PARIS-shortest1 | NU-ASP-shortest1 | sano | ddreconf |
 | :--------------- | ----: | ----------: | -------: | --------------: | ---------------: | ---: | -------: |
 | color04          |   202 |       10000 |      112 |             198 |              200 |  153 |       76 |
@@ -251,7 +275,6 @@
 | ph-isr           |    36 |        9205 |       31 |               1 |                0 |    0 |        1 |
 | random\_instance |   200 |         520 |      115 |             140 |              194 |   17 |       35 |
 | Total            |   693 |             |          |             420 |              433 |  203 |      240 |
-
 
 # Participated Teams
 
