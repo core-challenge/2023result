@@ -1,8 +1,22 @@
 # Solver best times
 
-[solver_best_times.csv](solver_best_times.csv) has one row for each of the 693 instances scored in CoRe Challenge 2023. For each solver it keeps a single run: the CPU time, the answer, and, when a reconfiguration was found, the number of token jumps.
+[solver_best_times.csv](solver_best_times.csv) has one row for each of the 693 instances scored in CoRe Challenge 2023. For each solver it keeps one run: the CPU time, the answer, and, when a reconfiguration was found, the number of token jumps.
 
-The file is a later re-run of those 693 instances under a 1800-second CPU limit enforced by runsolver. PARIS, NU-ASP, ISR, and Reconfaigeration each appear as one configuration. SRIP appears as the fastest successful configuration among 68. SRIP is a reference solver developed in 2025. It did not participate in CoRe Challenge 2022 or 2023, and its column is outside the competition ranking. The competition scores, which combine several submissions, the existent / shortest / longest tracks, and CPU and wall-clock limits, stay in [`docs/index.md`](docs/index.md). The logs behind those scores stay in `docs/solver/log/`.
+The file is a later re-run of those 693 instances under a 1800-second CPU limit enforced by runsolver. The competition scores, which combine several submissions, the existent / shortest / longest tracks, and CPU and wall-clock limits, stay in [`docs/index.md`](docs/index.md). The logs behind those scores stay in `docs/solver/log/`.
+
+## Category
+
+The 2023 pages score an **overall** category and a **single** category. Overall may use several engines from one team. Single is one engine. A single-engine team is listed in both tables.
+
+| Prefix | Solver | Category | Run recorded in this file |
+| --- | --- | --- | --- |
+| `paris` | PARIS | single | `shortest-single` in `logs-paris`. That config runs ScorpionAnytime alone. The overall shortest config is `shortest-portfolio` (ScorpionAnytime and SymK) |
+| `nuasp` | NU-ASP | overall | `run_3.py --shortest` in `logs-nuasp`, the third NU-ASP engine. The single category used the first engine, `run.py`. This column is that one overall-category engine |
+| `isr` | ISR (sano in the 2023 tables) | single | `IsrSolverTjOrderClique01` in `logs-isr` |
+| `reconf` | Reconfaigeration (ddreconf in the 2023 tables) | single | `reconfaigeration` on the shortest track, in `logs-reconfaigeration` |
+| `srip` | SRIP | single | Fastest successful configuration among 68 directories named `logs` or `logs-v*` |
+
+SRIP is a reference solver developed in 2025. It did not participate in CoRe Challenge 2022 or 2023, and its column is outside the competition ranking. The 68 directories are configurations of this one single solver.
 
 ## Columns
 
@@ -19,13 +33,7 @@ The file is a later re-run of those 693 instances under a 1800-second CPU limit 
 
 `{solver}` is `paris`, `nuasp`, `isr`, `reconf`, or `srip`.
 
-| Prefix | Solver | Run directory |
-| --- | --- | --- |
-| `paris` | PARIS | `logs-paris` |
-| `nuasp` | NU-ASP | `logs-nuasp` |
-| `isr` | ISR | `logs-isr` |
-| `reconf` | Reconfaigeration | `logs-reconfaigeration` |
-| `srip` | SRIP, a reference solver developed in 2025. It did not participate in the competition | the fastest of 68 directories named `logs` or `logs-v*` |
+The solver name, category, and command for each prefix are in the table under [Category](#category).
 
 Reconfaigeration's logs are shortest-track runs (`solving shortest`). Its `Length` line counts states in the sequence. `reconf_steps` counts token jumps, one less than the number of states.
 
@@ -55,7 +63,7 @@ The step count is taken from a `steps=N` line or a `Step: N` line when one is pr
 
 ## How the SRIP column was selected
 
-SRIP is a reference solver developed in 2025. It did not participate in the competition, so this column is a comparison point for the four solvers above.
+SRIP is a single solver: a reference solver developed in 2025 that did not participate in the competition. The directories below are configurations of that one solver, and the column keeps the fastest successful configuration.
 
 A configuration directory is included when its name is `logs` or starts with `logs-v`, and it contains a run of `1-FullIns_3_01`. That gives 68 directories.
 
