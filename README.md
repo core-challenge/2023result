@@ -17,6 +17,7 @@ Descriptions of the benchmark families, with the accounts given in the published
 | `docs/solver/log/benchmark/` | One log file per instance, solver submission, track, and resource limit |
 | `docs/solver/log/benchmark-log.tar.gz` | The same solver logs packed as one archive |
 | `docs/graph/` | Graph-track submissions that were ranked: `PARIS/`, `piyopiyo/`, and `tohoku_boar/` |
+| `solver_best_times.csv` | One row per scored instance, with a single later run of each solver. Column definitions are in [RESULTS.md](RESULTS.md) |
 
 `docs/solver/benchmark/` has eleven directories. Seven of them come from CoRe Challenge 2022, under `2022benchmark/benchmark/`. The 2023 additions are `exp_instance/`, `hand_made_wide/`, `ph-isr/`, and `random_instance/`. The summary tables in `docs/index.md` split `hand_made_wide/` into four series, so those tables have fourteen rows. Together they are the 693 instances used for evaluation.
 
@@ -72,6 +73,10 @@ A log path mirrors the instance path. The file name concatenates the `.col` name
 On the result pages, a cell such as `YES 3` means the solver returned a reconfiguration of that length. `NO` means the solver reported that no reconfiguration exists. `N.A.` means no answer was accepted for that run.
 
 The pages distinguish single-engine submissions from portfolio (`overall`) submissions, and CPU time from wall-clock time. Ties were broken by submission time. The scoring tables and team affiliations are in `docs/index.md`.
+
+## Best-time table
+
+[solver_best_times.csv](solver_best_times.csv) lists the same 693 scored instances, one row each. Each solver column is one later run under a 1800-second CPU limit: PARIS, NU-ASP, ISR, and Reconfaigeration as a single configuration, and SRIP as the fastest successful configuration among 68. Answers, CPU times, token-jump counts, and the SRIP configuration name are defined in [RESULTS.md](RESULTS.md).
 
 ## Graph track
 
