@@ -68,7 +68,7 @@ Every directory named `logs` or `logs-v*` is included (89 directories). Each `to
 
 On `random_instance004_graph005_01`, one configuration reported 9 steps and the others reported 7. The column keeps 7. The other 496 `YES` rows have the same step count in every configuration that solved them.
 
-497 rows are `YES`. The other 196 are `unsolved`. This union is larger than the 477 solved by the single configuration reported in Soh et al., KR 2026 (`logs-v47-full-op-f-d1-d2`).
+497 rows are `YES`. The other 196 are `unsolved`. This union is larger than the 477 solved by the single configuration in Soh et al., KR 2026 ([proceedings](https://proceedings.kr.org/2026/72/)), which is `logs-v47-full-op-f-d1-d2`.
 
 ## Outcomes in this file
 
