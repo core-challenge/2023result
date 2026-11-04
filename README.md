@@ -76,7 +76,7 @@ The pages distinguish single-engine submissions from portfolio (`overall`) submi
 
 ## Best-time table
 
-[solver_best_times.csv](solver_best_times.csv) lists the same 693 scored instances, one row each. Each solver column is one later run under a 1800-second CPU limit: PARIS, NU-ASP, ISR, and Reconfaigeration as a single configuration, and SRIP as the fastest successful configuration among 68. Answers, CPU times, token-jump counts, and the SRIP configuration name are defined in [RESULTS.md](RESULTS.md).
+[solver_best_times.csv](solver_best_times.csv) lists the same 693 scored instances, one row each. Each solver column is one later run under a 1800-second CPU limit: PARIS, NU-ASP, ISR, and Reconfaigeration as a single configuration, and SRIP as the fastest successful configuration among 68. SRIP is a reference solver developed in 2025. It did not participate in the competition. Answers, CPU times, token-jump counts, and the SRIP configuration name are defined in [RESULTS.md](RESULTS.md).
 
 ## Graph track
 

@@ -2,7 +2,7 @@
 
 [solver_best_times.csv](solver_best_times.csv) has one row for each of the 693 instances scored in CoRe Challenge 2023. For each solver it keeps a single run: the CPU time, the answer, and, when a reconfiguration was found, the number of token jumps.
 
-The file is a later re-run of those 693 instances under a 1800-second CPU limit enforced by runsolver. PARIS, NU-ASP, ISR, and Reconfaigeration each appear as one configuration. SRIP appears as the fastest successful configuration among 68. The competition scores, which combine several submissions, the existent / shortest / longest tracks, and CPU and wall-clock limits, stay in [`docs/index.md`](docs/index.md). The logs behind those scores stay in `docs/solver/log/`.
+The file is a later re-run of those 693 instances under a 1800-second CPU limit enforced by runsolver. PARIS, NU-ASP, ISR, and Reconfaigeration each appear as one configuration. SRIP appears as the fastest successful configuration among 68. SRIP is a reference solver developed in 2025. It did not participate in CoRe Challenge 2022 or 2023, and its column is outside the competition ranking. The competition scores, which combine several submissions, the existent / shortest / longest tracks, and CPU and wall-clock limits, stay in [`docs/index.md`](docs/index.md). The logs behind those scores stay in `docs/solver/log/`.
 
 ## Columns
 
@@ -25,7 +25,7 @@ The file is a later re-run of those 693 instances under a 1800-second CPU limit 
 | `nuasp` | NU-ASP | `logs-nuasp` |
 | `isr` | ISR | `logs-isr` |
 | `reconf` | Reconfaigeration | `logs-reconfaigeration` |
-| `srip` | SRIP | the fastest of 68 directories named `logs` or `logs-v*` |
+| `srip` | SRIP, a reference solver developed in 2025. It did not participate in the competition | the fastest of 68 directories named `logs` or `logs-v*` |
 
 Reconfaigeration's logs are shortest-track runs (`solving shortest`). Its `Length` line counts states in the sequence. `reconf_steps` counts token jumps, one less than the number of states.
 
@@ -54,6 +54,8 @@ For SRIP, `srip_cpu_s`, `srip_steps`, and `srip_config` are filled only on `YES`
 The step count is taken from a `steps=N` line or a `Step: N` line when one is present. Otherwise it is the number of `a` state lines minus one. Reconfaigeration's `Length` value is used only when the log has no `a` state line; the stored count is then `Length − 1` when `Length` is greater than 1. Every `YES` row in this file has a step count.
 
 ## How the SRIP column was selected
+
+SRIP is a reference solver developed in 2025. It did not participate in the competition, so this column is a comparison point for the four solvers above.
 
 A configuration directory is included when its name is `logs` or starts with `logs-v`, and it contains a run of `1-FullIns_3_01`. That gives 68 directories.
 
