@@ -76,7 +76,7 @@ The pages distinguish single-engine submissions from portfolio (`overall`) submi
 
 ## Best-time table
 
-[solver_best_times.csv](solver_best_times.csv) lists the same 693 scored instances, one row each, from a later run under a 1800-second CPU limit. Every solver column is a single solver: PARIS (`shortest-single`), NU-ASP (`run_3.py --shortest`), and Reconfaigeration (ddreconf). SRIP is a single reference solver developed in 2025 and did not participate in the competition; its column is `YES` when any configuration printed a shortest sequence. Answers, CPU times, and token-jump counts are defined in [RESULTS.md](RESULTS.md).
+[solver_best_times.csv](solver_best_times.csv) lists the same 693 scored instances, one row each, from a later run under a 1800-second CPU limit. Every solver column is a single solver: PARIS (`shortest-single`), NU-ASP (`run_3.py --shortest`), and Reconfaigeration. SRIP is a single reference solver developed in 2025 and did not participate in the competition; its column is the KR 2026 configuration `logs-v47-full-op-f-d1-d2`. Answers, CPU times, and token-jump counts are defined in [RESULTS.md](RESULTS.md).
 
 ## Graph track
 
