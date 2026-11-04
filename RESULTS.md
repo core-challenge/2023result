@@ -13,9 +13,9 @@ Every column in this file is a **single** solver: one engine per column. The 202
 | `paris` | PARIS | single | `shortest-single` in `logs-paris`. That config runs ScorpionAnytime alone |
 | `nuasp` | NU-ASP | single | `run_3.py --shortest` in `logs-nuasp` |
 | `reconf` | Reconfaigeration (ddreconf in the 2023 tables) | single | `reconfaigeration` on the shortest track, in `logs-reconfaigeration` |
-| `srip` | SRIP | single | Fastest successful configuration among 68 directories named `logs` or `logs-v*` |
+| `srip` | SRIP | single | Any configuration under a directory named `logs` or `logs-v*` that printed a shortest sequence |
 
-SRIP is a reference solver developed in 2025. It did not participate in CoRe Challenge 2022 or 2023, and its column is outside the competition ranking. The 68 directories are configurations of this one single solver.
+SRIP is a reference solver developed in 2025. It did not participate in CoRe Challenge 2022 or 2023, and its column is outside the competition ranking. The directories are configurations of this one single solver.
 
 ## Columns
 
@@ -28,7 +28,7 @@ SRIP is a reference solver developed in 2025. It did not participate in CoRe Cha
 | `{solver}_answer` | Outcome of that solver's run. Values are listed below |
 | `{solver}_cpu_s` | runsolver `CPUTIME` in seconds, written with three decimal places |
 | `{solver}_steps` | Number of token jumps in the returned reconfiguration. Empty when no sequence was accepted |
-| `srip_config` | Directory name of the SRIP configuration that produced the retained run. Empty when `srip_answer` is `unsolved` |
+| `srip_config` | One directory that printed a shortest sequence, the first in sorted name order. Empty when `srip_answer` is `unsolved`. The CPU time in `srip_cpu_s` is that run's time |
 
 `{solver}` is `paris`, `nuasp`, `reconf`, or `srip`.
 
@@ -62,19 +62,13 @@ The step count is taken from a `steps=N` line or a `Step: N` line when one is pr
 
 ## How the SRIP column was selected
 
-SRIP is a single solver: a reference solver developed in 2025 that did not participate in the competition. The directories below are configurations of that one solver, and the column keeps the fastest successful configuration.
+SRIP is a single solver: a reference solver developed in 2025 that did not participate in the competition. A row is `YES` when any configuration printed a shortest sequence. CPU time is not used to choose the row.
 
-A configuration directory is included when its name is `logs` or starts with `logs-v`, and it contains a run of `1-FullIns_3_01`. That gives 68 directories.
+Every directory named `logs` or `logs-v*` is included (89 directories). Each `tool.log` is read until `s SATISFIABLE` or `a YES`, or until the file ends. There is no byte cutoff, and a run is kept whether or not runsolver reported a timeout. `srip_steps` is the `c steps=` value written with that answer. `srip_config` is the first directory in sorted name order that produced an answer, and `srip_cpu_s` is that run's CPU time.
 
-A run is eligible when all three hold:
+On `random_instance004_graph005_01`, one configuration reported 9 steps and the others reported 7. The column keeps 7. The other 496 `YES` rows have the same step count in every configuration that solved them.
 
-- runsolver did not set `TIMEOUT=true`
-- `EXITSTATUS` is `0`
-- the first 8192 bytes of `tool.log` contain `YES` or `NO`, as defined above
-
-The retained run is the eligible run with the smallest `CPUTIME`. When two eligible runs have the same CPU time, the directory that comes first in sorted name order stays. `srip_steps` is read from `steps=` inside those first 8192 bytes.
-
-All 457 retained SRIP runs are `YES`. The other 236 rows are `unsolved`. The configuration that wins most often is `logs-v20-s20` (287 instances).
+497 rows are `YES`. The other 196 are `unsolved`. This union is larger than the 477 solved by the single configuration reported in Soh et al., KR 2026 (`logs-v47-full-op-f-d1-d2`).
 
 ## Outcomes in this file
 
@@ -85,7 +79,7 @@ Counts below are rows, out of the 693 instances.
 | PARIS | 425 | 23 | 4 | 241 | — |
 | NU-ASP | 432 | 0 | 261 | 0 | — |
 | Reconfaigeration | 250 | 0 | 436 | 7 | — |
-| SRIP | 457 | 0 | — | — | 236 |
+| SRIP | 497 | 0 | — | — | 196 |
 
 Solved rows (`YES` or `NO`) by series:
 
@@ -96,12 +90,12 @@ Solved rows (`YES` or `NO`) by series:
 | grid | 49 | 23 | 2 | 2 | 2 |
 | queen | 48 | 44 | 24 | 24 | 31 |
 | ph-isr | 36 | 2 | 0 | 0 | 4 |
-| sp | 30 | 8 | 2 | 3 | 3 |
-| exp_instance | 20 | 9 | 5 | 5 | 7 |
-| power | 17 | 4 | 0 | 0 | 0 |
-| power_wide | 17 | 0 | 0 | 0 | 0 |
-| power_wider | 17 | 0 | 0 | 0 | 0 |
-| square | 17 | 6 | 0 | 0 | 1 |
-| square_wide | 17 | 1 | 0 | 0 | 1 |
-| square_wider | 17 | 0 | 0 | 0 | 1 |
+| sp | 30 | 8 | 2 | 3 | 6 |
+| exp_instance | 20 | 9 | 5 | 5 | 8 |
+| power | 17 | 4 | 0 | 0 | 3 |
+| power_wide | 17 | 0 | 0 | 0 | 2 |
+| power_wider | 17 | 0 | 0 | 0 | 2 |
+| square | 17 | 6 | 0 | 0 | 13 |
+| square_wide | 17 | 1 | 0 | 0 | 10 |
+| square_wider | 17 | 0 | 0 | 0 | 9 |
 | handcrafted | 6 | 6 | 5 | 5 | 5 |
