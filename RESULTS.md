@@ -12,7 +12,6 @@ Every column in this file is a **single** solver: one engine per column. The 202
 | --- | --- | --- | --- |
 | `paris` | PARIS | single | `shortest-single` in `logs-paris`. That config runs ScorpionAnytime alone |
 | `nuasp` | NU-ASP | single | `run_3.py --shortest` in `logs-nuasp` |
-| `isr` | ISR (sano in the 2023 tables) | single | `IsrSolverTjOrderClique01` in `logs-isr` |
 | `reconf` | Reconfaigeration (ddreconf in the 2023 tables) | single | `reconfaigeration` on the shortest track, in `logs-reconfaigeration` |
 | `srip` | SRIP | single | Fastest successful configuration among 68 directories named `logs` or `logs-v*` |
 
@@ -31,7 +30,7 @@ SRIP is a reference solver developed in 2025. It did not participate in CoRe Cha
 | `{solver}_steps` | Number of token jumps in the returned reconfiguration. Empty when no sequence was accepted |
 | `srip_config` | Directory name of the SRIP configuration that produced the retained run. Empty when `srip_answer` is `unsolved` |
 
-`{solver}` is `paris`, `nuasp`, `isr`, `reconf`, or `srip`.
+`{solver}` is `paris`, `nuasp`, `reconf`, or `srip`.
 
 The solver name, category, and command for each prefix are in the table under [Category](#category).
 
@@ -51,11 +50,11 @@ The `exp_instance` rows are the 20 queries used in the scored tables (`LGC_` and
 
 `YES` is recognized from an `a YES` line or an `s SATISFIABLE` line. `NO` is recognized from an `a NO` line or an `s UNSATISFIABLE` line.
 
-In this file only PARIS reports `NO`: 21 grid queries, one handcrafted query, and one `ph-isr` query. NU-ASP, ISR, Reconfaigeration, and SRIP have no `NO` rows.
+In this file only PARIS reports `NO`: 21 grid queries, one handcrafted query, and one `ph-isr` query. NU-ASP, Reconfaigeration, and SRIP have no `NO` rows.
 
 ## CPU time and step counts
 
-For PARIS, NU-ASP, ISR, and Reconfaigeration, `*_cpu_s` is filled on every row, including `timeout` and `no-answer`. `*_steps` is filled only on `YES`.
+For PARIS, NU-ASP, and Reconfaigeration, `*_cpu_s` is filled on every row, including `timeout` and `no-answer`. `*_steps` is filled only on `YES`.
 
 For SRIP, `srip_cpu_s`, `srip_steps`, and `srip_config` are filled only on `YES`. All three are empty when the answer is `unsolved`.
 
@@ -85,25 +84,24 @@ Counts below are rows, out of the 693 instances.
 | --- | ---: | ---: | ---: | ---: | ---: |
 | PARIS | 425 | 23 | 4 | 241 | — |
 | NU-ASP | 432 | 0 | 261 | 0 | — |
-| ISR | 468 | 0 | 209 | 16 | — |
 | Reconfaigeration | 250 | 0 | 436 | 7 | — |
 | SRIP | 457 | 0 | — | — | 236 |
 
 Solved rows (`YES` or `NO`) by series:
 
-| Series | Instances | PARIS | NU-ASP | ISR | Reconfaigeration | SRIP |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| color04 | 202 | 202 | 200 | 201 | 177 | 202 |
-| random_instance | 200 | 143 | 194 | 200 | 34 | 200 |
-| grid | 49 | 23 | 2 | 2 | 2 | 2 |
-| queen | 48 | 44 | 24 | 25 | 24 | 31 |
-| ph-isr | 36 | 2 | 0 | 1 | 0 | 4 |
-| sp | 30 | 8 | 2 | 6 | 3 | 3 |
-| exp_instance | 20 | 9 | 5 | 8 | 5 | 7 |
-| power | 17 | 4 | 0 | 3 | 0 | 0 |
-| power_wide | 17 | 0 | 0 | 1 | 0 | 0 |
-| power_wider | 17 | 0 | 0 | 1 | 0 | 0 |
-| square | 17 | 6 | 0 | 8 | 0 | 1 |
-| square_wide | 17 | 1 | 0 | 4 | 0 | 1 |
-| square_wider | 17 | 0 | 0 | 3 | 0 | 1 |
-| handcrafted | 6 | 6 | 5 | 5 | 5 | 5 |
+| Series | Instances | PARIS | NU-ASP | Reconfaigeration | SRIP |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| color04 | 202 | 202 | 200 | 177 | 202 |
+| random_instance | 200 | 143 | 194 | 34 | 200 |
+| grid | 49 | 23 | 2 | 2 | 2 |
+| queen | 48 | 44 | 24 | 24 | 31 |
+| ph-isr | 36 | 2 | 0 | 0 | 4 |
+| sp | 30 | 8 | 2 | 3 | 3 |
+| exp_instance | 20 | 9 | 5 | 5 | 7 |
+| power | 17 | 4 | 0 | 0 | 0 |
+| power_wide | 17 | 0 | 0 | 0 | 0 |
+| power_wider | 17 | 0 | 0 | 0 | 0 |
+| square | 17 | 6 | 0 | 0 | 1 |
+| square_wide | 17 | 1 | 0 | 0 | 1 |
+| square_wider | 17 | 0 | 0 | 0 | 1 |
+| handcrafted | 6 | 6 | 5 | 5 | 5 |
