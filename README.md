@@ -17,7 +17,7 @@ Descriptions of the benchmark families, with the accounts given in the published
 | `docs/solver/log/benchmark/` | One log file per instance, solver submission, track, and resource limit |
 | `docs/solver/log/benchmark-log.tar.gz` | The same solver logs packed as one archive |
 | `docs/graph/` | Graph-track submissions that were ranked: `PARIS/`, `piyopiyo/`, and `tohoku_boar/` |
-| `solver_best_times.csv` | One row per scored instance, with a single later run of each solver. Column definitions are in [RESULTS.md](RESULTS.md) |
+| `solver_best_times.csv` | One row per scored instance. Every column is a single solver. Column definitions are in [RESULTS.md](RESULTS.md) |
 
 `docs/solver/benchmark/` has eleven directories. Seven of them come from CoRe Challenge 2022, under `2022benchmark/benchmark/`. The 2023 additions are `exp_instance/`, `hand_made_wide/`, `ph-isr/`, and `random_instance/`. The summary tables in `docs/index.md` split `hand_made_wide/` into four series, so those tables have fourteen rows. Together they are the 693 instances used for evaluation.
 
