@@ -29,6 +29,7 @@ SRIP is a reference solver developed in 2025. It did not participate in CoRe Cha
 | `{solver}_cpu_s` | runsolver `CPUTIME` in seconds, written with three decimal places |
 | `{solver}_steps` | Number of token jumps in the returned reconfiguration. Empty when no sequence was accepted |
 | `srip_config` | `logs-v47-full-op-f-d1-d2` when that configuration printed a shortest sequence. Empty otherwise |
+| `n_solved` | How many of the five solvers solved the instance: PARIS, NU-ASP, Reconfaigeration, ddreconf, and SRIP. An integer from 0 to 5 |
 
 `{solver}` is `paris`, `nuasp`, `reconf`, or `srip`.
 
@@ -68,7 +69,7 @@ A row is `YES` when that run exited with status 0, runsolver did not report a ti
 
 ## Solved instances by series
 
-PARIS, NU-ASP, Reconfaigeration, and SRIP count rows in this file whose answer is `YES` or `NO`. ddreconf is the solved count from the 2023 shortest track with CPU time in [`docs/index.md`](docs/index.md). That solver is a single engine, and the same counts appear in the overall and single shortest tables.
+PARIS, NU-ASP, Reconfaigeration, and SRIP count rows in this file whose answer is `YES` or `NO`. ddreconf counts a `YES` in the 2023 shortest CPU table in [`docs/index.md`](docs/index.md); a `NO` from that solver is not counted. Those are the same five solvers summed in `n_solved`. ddreconf is a single engine, and the same `YES` counts appear in the overall and single shortest tables.
 
 | Series | Instances | PARIS | NU-ASP | Reconfaigeration | ddreconf | SRIP |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
