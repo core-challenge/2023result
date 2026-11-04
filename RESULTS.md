@@ -1,6 +1,6 @@
-# Solver best times
+# Instance statistics
 
-[solver_best_times.csv](solver_best_times.csv) has one row for each of the 693 instances scored in CoRe Challenge 2023. For each solver it keeps one run: the CPU time, the answer, and, when a reconfiguration was found, the number of token jumps.
+[instance_stats.csv](instance_stats.csv) has one row for each of the 693 instances scored in CoRe Challenge 2023. It records graph statistics for the instance and one run of each solver: the CPU time, the answer, and, when a reconfiguration was found, the number of token jumps.
 
 The file is a later re-run of those 693 instances under a 1800-second CPU limit enforced by runsolver. The competition scores, which combine several submissions, the existent / shortest / longest tracks, and CPU and wall-clock limits, stay in [`docs/index.md`](docs/index.md). The logs behind those scores stay in `docs/solver/log/`.
 
@@ -24,7 +24,9 @@ SRIP is a reference solver developed in 2025. It did not participate in CoRe Cha
 | `instance` | Query name: the `.dat` basename without the extension |
 | `group` | Benchmark series. `hand_made_wide` is stored as `power_wide`, `power_wider`, `square_wide`, and `square_wider` |
 | `vertices`, `edges` | Order and size of the graph, from the `p` line of the `.col` file |
+| `avg_degree` | Mean degree, `2 * edges / vertices`, written with three decimal places |
 | `tokens` | Number of vertices on the start line (`s`) of the `.dat` file |
+| `shortest_steps` | Shortest `YES` length among PARIS, NU-ASP, Reconfaigeration, SRIP, and ddreconf. Empty when none of them returned a sequence |
 | `{solver}_answer` | Outcome of that solver's run. Values are listed below |
 | `{solver}_cpu_s` | runsolver `CPUTIME` in seconds, written with three decimal places |
 | `{solver}_steps` | Number of token jumps in the returned reconfiguration. Empty when no sequence was accepted |
@@ -71,7 +73,7 @@ A row is `YES` when that run exited with status 0, runsolver did not report a ti
 
 PARIS, NU-ASP, Reconfaigeration, and SRIP count rows in this file whose answer is `YES` or `NO`. ddreconf counts a `YES` in the 2023 shortest CPU table in [`docs/index.md`](docs/index.md); a `NO` from that solver is not counted. Those are the same five solvers summed in `n_solved`. ddreconf is a single engine, and the same `YES` counts appear in the overall and single shortest tables.
 
-`verts min`, `verts median`, and `verts max` summarize the number of vertices over every instance in the series. `length min`, `length median`, and `length max` summarize transition length. For each instance the length is the shortest `YES` sequence among PARIS, NU-ASP, Reconfaigeration, SRIP, and ddreconf. Instances with no such sequence are left out of the length summary. The maximum in each series is the max Len. value in the 2023 shortest CPU table. A median of two middle values is written with one decimal place.
+`verts min`, `verts median`, and `verts max` summarize `vertices` over every instance in the series. `length min`, `length median`, and `length max` summarize `shortest_steps`. Instances with an empty `shortest_steps` are left out of the length summary. The maximum in each series is the max Len. value in the 2023 shortest CPU table. A median of two middle values is written with one decimal place.
 
 | Series | Instances | verts min | verts median | verts max | length min | length median | length max | PARIS | NU-ASP | Reconfaigeration | ddreconf | SRIP |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |

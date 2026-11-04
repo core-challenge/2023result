@@ -17,7 +17,7 @@ Descriptions of the benchmark families, with the accounts given in the published
 | `docs/solver/log/benchmark/` | One log file per instance, solver submission, track, and resource limit |
 | `docs/solver/log/benchmark-log.tar.gz` | The same solver logs packed as one archive |
 | `docs/graph/` | Graph-track submissions that were ranked: `PARIS/`, `piyopiyo/`, and `tohoku_boar/` |
-| `solver_best_times.csv` | One row per scored instance. Every column is a single solver. Column definitions are in [RESULTS.md](RESULTS.md) |
+| `instance_stats.csv` | One row per scored instance, with graph statistics and one single-solver run. Column definitions are in [RESULTS.md](RESULTS.md) |
 
 `docs/solver/benchmark/` has eleven directories. Seven of them come from CoRe Challenge 2022, under `2022benchmark/benchmark/`. The 2023 additions are `exp_instance/`, `hand_made_wide/`, `ph-isr/`, and `random_instance/`. The summary tables in `docs/index.md` split `hand_made_wide/` into four series, so those tables have fourteen rows. Together they are the 693 instances used for evaluation.
 
@@ -76,7 +76,7 @@ The pages distinguish single-engine submissions from portfolio (`overall`) submi
 
 ## Best-time table
 
-[solver_best_times.csv](solver_best_times.csv) lists the same 693 scored instances, one row each, from a later run under a 1800-second CPU limit. Every solver column is a single solver: PARIS (`shortest-single`), NU-ASP (`run_3.py --shortest`), and Reconfaigeration. SRIP is a single reference solver developed in 2025 and did not participate in the competition; its column is the KR 2026 configuration `logs-v47-full-op-f-d1-d2`. Answers, CPU times, and token-jump counts are defined in [RESULTS.md](RESULTS.md).
+[instance_stats.csv](instance_stats.csv) lists the same 693 scored instances, one row each, with graph statistics and a later run under a 1800-second CPU limit. Every solver column is a single solver: PARIS (`shortest-single`), NU-ASP (`run_3.py --shortest`), and Reconfaigeration. SRIP is a single reference solver developed in 2025 and did not participate in the competition; its column is the KR 2026 configuration `logs-v47-full-op-f-d1-d2`. Answers, CPU times, and token-jump counts are defined in [RESULTS.md](RESULTS.md).
 
 ## Graph track
 
