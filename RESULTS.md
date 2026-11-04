@@ -6,12 +6,12 @@ The file is a later re-run of those 693 instances under a 1800-second CPU limit 
 
 ## Category
 
-The 2023 pages score an **overall** category and a **single** category. Overall may use several engines from one team. Single is one engine. A single-engine team is listed in both tables.
+Every column in this file is a **single** solver: one engine per column. The 2023 pages also score an overall category, which may combine several engines from one team. Those overall runs are not in this CSV.
 
 | Prefix | Solver | Category | Run recorded in this file |
 | --- | --- | --- | --- |
-| `paris` | PARIS | single | `shortest-single` in `logs-paris`. That config runs ScorpionAnytime alone. The overall shortest config is `shortest-portfolio` (ScorpionAnytime and SymK) |
-| `nuasp` | NU-ASP | overall | `run_3.py --shortest` in `logs-nuasp`, the third NU-ASP engine. The single category used the first engine, `run.py`. This column is that one overall-category engine |
+| `paris` | PARIS | single | `shortest-single` in `logs-paris`. That config runs ScorpionAnytime alone |
+| `nuasp` | NU-ASP | single | `run_3.py --shortest` in `logs-nuasp` |
 | `isr` | ISR (sano in the 2023 tables) | single | `IsrSolverTjOrderClique01` in `logs-isr` |
 | `reconf` | Reconfaigeration (ddreconf in the 2023 tables) | single | `reconfaigeration` on the shortest track, in `logs-reconfaigeration` |
 | `srip` | SRIP | single | Fastest successful configuration among 68 directories named `logs` or `logs-v*` |
